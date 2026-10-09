@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦷</text></svg>"><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {"colors": {"on-secondary-container": "#00477f", "surface-container-low": "#f1f4f6", "surface-dim": "#d7dadc", "tertiary-fixed": "#94f2f1", "secondary-container": "#7db6ff", "on-error-container": "#93000a", "inverse-primary": "#7cd4e0", "outline": "#6e797b", "surface-container-high": "#e5e9eb", "on-secondary-fixed": "#001c38", "surface-bright": "#f7fafc", "surface-container-lowest": "#ffffff", "secondary-fixed": "#d3e4ff", "on-tertiary-fixed-variant": "#00504f", "surface-container-highest": "#e0e3e5", "secondary": "#1960a3", "tertiary-container": "#007877", "on-tertiary-fixed": "#002020", "on-primary": "#ffffff", "on-secondary": "#ffffff", "on-tertiary-container": "#9ffdfc", "tertiary-fixed-dim": "#77d6d4", "error": "#ba1a1a", "primary-fixed": "#99f0fd", "on-secondary-fixed-variant": "#004881", "primary": "#005c65", "primary-fixed-dim": "#7cd4e0", "surface-variant": "#e0e3e5", "outline-variant": "#bdc8ca", "primary-container": "#007782", "on-surface": "#181c1e", "surface-tint": "#006972", "background": "#f7fafc", "on-primary-container": "#c1f7ff", "on-surface-variant": "#3e494a", "inverse-surface": "#2d3133", "on-background": "#181c1e", "surface-container": "#ebeef0", "tertiary": "#005d5d", "surface": "#f7fafc", "inverse-on-surface": "#eef1f3", "secondary-fixed-dim": "#a2c9ff", "on-primary-fixed": "#001f23", "on-primary-fixed-variant": "#004f56", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "on-error": "#ffffff"}, "borderRadius": {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"}, "spacing": {"space-xl": "2.5rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1.5rem", "space-xs": "0.25rem", "margin": "2rem"}, "fontFamily": {"headline-sm": ["Inter"], "headline-md": ["Inter"], "body-lg": ["Inter"], "label-lg": ["Inter"], "label-md": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "headline-lg": ["Inter"], "label-sm": ["Inter"]}}}};</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><aside id="mobile-sidebar" class="fixed left-0 top-0 h-full w-64 transform -translate-x-full lg:translate-x-0 transition-transform duration-300 shadow-2xl lg:shadow-none bg-surface-container-low z-50 flex flex-col pt-space-xl pb-space-lg border-r border-surface-variant/40"><div class="px-space-lg mb-space-lg text-headline-sm font-headline-sm tracking-tight text-primary flex items-center gap-space-sm"><img alt="Logo" class="w-8 h-8 rounded-sm object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VBMQbDrhUnOYcpY7XlxeYntotjue9k6Ag-gX-3CiHSPTpJf89vb_82BHB2ffK_RcbYdpAFJEVIjz5-56hqT75H5mGUhKeGwWUthXA4Tp5fMjc75HLWqT1tFFHyjfVgibStaNcH8TPe972CKU8tRiDXiWxYRIQhxzrhDuqhES3CzfT2UJRm6BxY2BEFiR_aZouUmSR-ZStKOw4KgllTTN1fJGTg-tJp718cFbXLjt4AUL_5Z3-JrbpI_kM"/><span>Dental Clinic Pro</span></div><nav class="flex-1 px-space-md space-y-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="../doctor_dashboard_dentalcare_portal_1/code.html"><span class="material-symbols-outlined mr-space-md text-[20px]">dashboard</span>Dashboard</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="appointments" href="../appointments_dentalcare_portal/code.html"><span class="material-symbols-outlined mr-space-md text-[20px]">calendar_month</span>Appointments</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="patients" href="../patients_directory_dentalcare_portal/code.html"><span class="material-symbols-outlined mr-space-md text-[20px]">group</span>Patients</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reviews" href="../patient_reviews_dentalcare_portal_1/code.html"><span class="material-symbols-outlined mr-space-md text-[20px]">reviews</span>Reviews</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="../practice_settings_dentalcare_portal/code.html"><span class="material-symbols-outlined mr-space-md text-[20px]">settings</span>Settings</a></nav></aside><div class="pl-0 lg:pl-64"><header class="fixed top-0 left-0 lg:left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-gutter">
+
+    <button id="mobile-menu-btn" class="lg:hidden p-2 text-on-surface hover:bg-surface-container rounded-lg mr-auto z-50">
+        <span class="material-symbols-outlined text-2xl">menu</span>
+    </button>
+    <div class="flex items-center gap-2"><span class="text-label-md bg-primary-fixed text-on-primary-fixed px-2 py-1 rounded-md font-semibold">Power BI Analytics Active</span></div><div class="flex items-center gap-space-md"><button class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors relative"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-0 right-0 w-2 h-2 bg-error rounded-full"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full p-space-gutter space-y-space-lg">
+<!-- Power BI Analytics Summary Banner -->
+<div class="relative overflow-hidden bg-gradient-to-br from-primary-container via-surface-container-low to-surface-container-high rounded-xl p-space-lg shadow-sm">
+<div class="absolute -right-10 -bottom-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-space-md mb-space-md">
+<div>
+<div class="flex items-center gap-space-xs text-primary mb-1">
+<span class="material-symbols-outlined text-[18px]">analytics</span>
+<span class="text-label-md font-label-md tracking-wider uppercase">Power BI Clinical Analytics</span>
+</div>
+<h2 class="text-headline-md font-headline-md text-on-surface">Patient Demographics &amp; Treatment Flow</h2>
+</div>
+<div class="flex items-center gap-space-sm bg-surface/80 backdrop-blur-md px-space-md py-space-sm rounded-xl shadow-sm">
+<span class="w-2.5 h-2.5 bg-tertiary-container rounded-full animate-pulse"></span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Live Sync: Active Database</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md">
+<div class="bg-surface/60 backdrop-blur-md p-space-md rounded-xl shadow-sm">
+<div class="text-label-sm font-label-sm text-on-surface-variant mb-1">Total Active Patients</div>
+<div class="text-headline-md font-headline-md text-on-surface flex items-baseline justify-between">
+<span>2,482</span>
+<span class="text-body-sm text-tertiary-container font-semibold">+12% this month</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary h-full w-[78%] rounded-full"></div>
+</div>
+</div>
+<div class="bg-surface/60 backdrop-blur-md p-space-md rounded-xl shadow-sm">
+<div class="text-label-sm font-label-sm text-on-surface-variant mb-1">Preventive Care Ratio</div>
+<div class="text-headline-md font-headline-md text-on-surface flex items-baseline justify-between">
+<span>64.5%</span>
+<span class="text-body-sm text-secondary font-semibold">Optimal</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-secondary h-full w-[64.5%] rounded-full"></div>
+</div>
+</div>
+<div class="bg-surface/60 backdrop-blur-md p-space-md rounded-xl shadow-sm">
+<div class="text-label-sm font-label-sm text-on-surface-variant mb-1">Insurance Verified</div>
+<div class="text-headline-md font-headline-md text-on-surface flex items-baseline justify-between">
+<span>91.2%</span>
+<span class="text-body-sm text-tertiary-container font-semibold">High tier</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-tertiary-container h-full w-[91.2%] rounded-full"></div>
+</div>
+</div>
+<div class="bg-surface/60 backdrop-blur-md p-space-md rounded-xl shadow-sm">
+<div class="text-label-sm font-label-sm text-on-surface-variant mb-1">Medical Alerts Flagged</div>
+<div class="text-headline-md font-headline-md text-on-surface flex items-baseline justify-between">
+<span>142</span>
+<span class="text-body-sm text-error font-semibold">Requires Review</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-error h-full w-[25%] rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Patient Directory Header & Actions -->
+<div class="flex flex-col md:flex-row justify-between items-stretch md:items-center gap-space-md">
+<div class="flex items-center gap-space-md flex-1">
+<div class="relative flex-1 max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full bg-surface-container-lowest text-on-surface pl-10 pr-4 py-2.5 rounded-xl text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all placeholder:text-outline" id="patientSearchInput" placeholder="Search by patient name, ID, or phone number..." type="text"/>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-space-xs bg-surface-container-lowest text-on-surface px-space-md py-2.5 rounded-xl text-label-lg shadow-sm hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+<span>Filter</span>
+</button>
+<button class="flex items-center gap-space-xs bg-surface-container-lowest text-on-surface px-space-md py-2.5 rounded-xl text-label-lg shadow-sm hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined text-[18px]">sort</span>
+<span>Sort</span>
+</button>
+</div>
+</div>
+<button class="flex items-center justify-center gap-space-xs bg-primary text-on-primary px-space-lg py-2.5 rounded-xl text-label-lg shadow-sm hover:bg-primary/90 transition-all" onclick="toggleNewPatientModal(true)">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+<span>Add New Patient</span>
+</button>
+</div>
+<!-- Patient Table Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant text-label-md">
+<th class="py-space-md px-space-md font-semibold">Patient Name &amp; ID</th>
+<th class="py-space-md px-space-md font-semibold">Age / Gender</th>
+<th class="py-space-md px-space-md font-semibold">Last Visit</th>
+<th class="py-space-md px-space-md font-semibold">Primary Procedure</th>
+<th class="py-space-md px-space-md font-semibold">Medical Alerts</th>
+<th class="py-space-md px-space-md font-semibold">Insurance Status</th>
+<th class="py-space-md px-space-md font-semibold text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-variant/20 text-body-md text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-semibold text-label-lg">
+                  ES
+                </div>
+<div>
+<div class="font-semibold text-on-surface">Ananya Sterling</div>
+<div class="text-body-sm text-on-surface-variant font-mono">ID: #DC-88492</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div>34 yrs</div>
+<div class="text-body-sm text-on-surface-variant">Female</div>
+</td>
+<td class="py-space-md px-space-md">
+<div>Oct 12, 2023</div>
+<div class="text-body-sm text-secondary">Dr. Priya Patel</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2.5 py-1 rounded-md bg-secondary-fixed text-on-secondary-fixed text-label-sm font-semibold">
+                Root Canal Therapy
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-md bg-error-container text-on-error-container text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                Latex Allergy
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-xs text-tertiary-container font-semibold text-body-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                Delta Dental Premier
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" onclick="viewPatientHistory('Ananya Sterling')" title="View History">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+<button class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" title="Edit Record">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" title="Odontogram Profile">
+<span class="material-symbols-outlined text-[18px]">dentistry</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-semibold text-label-lg">
+                  MC
+                </div>
+<div>
+<div class="font-semibold text-on-surface">Marcus Chen</div>
+<div class="text-body-sm text-on-surface-variant font-mono">ID: #DC-88493</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div>45 yrs</div>
+<div class="text-body-sm text-on-surface-variant">Male</div>
+</td>
+<td class="py-space-md px-space-md">
+<div>Nov 04, 2023</div>
+<div class="text-body-sm text-secondary">Dr. Rohan Vance</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2.5 py-1 rounded-md bg-tertiary-fixed text-on-tertiary-fixed text-label-sm font-semibold">
+                Crown &amp; Bridge
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface-variant text-label-sm">
+                None Reported
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-xs text-tertiary-container font-semibold text-body-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                MetLife Dental PPO
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" onclick="viewPatientHistory('Marcus Chen')" title="View History">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+<button class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" title="Edit Record">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" title="Odontogram Profile">
+<span class="material-symbols-outlined text-[18px]">dentistry</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-fixed-dim text-on-primary-fixed flex items-center justify-center font-semibold text-label-lg">
+                  AP
+                </div>
+<div>
+<div class="font-semibold text-on-surface">Amara Patel</div>
+<div class="text-body-sm text-on-surface-variant font-mono">ID: #DC-88494</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div>28 yrs</div>
+<div class="text-body-sm text-on-surface-variant">Female</div>
+</td>
+<td class="py-space-md px-space-md">
+<div>Dec 01, 2023</div>
+<div class="text-body-sm text-secondary">Dr. Priya Patel</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2.5 py-1 rounded-md bg-secondary-fixed text-on-secondary-fixed text-label-sm font-semibold">
+                Orthodontic Adjustment
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-md bg-error-container text-on-error-container text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                Penicillin Allergy
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-xs text-error font-semibold text-body-sm">
+<span class="material-symbols-outlined text-[16px]">error</span>
+                Verification Pending
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" onclick="viewPatientHistory('Amara Patel')" title="View History">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+<button class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" title="Edit Record">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" title="Odontogram Profile">
+<span class="material-symbols-outlined text-[18px]">dentistry</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-semibold text-label-lg">
+                  JD
+                </div>
+<div>
+<div class="font-semibold text-on-surface">Jonathan Chopra</div>
+<div class="text-body-sm text-on-surface-variant font-mono">ID: #DC-88495</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div>52 yrs</div>
+<div class="text-body-sm text-on-surface-variant">Male</div>
+</td>
+<td class="py-space-md px-space-md">
+<div>Jan 15, 2024</div>
+<div class="text-body-sm text-secondary">Dr. Rohan Vance</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2.5 py-1 rounded-md bg-tertiary-fixed text-on-tertiary-fixed text-label-sm font-semibold">
+                Dental Implants
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-md bg-error-container text-on-error-container text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                Hypertension
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-xs text-tertiary-container font-semibold text-body-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                Cigna Dental Care
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" onclick="viewPatientHistory('Jonathan Chopra')" title="View History">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+<button class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" title="Edit Record">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" title="Odontogram Profile">
+<span class="material-symbols-outlined text-[18px]">dentistry</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="flex items-center justify-between px-space-md py-space-md bg-surface-container-low/30 border-t border-surface-variant/20">
+<div class="text-body-sm text-on-surface-variant">
+        Showing <span class="font-semibold text-on-surface">1-4</span> of <span class="font-semibold text-on-surface">2,482</span> patients
+      </div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded-xl bg-surface-container-high text-on-surface-variant opacity-50 text-label-md" disabled="">Previous</button>
+<button class="px-space-md py-1.5 rounded-xl bg-primary text-on-primary text-label-md font-semibold">1</button>
+<button class="px-space-md py-1.5 rounded-xl bg-surface-container-high text-on-surface text-label-md hover:bg-surface-variant transition-all">2</button>
+<button class="px-space-md py-1.5 rounded-xl bg-surface-container-high text-on-surface text-label-md hover:bg-surface-variant transition-all">3</button>
+<span class="px-2 text-on-surface-variant">...</span>
+<button class="px-space-md py-1.5 rounded-xl bg-surface-container-high text-on-surface text-label-md hover:bg-surface-variant transition-all">62</button>
+<button class="px-space-md py-1.5 rounded-xl bg-surface-container-high text-on-surface text-label-md hover:bg-surface-variant transition-all">Next</button>
+</div>
+</div>
+</div>
+<!-- New Patient Modal Placeholder (Hidden by default) -->
+<div class="fixed inset-0 bg-inverse-surface/60 backdrop-blur-sm z-50 flex items-center justify-center hidden" id="newPatientModal">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg w-full max-w-xl shadow-2xl relative">
+<div class="flex justify-between items-center mb-space-md">
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Add New Patient Record</h3>
+<button class="p-1 rounded-xl text-on-surface-variant hover:bg-surface-container-high" onclick="toggleNewPatientModal(false)">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<form class="space-y-space-md" onsubmit="event.preventDefault(); toggleNewPatientModal(false);">
+<div class="grid grid-cols-2 gap-space-md">
+<div>
+<label class="block text-label-md font-label-md text-on-surface-variant mb-1">First Name</label>
+<input class="w-full bg-surface-container-low px-3 py-2 rounded-xl text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="e.g. John" required="" type="text"/>
+</div>
+<div>
+<label class="block text-label-md font-label-md text-on-surface-variant mb-1">Last Name</label>
+<input class="w-full bg-surface-container-low px-3 py-2 rounded-xl text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="e.g. Doe" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div>
+<label class="block text-label-md font-label-md text-on-surface-variant mb-1">Date of Birth</label>
+<input class="w-full bg-surface-container-low px-3 py-2 rounded-xl text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/50" required="" type="date"/>
+</div>
+<div>
+<label class="block text-label-md font-label-md text-on-surface-variant mb-1">Gender</label>
+<select class="w-full bg-surface-container-low px-3 py-2 rounded-xl text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/50">
+<option>Male</option>
+<option>Female</option>
+<option>Non-Binary / Other</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-label-md font-label-md text-on-surface-variant mb-1">Medical Alerts</label>
+<input class="w-full bg-surface-container-low px-3 py-2 rounded-xl text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="e.g. Penicillin allergy, Hypertension" type="text"/>
+</div>
+<div>
+<label class="block text-label-md font-label-md text-on-surface-variant mb-1">Insurance Provider</label>
+<input class="w-full bg-surface-container-low px-3 py-2 rounded-xl text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="e.g. Delta Dental Premier" type="text"/>
+</div>
+<div class="flex justify-end gap-space-sm pt-space-md">
+<button class="px-space-md py-2 rounded-xl bg-surface-container-high text-on-surface text-label-lg" onclick="toggleNewPatientModal(false)" type="button">Cancel</button>
+<button class="px-space-md py-2 rounded-xl bg-primary text-on-primary text-label-lg font-semibold" type="submit">Save Patient</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Patient History Drawer / Modal Placeholder -->
+<div class="fixed inset-0 bg-inverse-surface/60 backdrop-blur-sm z-50 flex items-center justify-end hidden" id="patientHistoryModal">
+<div class="bg-surface-container-lowest h-full w-full max-w-lg shadow-2xl flex flex-col p-space-lg relative animate-in slide-in-from-right duration-200">
+<div class="flex justify-between items-center pb-space-md border-b border-surface-variant/20">
+<div>
+<h3 class="text-headline-md font-headline-md text-on-surface" id="historyPatientName">Patient History</h3>
+<div class="text-body-sm text-on-surface-variant">Clinical timeline &amp; treatment records</div>
+</div>
+<button class="p-1 rounded-xl text-on-surface-variant hover:bg-surface-container-high" onclick="viewPatientHistory(null)">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="flex-1 overflow-y-auto py-space-lg space-y-space-md">
+<div class="relative pl-6 border-l-2 border-primary/30 space-y-space-lg">
+<div class="relative">
+<span class="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-primary ring-4 ring-surface-container-lowest"></span>
+<div class="text-body-sm text-on-surface-variant font-mono">October 12, 2023</div>
+<div class="font-semibold text-on-surface text-label-lg">Root Canal Therapy (Tooth #14)</div>
+<p class="text-body-md text-on-surface-variant mt-1">Completed successful endodontic treatment. Placed temporary crown. Follow-up scheduled in 2 weeks.</p>
+</div>
+<div class="relative">
+<span class="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-secondary ring-4 ring-surface-container-lowest"></span>
+<div class="text-body-sm text-on-surface-variant font-mono">May 04, 2023</div>
+<div class="font-semibold text-on-surface text-label-lg">Routine Cleaning &amp; Exam</div>
+<p class="text-body-md text-on-surface-variant mt-1">Periodontal probing showed healthy pocket depths (2-3mm). Minor plaque buildup removed via ultrasonic scaling.</p>
+</div>
+<div class="relative">
+<span class="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-tertiary-container ring-4 ring-surface-container-lowest"></span>
+<div class="text-body-sm text-on-surface-variant font-mono">January 15, 2023</div>
+<div class="font-semibold text-on-surface text-label-lg">Initial Comprehensive Consultation</div>
+<p class="text-body-md text-on-surface-variant mt-1">Full mouth series radiographs taken. Treatment plan established for caries management and restorative work.</p>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t border-surface-variant/20 flex justify-end gap-space-sm">
+<button class="px-space-lg py-2.5 rounded-xl bg-primary text-on-primary text-label-lg font-semibold" onclick="viewPatientHistory(null)">Close History</button>
+</div>
+</div>
+</div>
+<script>
+    // Highlight 'Patients' in the sidebar automatically per instructions
+    document.addEventListener("DOMContentLoaded", function() {
+      const sidebarLinks = document.querySelectorAll("aside nav a");
+      sidebarLinks.forEach(link => {
+        if(link.getAttribute("data-path") === "patients") {
+          link.classList.add("bg-primary-container", "text-on-primary-container", "font-semibold");
+          link.classList.remove("text-on-surface-variant");
+        } else {
+          link.classList.remove("bg-primary-container", "text-on-primary-container", "font-semibold");
+          link.classList.add("text-on-surface-variant");
+        }
+      });
+    });
+
+    function toggleNewPatientModal(show) {
+      const modal = document.getElementById('newPatientModal');
+      if(show) {
+        modal.classList.remove('hidden');
+      } else {
+        modal.classList.add('hidden');
+      }
+    }
+
+    function viewPatientHistory(name) {
+      const drawer = document.getElementById('patientHistoryModal');
+      const titleEl = document.getElementById('historyPatientName');
+      if(name) {
+        titleEl.textContent = name + " - Clinical History";
+        drawer.classList.remove('hidden');
+      } else {
+        drawer.classList.add('hidden');
+      }
+    }
+  </script>
+</div></main></div>
+    <!-- Floating Home Button -->
+    <a href="../../../index.html" class="fixed bottom-6 right-6 bg-[#007782] text-white px-5 py-3 rounded-full shadow-2xl z-50 flex items-center gap-2 hover:bg-[#005c65] transition-all font-semibold" style="text-decoration: none;">
+        <span class="material-symbols-outlined">home</span>
+        Back to Home
+    </a>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const sidebar = document.getElementById('mobile-sidebar');
+            if(menuBtn && sidebar) {
+                menuBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    sidebar.classList.toggle('-translate-x-full');
+                });
+                // Close sidebar when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!sidebar.contains(e.target) && !menuBtn.contains(e.target) && !sidebar.classList.contains('-translate-x-full')) {
+                        sidebar.classList.add('-translate-x-full');
+                    }
+                });
+            }
+        });
+    </script>
+    
+</body></html>

@@ -1,4 +1,4 @@
-# 🚀 Propnex AI Dental Clinic UI — Enterprise Clinical Management
+# 🚀 Smile Clinic UI — Enterprise Clinical Management
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <strong>Propnex AI Dental Clinic UI</strong> is a production-ready, beautifully crafted clinic management web interface. It provides three interconnected portals (Doctor, Admin, and Patient) built with HTML, Tailwind CSS, and vanilla JavaScript for a lightning-fast, highly responsive user experience.
+  <strong>Smile Clinic UI</strong> is a production-ready, beautifully crafted clinic management web interface. It provides three interconnected portals (Doctor, Admin, and Patient) built with modern design principles for a lightning-fast, highly responsive user experience.
 </p>
 
 ---
@@ -17,22 +17,24 @@
 ## ✨ Features
 
 - **Triple Portal Architecture** — Distinct, fully-designed workspaces for Doctors, Administrators, and Patients.
-- **Premium Clinical UI** — Crisp medical teal branding, smooth transitions, glassmorphism, and a modern card-based layout.
-- **Seamless Navigation** — Fully interconnected HTML pages. Sign in, view dashboards, manage appointments, and navigate perfectly between pages.
-- **Floating Quick-Access** — Universal "Back to Home" button for effortless navigation back to the main portal hub.
-- **HIPAA-Compliant Aesthetic** — Clean, trust-inspiring design featuring localized dummy data.
-- **Zero Dependencies** — Pure HTML and Tailwind CSS via CDN. No build steps, no complex Node.js setups needed to view the UI.
+- **Live Doctor Application** — Production web application deployed at [https://doctor-dental-clinic.vercel.app/](https://doctor-dental-clinic.vercel.app/).
+- **Admin & Staff Workspace** — Centralized dashboard for front desk, billing teams, and executives to manage clinic operations.
+- **Patient Portal Hub** — Personalized patient hub to book appointments, review X-rays, pay bills, and manage dental health records online.
+- **Premium Clinical UI** — Crisp medical teal branding, smooth transitions, glassmorphism, and modern card-based layouts.
+- **Seamless Navigation** — Fully interconnected HTML pages with universal "Back to Home" navigation.
+- **Zero Dependencies** — Pure HTML and Tailwind CSS via CDN for the design templates.
 
 ---
 
 ## 🖼 Application Structure
 
 ```text
-DentalClinic_UI/
-├── index.html                                      → Main Landing Page Hub
-├── stitch_dental_clinic_doctor_portal/             → Doctor Dashboard & Tools
-├── stitch_hospital_management_admin_dashboard/     → Admin & Staff Operations
-└── stitch_patient_dental_dashboard/                → Patient Portal & Records
+SmileClinic_UI/
+├── index.html                                      → Main Landing Page Hub (Portals Directory)
+└── Designs/
+    ├── stitch_dental_clinic_doctor_portal/         → Doctor Dashboard & Tools Design Templates
+    ├── stitch_hospital_management_admin_dashboard/ → Admin & Staff Operations Design Templates
+    └── stitch_patient_dental_dashboard/            → Patient Portal & Records Design Templates
 ```
 
 ---
@@ -55,13 +57,13 @@ DentalClinic_UI/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/HelloWorld-Farhan/DentalClinic_UI.git
+   git clone https://github.com/HelloWorld-Farhan/SmileClinic_UI.git
    ```
 2. Navigate to the directory:
    ```bash
-   cd DentalClinic_UI
+   cd SmileClinic_UI
    ```
-3. Open `index.html` in any modern web browser (Chrome, Edge, Firefox, Safari). No local server required!
+3. Open `index.html` in any modern web browser (Chrome, Edge, Firefox, Safari).
 
 ---
 

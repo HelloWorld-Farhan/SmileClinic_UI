@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦷</text></svg>"><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {"colors": {"on-secondary-container": "#00477f", "surface-container-low": "#f1f4f6", "surface-dim": "#d7dadc", "tertiary-fixed": "#94f2f1", "secondary-container": "#7db6ff", "on-error-container": "#93000a", "inverse-primary": "#7cd4e0", "outline": "#6e797b", "surface-container-high": "#e5e9eb", "on-secondary-fixed": "#001c38", "surface-bright": "#f7fafc", "surface-container-lowest": "#ffffff", "secondary-fixed": "#d3e4ff", "on-tertiary-fixed-variant": "#00504f", "surface-container-highest": "#e0e3e5", "secondary": "#1960a3", "tertiary-container": "#007877", "on-tertiary-fixed": "#002020", "on-primary": "#ffffff", "on-secondary": "#ffffff", "on-tertiary-container": "#9ffdfc", "tertiary-fixed-dim": "#77d6d4", "error": "#ba1a1a", "primary-fixed": "#99f0fd", "on-secondary-fixed-variant": "#004881", "primary": "#005c65", "primary-fixed-dim": "#7cd4e0", "surface-variant": "#e0e3e5", "outline-variant": "#bdc8ca", "primary-container": "#007782", "on-surface": "#181c1e", "surface-tint": "#006972", "background": "#f7fafc", "on-primary-container": "#c1f7ff", "on-surface-variant": "#3e494a", "inverse-surface": "#2d3133", "on-background": "#181c1e", "surface-container": "#ebeef0", "tertiary": "#005d5d", "surface": "#f7fafc", "inverse-on-surface": "#eef1f3", "secondary-fixed-dim": "#a2c9ff", "on-primary-fixed": "#001f23", "on-primary-fixed-variant": "#004f56", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "on-error": "#ffffff"}, "borderRadius": {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"}, "spacing": {"space-xl": "2.5rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1.5rem", "space-xs": "0.25rem", "margin": "2rem"}, "fontFamily": {"headline-sm": ["Inter"], "headline-md": ["Inter"], "body-lg": ["Inter"], "label-lg": ["Inter"], "label-md": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "headline-lg": ["Inter"], "label-sm": ["Inter"]}}}};</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><aside id="mobile-sidebar" class="fixed left-0 top-0 h-full w-64 transform -translate-x-full lg:translate-x-0 transition-transform duration-300 shadow-2xl lg:shadow-none bg-surface-container-low z-50 flex flex-col pt-space-xl pb-space-lg border-r border-surface-variant/40"><div class="px-space-lg mb-space-lg text-headline-sm font-headline-sm tracking-tight text-primary flex items-center gap-space-sm"><img alt="Logo" class="w-8 h-8 rounded-sm object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VBMQbDrhUnOYcpY7XlxeYntotjue9k6Ag-gX-3CiHSPTpJf89vb_82BHB2ffK_RcbYdpAFJEVIjz5-56hqT75H5mGUhKeGwWUthXA4Tp5fMjc75HLWqT1tFFHyjfVgibStaNcH8TPe972CKU8tRiDXiWxYRIQhxzrhDuqhES3CzfT2UJRm6BxY2BEFiR_aZouUmSR-ZStKOw4KgllTTN1fJGTg-tJp718cFbXLjt4AUL_5Z3-JrbpI_kM"/><span>Dental Clinic Pro</span></div><nav class="flex-1 px-space-md space-y-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="../doctor_dashboard_dentalcare_portal_1/code.html"><span class="material-symbols-outlined mr-space-md text-[20px]">dashboard</span>Dashboard</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="appointments" href="../appointments_dentalcare_portal/code.html"><span class="material-symbols-outlined mr-space-md text-[20px]">calendar_month</span>Appointments</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="patients" href="../patients_directory_dentalcare_portal/code.html"><span class="material-symbols-outlined mr-space-md text-[20px]">group</span>Patients</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reviews" href="../patient_reviews_dentalcare_portal_1/code.html"><span class="material-symbols-outlined mr-space-md text-[20px]">reviews</span>Reviews</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="../practice_settings_dentalcare_portal/code.html"><span class="material-symbols-outlined mr-space-md text-[20px]">settings</span>Settings</a></nav></aside><div class="pl-0 lg:pl-64"><header class="fixed top-0 left-0 lg:left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-gutter">
+
+    <button id="mobile-menu-btn" class="lg:hidden p-2 text-on-surface hover:bg-surface-container rounded-lg mr-auto z-50">
+        <span class="material-symbols-outlined text-2xl">menu</span>
+    </button>
+    <div class="flex items-center gap-2"><span class="text-label-md bg-primary-fixed text-on-primary-fixed px-2 py-1 rounded-md font-semibold">Power BI Analytics Active</span></div><div class="flex items-center gap-space-md"><button class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors relative"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-0 right-0 w-2 h-2 bg-error rounded-full"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full pb-space-xl">
+<!-- Hero / Header Section -->
+<div class="px-space-gutter pt-space-lg pb-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs text-on-surface-variant mb-space-xs">
+<span class="material-symbols-outlined text-[16px]">settings</span>
+<span class="text-label-md uppercase tracking-wider">Configuration &amp; System Control</span>
+</div>
+<h1 class="text-headline-lg font-headline-lg text-on-surface">Practice Settings &amp; Infrastructure</h1>
+<p class="text-body-md text-on-surface-variant mt-space-xs">Manage clinical parameters, HIPAA compliance protocols, automated telemetry, and third-party integrations.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-sm bg-surface-container-high text-on-surface rounded-xl font-medium text-label-lg hover:bg-surface-dim transition-all flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+        Reset Defaults
+      </button>
+<button class="px-space-lg py-space-sm bg-primary text-on-primary rounded-xl font-medium text-label-lg hover:bg-primary/90 transition-all shadow-sm flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">save</span>
+        Save Changes
+      </button>
+</div>
+</div>
+<!-- Navigation Tabs -->
+<div class="px-space-gutter border-b border-surface-variant/40 flex overflow-x-auto gap-space-lg scrollbar-none">
+<button class="pb-space-md font-medium text-label-lg text-primary border-b-2 border-primary flex items-center gap-space-xs whitespace-nowrap transition-all" id="tab-btn-profile" onclick="switchTab('profile')">
+<span class="material-symbols-outlined text-[18px]">local_hospital</span>
+      Profile &amp; Clinic Info
+    </button>
+<button class="pb-space-md font-medium text-label-lg text-on-surface-variant hover:text-on-surface flex items-center gap-space-xs whitespace-nowrap transition-all" id="tab-btn-security" onclick="switchTab('security')">
+<span class="material-symbols-outlined text-[18px]">security</span>
+      Security &amp; HIPAA
+    </button>
+<button class="pb-space-md font-medium text-label-lg text-on-surface-variant hover:text-on-surface flex items-center gap-space-xs whitespace-nowrap transition-all" id="tab-btn-notifications" onclick="switchTab('notifications')">
+<span class="material-symbols-outlined text-[18px]">notifications</span>
+      Notifications
+    </button>
+<button class="pb-space-md font-medium text-label-lg text-on-surface-variant hover:text-on-surface flex items-center gap-space-xs whitespace-nowrap transition-all" id="tab-btn-powerbi" onclick="switchTab('powerbi')">
+<span class="material-symbols-outlined text-[18px]">analytics</span>
+      Power BI Analytics
+    </button>
+<button class="pb-space-md font-medium text-label-lg text-on-surface-variant hover:text-on-surface flex items-center gap-space-xs whitespace-nowrap transition-all" id="tab-btn-equipment" onclick="switchTab('equipment')">
+<span class="material-symbols-outlined text-[18px]">medical_services</span>
+      Equipment Status
+    </button>
+<button class="pb-space-md font-medium text-label-lg text-on-surface-variant hover:text-on-surface flex items-center gap-space-xs whitespace-nowrap transition-all" id="tab-btn-voice" onclick="switchTab('voice')">
+<span class="material-symbols-outlined text-[18px]">mic</span>
+      Voice-to-Text Charting
+    </button>
+</div>
+<!-- Tab Content Container -->
+<div class="px-space-gutter pt-space-lg">
+<!-- 1. Profile & Clinic Info -->
+<div class="space-y-space-lg" id="tab-profile">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<div class="lg:col-span-2 bg-surface-container-low rounded-xl p-space-lg shadow-sm space-y-space-md">
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Practice Identification</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block text-label-md font-medium text-on-surface-variant mb-space-xs">Clinic Legal Name</label>
+<input class="w-full bg-surface border border-outline-variant/40 rounded-xl px-space-md py-space-sm text-body-md text-on-surface focus:outline-none focus:border-primary" type="text" value="Dental Clinic Pro Advanced Dental Studio"/>
+</div>
+<div>
+<label class="block text-label-md font-medium text-on-surface-variant mb-space-xs">Practice NPI Number</label>
+<input class="w-full bg-surface border border-outline-variant/40 rounded-xl px-space-md py-space-sm text-body-md text-on-surface focus:outline-none focus:border-primary" type="text" value="1295847392"/>
+</div>
+<div>
+<label class="block text-label-md font-medium text-on-surface-variant mb-space-xs">Primary Contact Email</label>
+<input class="w-full bg-surface border border-outline-variant/40 rounded-xl px-space-md py-space-sm text-body-md text-on-surface focus:outline-none focus:border-primary" type="email" value="admin@Dental Clinicpro.net"/>
+</div>
+<div>
+<label class="block text-label-md font-medium text-on-surface-variant mb-space-xs">Phone Number</label>
+<input class="w-full bg-surface border border-outline-variant/40 rounded-xl px-space-md py-space-sm text-body-md text-on-surface focus:outline-none focus:border-primary" type="text" value="+1 (555) 382-9900"/>
+</div>
+</div>
+<div>
+<label class="block text-label-md font-medium text-on-surface-variant mb-space-xs">Physical Address</label>
+<input class="w-full bg-surface border border-outline-variant/40 rounded-xl px-space-md py-space-sm text-body-md text-on-surface focus:outline-none focus:border-primary" type="text" value="742 Evergreen Terrace, Suite 400, Springfield, OR 97477"/>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col items-center text-center justify-between">
+<div class="space-y-space-md w-full flex flex-col items-center">
+<h2 class="text-headline-sm font-headline-sm text-on-surface w-full text-left">Clinic Logo</h2>
+<div class="w-32 h-32 rounded-full overflow-hidden bg-surface-container-high border-2 border-primary/20 shadow-sm relative">
+<img class="w-full h-full object-cover" data-alt="Professional crisp clinic logo showing a minimalist stylized blue tooth with a warm smile curve on a clean neutral background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClzs2qLi01u8zRP56sdKHGde1f5v8kA1yymHxyLBBL5MgYaln6q_mBLPAf_1laSNAh36wBiFZLcKOB3z-HfMwdAn7BMkr82AhTfIofnTWYa52t35hawrdE-mnBYyVIDhGqBuAhMVADjuNnI3QLg4_fIv2VdrEsGkUY4s6IPjvCjj_Wy1JoD7bCnoKpL3UxbrsWz6GDsR4ajAF-_U38bNQL-RiwpXMAxUkZV-Pn2A9WeS-sFYW36jcU"/>
+</div>
+<p class="text-body-sm text-on-surface-variant">Recommended 500x500px PNG or SVG with transparent background.</p>
+</div>
+<button class="w-full mt-space-md py-space-sm bg-surface-container-high text-on-surface rounded-xl font-medium text-label-lg hover:bg-surface-dim transition-all">
+            Upload New Logo
+          </button>
+</div>
+</div>
+</div>
+<!-- 2. Security & HIPAA Compliance -->
+<div class="hidden space-y-space-lg" id="tab-security">
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface">HIPAA Compliance &amp; Encryption Protocols</h2>
+<p class="text-body-md text-on-surface-variant">All patient health records (PHI) are protected under 256-bit AES encryption standards.</p>
+</div>
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed rounded-full text-label-sm font-semibold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+            Fully Compliant
+          </span>
+</div>
+<div class="space-y-space-md pt-space-sm">
+<div class="flex items-center justify-between p-space-md bg-surface rounded-xl">
+<div>
+<div class="font-semibold text-on-surface">Multi-Factor Authentication (MFA) Enforcement</div>
+<div class="text-body-sm text-on-surface-variant">Require all clinical staff and administrators to use TOTP authenticator apps.</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-space-md bg-surface rounded-xl">
+<div>
+<div class="font-semibold text-on-surface">Automatic Session Timeout</div>
+<div class="text-body-sm text-on-surface-variant">Automatically log out idle terminals after 15 minutes of inactivity.</div>
+</div>
+<select class="bg-surface-container-high text-on-surface px-space-md py-space-sm rounded-xl text-body-md border-0 focus:ring-1 focus:ring-primary">
+<option>15 Minutes</option>
+<option>30 Minutes</option>
+<option>60 Minutes</option>
+</select>
+</div>
+<div class="flex items-center justify-between p-space-md bg-surface rounded-xl">
+<div>
+<div class="font-semibold text-on-surface">Audit Trail Logging</div>
+<div class="text-body-sm text-on-surface-variant">Maintain immutable logs of every record access, modification, and export.</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Notification Preferences -->
+<div class="hidden space-y-space-lg" id="tab-notifications">
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm space-y-space-md">
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Automated Patient Reminders &amp; Alerts</h2>
+<p class="text-body-md text-on-surface-variant">Configure SMS and email communication triggers for appointments and recalls.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-sm">
+<div class="p-space-md bg-surface rounded-xl space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-on-surface">SMS Appointment Reminders</span>
+<input checked="" class="w-4 h-4 text-primary rounded focus:ring-primary" type="checkbox"/>
+</div>
+<p class="text-body-sm text-on-surface-variant">Send automated SMS notifications 24 hours prior to scheduled procedures.</p>
+</div>
+<div class="p-space-md bg-surface rounded-xl space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-on-surface">Email Recalls &amp; Checkups</span>
+<input checked="" class="w-4 h-4 text-primary rounded focus:ring-primary" type="checkbox"/>
+</div>
+<p class="text-body-sm text-on-surface-variant">Trigger bi-annual cleaning and preventive care reminder emails automatically.</p>
+</div>
+<div class="p-space-md bg-surface rounded-xl space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-on-surface">Emergency Booking Alerts</span>
+<input checked="" class="w-4 h-4 text-primary rounded focus:ring-primary" type="checkbox"/>
+</div>
+<p class="text-body-sm text-on-surface-variant">Instant push notification to lead dentist for urgent trauma or pain appointments.</p>
+</div>
+<div class="p-space-md bg-surface rounded-xl space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-on-surface">Billing &amp; Insurance Digest</span>
+<input class="w-4 h-4 text-primary rounded focus:ring-primary" type="checkbox"/>
+</div>
+<p class="text-body-sm text-on-surface-variant">Weekly financial and claim processing summary sent to practice managers.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. Power BI Analytics Integration -->
+<div class="hidden space-y-space-lg" id="tab-powerbi">
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">analytics</span>
+</div>
+<div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Power BI Embedded Workspace</h2>
+<p class="text-body-md text-on-surface-variant">Connected to Azure Tenant: <span class="font-mono text-primary">dentalcare-prod-uswest</span></p>
+</div>
+</div>
+<span class="px-3 py-1 bg-primary text-on-primary rounded-full text-label-sm font-semibold">Active Sync</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-sm">
+<div>
+<label class="block text-label-md font-medium text-on-surface-variant mb-space-xs">Workspace ID</label>
+<input class="w-full bg-surface border border-outline-variant/40 rounded-xl px-space-md py-space-sm text-body-md font-mono text-on-surface focus:outline-none focus:border-primary" type="text" value="8f4b2c1e-9a3d-4c5e-8b1a-7f6e5d4c3b2a"/>
+</div>
+<div>
+<label class="block text-label-md font-medium text-on-surface-variant mb-space-xs">Dataset Refresh Frequency</label>
+<select class="w-full bg-surface border border-outline-variant/40 rounded-xl px-space-md py-space-sm text-body-md text-on-surface focus:outline-none focus:border-primary">
+<option>Real-Time Streaming</option>
+<option>Every 1 Hour</option>
+<option>Every 4 Hours</option>
+<option>Daily at Midnight</option>
+</select>
+</div>
+</div>
+<div class="p-space-md bg-surface rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-[24px] text-primary">sync</span>
+<div>
+<div class="font-semibold text-on-surface">Telemetry &amp; Patient Flow Data Feed</div>
+<div class="text-body-sm text-on-surface-variant">Last successful synchronization completed 4 minutes ago.</div>
+</div>
+</div>
+<button class="px-space-md py-space-sm bg-primary-container text-on-primary-container rounded-xl font-medium text-label-lg hover:bg-primary-container/80 transition-all">
+            Test Connection
+          </button>
+</div>
+</div>
+</div>
+<!-- 5. Equipment Status Management -->
+<div class="hidden space-y-space-lg" id="tab-equipment">
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Operatory &amp; Diagnostic Equipment Telemetry</h2>
+<button class="px-space-md py-space-sm bg-primary text-on-primary rounded-xl font-medium text-label-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">add</span>
+            Add Equipment
+          </button>
+</div>
+<div class="space-y-space-sm pt-space-sm">
+<div class="p-space-md bg-surface rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 bg-surface-container-high rounded-xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">dentistry</span>
+</div>
+<div>
+<div class="font-semibold text-on-surface">Planmeca ProMax 3D CBCT Scanner</div>
+<div class="text-body-sm text-on-surface-variant">Operatory 1 • Calibration Due: Oct 2025</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed rounded-full text-label-sm font-semibold">Operational</span>
+<button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined">more_vert</span></button>
+</div>
+</div>
+<div class="p-space-md bg-surface rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 bg-surface-container-high rounded-xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">scanner</span>
+</div>
+<div>
+<div class="font-semibold text-on-surface">iTero Element 5D Intraoral Scanner</div>
+<div class="text-body-sm text-on-surface-variant">Operatory 2 • Firmware v4.12.0</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed rounded-full text-label-sm font-semibold">Operational</span>
+<button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined">more_vert</span></button>
+</div>
+</div>
+<div class="p-space-md bg-surface rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 bg-error-container text-on-error-container rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">light_mode</span>
+</div>
+<div>
+<div class="font-semibold text-on-surface">A-dec 500 LED Dental Curing Light</div>
+<div class="text-body-sm text-on-surface-variant">Operatory 3 • Bulb intensity degraded (78%)</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="px-3 py-1 bg-error-container text-on-error-container rounded-full text-label-sm font-semibold">Service Required</span>
+<button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined">more_vert</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 6. Voice-to-Text Charting Toggles -->
+<div class="hidden space-y-space-lg" id="tab-voice">
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">mic</span>
+</div>
+<div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface">AI Voice-to-Text Perio &amp; Restorative Charting</h2>
+<p class="text-body-md text-on-surface-variant">Dictate periodontal depths, missing teeth, and restorations hands-free during exams.</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-sm">
+<div class="p-space-md bg-surface rounded-xl space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-on-surface">Auto-Advance Perio Sounding</span>
+<input checked="" class="w-4 h-4 text-primary rounded focus:ring-primary" type="checkbox"/>
+</div>
+<p class="text-body-sm text-on-surface-variant">Automatically jump to the next tooth/pocket number upon successful numerical speech capture.</p>
+</div>
+<div class="p-space-md bg-surface rounded-xl space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-on-surface">Clinical Medical Vocabulary Model</span>
+<select class="bg-surface-container-high text-on-surface px-space-sm py-1 rounded-lg text-body-sm border-0">
+<option>Dental Pro v4.2 (US English)</option>
+<option>Dental Pro v4.2 (UK English)</option>
+</select>
+</div>
+<p class="text-body-sm text-on-surface-variant">Optimized acoustic models trained on dental terminology and ADA code identifiers.</p>
+</div>
+<div class="p-space-md bg-surface rounded-xl space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-on-surface">Noise Cancellation Filter</span>
+<input checked="" class="w-4 h-4 text-primary rounded focus:ring-primary" type="checkbox"/>
+</div>
+<p class="text-body-sm text-on-surface-variant">Filter out high-frequency dental drill and suction background noise during speech recognition.</p>
+</div>
+<div class="p-space-md bg-surface rounded-xl space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-on-surface">Audio Recording Retention</span>
+<select class="bg-surface-container-high text-on-surface px-space-sm py-1 rounded-lg text-body-sm border-0">
+<option>Discard Immediately After Text Parse</option>
+<option>Retain 30 Days for Audit</option>
+</select>
+</div>
+<p class="text-body-sm text-on-surface-variant">Compliance setting governing raw voice file storage on local secure edge servers.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    function switchTab(tabId) {
+      const tabs = ['profile', 'security', 'notifications', 'powerbi', 'equipment', 'voice'];
+      tabs.forEach(t => {
+        const el = document.getElementById('tab-' + t);
+        const btn = document.getElementById('tab-btn-' + t);
+        if (t === tabId) {
+          el.classList.remove('hidden');
+          btn.classList.add('text-primary', 'border-b-2', 'border-primary');
+          btn.classList.remove('text-on-surface-variant');
+        } else {
+          el.classList.add('hidden');
+          btn.classList.remove('text-primary', 'border-b-2', 'border-primary');
+          btn.classList.add('text-on-surface-variant');
+        }
+      });
+    }
+
+    // Highlight Settings in the sidebar as requested
+    document.addEventListener('DOMContentLoaded', () => {
+      const settingsLink = document.querySelector('aside nav a[data-path="settings"]');
+      if (settingsLink) {
+        settingsLink.className = 'flex items-center px-space-md py-space-sm rounded-xl bg-primary-container text-on-primary-container font-semibold transition-all';
+      }
+    });
+  </script>
+</div></main></div>
+    <!-- Floating Home Button -->
+    <a href="../../../index.html" class="fixed bottom-6 right-6 bg-[#007782] text-white px-5 py-3 rounded-full shadow-2xl z-50 flex items-center gap-2 hover:bg-[#005c65] transition-all font-semibold" style="text-decoration: none;">
+        <span class="material-symbols-outlined">home</span>
+        Back to Home
+    </a>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const sidebar = document.getElementById('mobile-sidebar');
+            if(menuBtn && sidebar) {
+                menuBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    sidebar.classList.toggle('-translate-x-full');
+                });
+                // Close sidebar when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!sidebar.contains(e.target) && !menuBtn.contains(e.target) && !sidebar.classList.contains('-translate-x-full')) {
+                        sidebar.classList.add('-translate-x-full');
+                    }
+                });
+            }
+        });
+    </script>
+    
+</body></html>

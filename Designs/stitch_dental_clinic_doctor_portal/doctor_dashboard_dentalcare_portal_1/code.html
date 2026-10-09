@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦷</text></svg>"><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {"colors": {"on-secondary-container": "#00477f", "surface-container-low": "#f1f4f6", "surface-dim": "#d7dadc", "tertiary-fixed": "#94f2f1", "secondary-container": "#7db6ff", "on-error-container": "#93000a", "inverse-primary": "#7cd4e0", "outline": "#6e797b", "surface-container-high": "#e5e9eb", "on-secondary-fixed": "#001c38", "surface-bright": "#f7fafc", "surface-container-lowest": "#ffffff", "secondary-fixed": "#d3e4ff", "on-tertiary-fixed-variant": "#00504f", "surface-container-highest": "#e0e3e5", "secondary": "#1960a3", "tertiary-container": "#007877", "on-tertiary-fixed": "#002020", "on-primary": "#ffffff", "on-secondary": "#ffffff", "on-tertiary-container": "#9ffdfc", "tertiary-fixed-dim": "#77d6d4", "error": "#ba1a1a", "primary-fixed": "#99f0fd", "on-secondary-fixed-variant": "#004881", "primary": "#005c65", "primary-fixed-dim": "#7cd4e0", "surface-variant": "#e0e3e5", "outline-variant": "#bdc8ca", "primary-container": "#007782", "on-surface": "#181c1e", "surface-tint": "#006972", "background": "#f7fafc", "on-primary-container": "#c1f7ff", "on-surface-variant": "#3e494a", "inverse-surface": "#2d3133", "on-background": "#181c1e", "surface-container": "#ebeef0", "tertiary": "#005d5d", "surface": "#f7fafc", "inverse-on-surface": "#eef1f3", "secondary-fixed-dim": "#a2c9ff", "on-primary-fixed": "#001f23", "on-primary-fixed-variant": "#004f56", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "on-error": "#ffffff"}, "borderRadius": {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"}, "spacing": {"space-xl": "2.5rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1.5rem", "space-xs": "0.25rem", "margin": "2rem"}, "fontFamily": {"headline-sm": ["Inter"], "headline-md": ["Inter"], "body-lg": ["Inter"], "label-lg": ["Inter"], "label-md": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "headline-lg": ["Inter"], "label-sm": ["Inter"]}, "fontSize": {"headline-sm": ["18px", {"lineHeight": "24px", "fontWeight": "600"}], "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "label-lg": ["14px", {"lineHeight": "20px", "fontWeight": "500"}], "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "500"}], "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}], "label-sm": ["10px", {"lineHeight": "14px", "fontWeight": "500"}]}}}};</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><aside id="mobile-sidebar" class="fixed left-0 top-0 h-full w-64 transform -translate-x-full lg:translate-x-0 transition-transform duration-300 shadow-2xl lg:shadow-none bg-surface-container-low z-50 flex flex-col pt-space-xl pb-space-lg"><div class="px-space-lg mb-space-lg text-headline-sm font-headline-sm tracking-tight text-primary flex items-center gap-space-sm"><span class="material-symbols-outlined text-[24px]">dentistry</span><span>Dental Clinic Pro</span></div><nav class="flex-1 px-space-md space-y-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a aria-current="page" class="flex items-center px-space-md py-space-sm rounded-xl transition-all bg-primary-container text-on-primary-container font-semibold" data-path="dashboard" href="../doctor_dashboard_dentalcare_portal_1/code.html"><span class="material-symbols-outlined mr-space-md text-[20px]">dashboard</span>Dashboard</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="appointments" href="../appointments_dentalcare_portal/code.html"><span class="material-symbols-outlined mr-space-md text-[20px]">calendar_month</span>Appointments</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="patients" href="../patients_directory_dentalcare_portal/code.html"><span class="material-symbols-outlined mr-space-md text-[20px]">group</span>Patients</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reviews" href="../patient_reviews_dentalcare_portal_1/code.html"><span class="material-symbols-outlined mr-space-md text-[20px]">reviews</span>Reviews</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="../practice_settings_dentalcare_portal/code.html"><span class="material-symbols-outlined mr-space-md text-[20px]">settings</span>Settings</a></nav></aside><div class="pl-0 lg:pl-64"><header class="fixed top-0 left-0 lg:left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-end px-space-gutter gap-space-md">
+
+    <button id="mobile-menu-btn" class="lg:hidden p-2 text-on-surface hover:bg-surface-container rounded-lg mr-auto z-50">
+        <span class="material-symbols-outlined text-2xl">menu</span>
+    </button>
+    <button class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full p-space-gutter space-y-space-xl">
+<!-- Top Welcome & Quick Actions Bar -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-space-md">
+<div>
+<div class="text-label-md font-label-md text-primary tracking-wider uppercase mb-1">Clinical Workspace</div>
+<h1 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">Good morning, Dr. Sharma</h1>
+<p class="text-body-md text-on-surface-variant">Here is your practice overview and patient schedule for today.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-xl text-label-lg transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+        New Patient
+      </button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm bg-primary text-on-primary hover:bg-primary-container rounded-xl text-label-lg transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">calendar_add_on</span>
+        Schedule Appointment
+      </button>
+</div>
+</div>
+<!-- Key Metrics Bento Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-primary/5 rounded-full group-hover:scale-125 transition-transform"></div>
+<div class="flex justify-between items-start mb-space-md">
+<span class="text-label-lg font-label-lg text-on-surface-variant">Today's Appointments</span>
+<div class="p-space-xs bg-primary-fixed text-on-primary-fixed rounded-lg">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+</div>
+</div>
+<div>
+<div class="text-headline-lg font-headline-lg text-on-surface">8</div>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="text-label-md text-emerald-600 font-semibold">+12%</span>
+<span class="text-body-sm text-on-surface-variant">vs yesterday</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-tertiary/5 rounded-full group-hover:scale-125 transition-transform"></div>
+<div class="flex justify-between items-start mb-space-md">
+<span class="text-label-lg font-label-lg text-on-surface-variant">Pending Reviews</span>
+<div class="p-space-xs bg-tertiary-fixed text-on-tertiary-fixed rounded-lg">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">rate_review</span>
+</div>
+</div>
+<div>
+<div class="text-headline-lg font-headline-lg text-on-surface">3</div>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="text-label-md text-amber-600 font-semibold">Action req.</span>
+<span class="text-body-sm text-on-surface-variant">chart summaries</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-secondary/5 rounded-full group-hover:scale-125 transition-transform"></div>
+<div class="flex justify-between items-start mb-space-md">
+<span class="text-label-lg font-label-lg text-on-surface-variant">Patient Satisfaction</span>
+<div class="p-space-xs bg-secondary-fixed text-on-secondary-fixed rounded-lg">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">sentiment_satisfied</span>
+</div>
+</div>
+<div>
+<div class="text-headline-lg font-headline-lg text-on-surface">4.9<span class="text-body-lg text-on-surface-variant font-normal">/5</span></div>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="text-label-md text-emerald-600 font-semibold">Top 5%</span>
+<span class="text-body-sm text-on-surface-variant">regional clinic</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-primary/5 rounded-full group-hover:scale-125 transition-transform"></div>
+<div class="flex justify-between items-start mb-space-md">
+<span class="text-label-lg font-label-lg text-on-surface-variant">Active Patients</span>
+<div class="p-space-xs bg-surface-container-high text-on-surface rounded-lg">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">group</span>
+</div>
+</div>
+<div>
+<div class="text-headline-lg font-headline-lg text-on-surface">1,240</div>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="text-label-md text-emerald-600 font-semibold">+38</span>
+<span class="text-body-sm text-on-surface-variant">this month</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content Grid: Schedule Table & Weekly Overview Widget -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Upcoming Appointments Table (2 cols) -->
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col">
+<div class="flex justify-between items-center mb-space-md">
+<div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Today's Schedule</h2>
+<p class="text-body-sm text-on-surface-variant">Showing active patient queue for today, Oct 24</p>
+</div>
+<button class="text-primary text-label-md hover:underline font-semibold flex items-center gap-1">
+          View All <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<div class="overflow-x-auto flex-1">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="text-label-md text-on-surface-variant bg-surface-container-low">
+<th class="p-space-sm rounded-l-lg pl-space-md">Time</th>
+<th class="p-space-sm">Patient Name</th>
+<th class="p-space-sm">Procedure</th>
+<th class="p-space-sm">Status</th>
+<th class="p-space-sm rounded-r-lg pr-space-md text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="text-body-md text-on-surface divide-y divide-surface-container-low">
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="p-space-sm pl-space-md font-semibold">09:00 AM</td>
+<td class="p-space-sm flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-semibold text-label-sm">JD</div>
+<div>
+<div class="font-medium">Neha Gupta</div>
+<div class="text-body-sm text-on-surface-variant">ID: #40921</div>
+</div>
+</td>
+<td class="p-space-sm text-on-surface-variant">Root Canal Therapy</td>
+<td class="p-space-sm">
+<span class="inline-flex items-center px-space-sm py-0.5 rounded-full text-label-sm font-semibold bg-primary-fixed text-on-primary-fixed">
+                  In Progress
+                </span>
+</td>
+<td class="p-space-sm pr-space-md text-right">
+<button class="p-space-xs text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="p-space-sm pl-space-md font-semibold">10:15 AM</td>
+<td class="p-space-sm flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-semibold text-label-sm">MS</div>
+<div>
+<div class="font-medium">Mark Singh</div>
+<div class="text-body-sm text-on-surface-variant">ID: #40922</div>
+</div>
+</td>
+<td class="p-space-sm text-on-surface-variant">Routine Cleaning & Exam</td>
+<td class="p-space-sm">
+<span class="inline-flex items-center px-space-sm py-0.5 rounded-full text-label-sm font-semibold bg-surface-container-high text-on-surface">
+                  Confirmed
+                </span>
+</td>
+<td class="p-space-sm pr-space-md text-right">
+<button class="p-space-xs text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="p-space-sm pl-space-md font-semibold">11:30 AM</td>
+<td class="p-space-sm flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-semibold text-label-sm">AR</div>
+<div>
+<div class="font-medium">Alice Ross</div>
+<div class="text-body-sm text-on-surface-variant">ID: #40925</div>
+</div>
+</td>
+<td class="p-space-sm text-on-surface-variant">Orthodontic Adjustment</td>
+<td class="p-space-sm">
+<span class="inline-flex items-center px-space-sm py-0.5 rounded-full text-label-sm font-semibold bg-surface-container-high text-on-surface">
+                  Confirmed
+                </span>
+</td>
+<td class="p-space-sm pr-space-md text-right">
+<button class="p-space-xs text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="p-space-sm pl-space-md font-semibold">01:30 PM</td>
+<td class="p-space-sm flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-semibold text-label-sm">RK</div>
+<div>
+<div class="font-medium">Robert King</div>
+<div class="text-body-sm text-on-surface-variant">ID: #40930</div>
+</div>
+</td>
+<td class="p-space-sm text-on-surface-variant">Teeth Whitening Session</td>
+<td class="p-space-sm">
+<span class="inline-flex items-center px-space-sm py-0.5 rounded-full text-label-sm font-semibold bg-emerald-100 text-emerald-800">
+                  Completed
+                </span>
+</td>
+<td class="p-space-sm pr-space-md text-right">
+<button class="p-space-xs text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="p-space-sm pl-space-md font-semibold">03:00 PM</td>
+<td class="p-space-sm flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-error-container text-on-error-container flex items-center justify-center font-semibold text-label-sm">EL</div>
+<div>
+<div class="font-medium">Anjali Lane</div>
+<div class="text-body-sm text-on-surface-variant">ID: #40935</div>
+</div>
+</td>
+<td class="p-space-sm text-on-surface-variant">Emergency Crown Fix</td>
+<td class="p-space-sm">
+<span class="inline-flex items-center px-space-sm py-0.5 rounded-full text-label-sm font-semibold bg-surface-container-high text-on-surface">
+                  Confirmed
+                </span>
+</td>
+<td class="p-space-sm pr-space-md text-right">
+<button class="p-space-xs text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Weekly Schedule Overview Chart Widget (1 col) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center mb-space-sm">
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Weekly Overview</h2>
+<span class="text-label-md text-on-surface-variant bg-surface-container-low px-space-sm py-1 rounded-lg">Oct 20 - Oct 26</span>
+</div>
+<p class="text-body-sm text-on-surface-variant mb-space-lg">Appointment volume distribution across weekdays.</p>
+<!-- Simulated Bar Chart -->
+<div class="flex items-end justify-between h-48 pt-space-md px-space-xs gap-space-sm">
+<div class="flex flex-col items-center flex-1 h-full justify-end group">
+<div class="text-body-sm text-on-surface-variant mb-1 opacity-0 group-hover:opacity-100 transition-opacity">10</div>
+<div class="w-full bg-primary/20 hover:bg-primary transition-all rounded-t-lg" style="height: 60%;"></div>
+<span class="text-label-sm text-on-surface-variant mt-2">Mon</span>
+</div>
+<div class="flex flex-col items-center flex-1 h-full justify-end group">
+<div class="text-body-sm text-on-surface-variant mb-1 opacity-0 group-hover:opacity-100 transition-opacity">14</div>
+<div class="w-full bg-primary/20 hover:bg-primary transition-all rounded-t-lg" style="height: 85%;"></div>
+<span class="text-label-sm text-on-surface-variant mt-2">Tue</span>
+</div>
+<div class="flex flex-col items-center flex-1 h-full justify-end group">
+<div class="text-body-sm text-on-surface-variant mb-1 opacity-0 group-hover:opacity-100 transition-opacity">12</div>
+<div class="w-full bg-primary/20 hover:bg-primary transition-all rounded-t-lg" style="height: 70%;"></div>
+<span class="text-label-sm text-on-surface-variant mt-2">Wed</span>
+</div>
+<div class="flex flex-col items-center flex-1 h-full justify-end group">
+<div class="text-body-sm text-on-surface-variant mb-1 opacity-0 group-hover:opacity-100 transition-opacity">16</div>
+<div class="w-full bg-primary hover:bg-primary-container transition-all rounded-t-lg" style="height: 100%;"></div>
+<span class="text-label-sm text-on-surface-variant mt-2 font-bold text-primary">Thu</span>
+</div>
+<div class="flex flex-col items-center flex-1 h-full justify-end group">
+<div class="text-body-sm text-on-surface-variant mb-1 opacity-0 group-hover:opacity-100 transition-opacity">11</div>
+<div class="w-full bg-primary/20 hover:bg-primary transition-all rounded-t-lg" style="height: 65%;"></div>
+<span class="text-label-sm text-on-surface-variant mt-2">Fri</span>
+</div>
+<div class="flex flex-col items-center flex-1 h-full justify-end group">
+<div class="text-body-sm text-on-surface-variant mb-1 opacity-0 group-hover:opacity-100 transition-opacity">6</div>
+<div class="w-full bg-primary/20 hover:bg-primary transition-all rounded-t-lg" style="height: 35%;"></div>
+<span class="text-label-sm text-on-surface-variant mt-2">Sat</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md border-t border-surface-container-low flex justify-between items-center">
+<div>
+<div class="text-body-sm text-on-surface-variant">Total Weekly Load</div>
+<div class="text-headline-sm font-headline-sm text-on-surface">69 Patients</div>
+</div>
+<div class="p-space-sm bg-primary-fixed text-on-primary-fixed rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">trending_up</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Section: Quick Clinical Notes & Clinic Status -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center mb-space-md">
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Quick Note Pad</h2>
+<span class="material-symbols-outlined text-primary text-[20px]">edit_note</span>
+</div>
+<textarea class="w-full p-space-md bg-surface-container-low rounded-xl text-on-surface border-0 focus:ring-2 focus:ring-primary outline-none resize-none text-body-md" placeholder="Type quick patient reminders or prescription notes here..." rows="4"></textarea>
+</div>
+<div class="flex justify-end mt-space-md">
+<button class="px-space-md py-space-sm bg-primary text-on-primary rounded-xl text-label-lg hover:bg-primary-container transition-all">
+          Save Note
+        </button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center mb-space-md">
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Equipment Status</h2>
+<span class="material-symbols-outlined text-emerald-600 text-[20px]">check_circle</span>
+</div>
+<div class="space-y-space-sm">
+<div class="flex justify-between items-center p-space-sm bg-surface-container-low rounded-lg">
+<span class="text-body-md text-on-surface">Digital X-Ray Unit A</span>
+<span class="text-label-sm font-semibold text-emerald-700 bg-emerald-100 px-space-sm py-0.5 rounded-full">Operational</span>
+</div>
+<div class="flex justify-between items-center p-space-sm bg-surface-container-low rounded-lg">
+<span class="text-body-md text-on-surface">Autoclave Sterilizer #2</span>
+<span class="text-label-sm font-semibold text-emerald-700 bg-emerald-100 px-space-sm py-0.5 rounded-full">Operational</span>
+</div>
+<div class="flex justify-between items-center p-space-sm bg-surface-container-low rounded-lg">
+<span class="text-body-md text-on-surface">Laser Scaler Unit</span>
+<span class="text-label-sm font-semibold text-amber-700 bg-amber-100 px-space-sm py-0.5 rounded-full">Maintenance Due</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-primary text-on-primary rounded-xl shadow-sm p-space-lg flex flex-col justify-between relative overflow-hidden">
+<div class="absolute right-0 bottom-0 opacity-10 translate-x-4 translate-y-4">
+<span class="material-symbols-outlined text-[160px]">dentistry</span>
+</div>
+<div>
+<div class="text-label-md font-label-md text-on-primary-container uppercase tracking-wider mb-2">Dental Clinic Pro Tip</div>
+<h3 class="text-headline-sm font-headline-sm text-on-primary mb-space-sm">Streamline Charting with Voice</h3>
+<p class="text-body-md text-on-primary/90">Enable automated voice-to-text periodontal charting in the settings menu to save up to 4 minutes per patient consultation.</p>
+</div>
+<div class="mt-space-lg">
+<button class="px-space-md py-space-sm bg-surface-container-lowest text-primary rounded-xl text-label-lg font-semibold hover:bg-surface-bright transition-all shadow-sm">
+          Enable Feature
+        </button>
+</div>
+</div>
+</div>
+</div></main></div>
+    <!-- Floating Home Button -->
+    <a href="../../../index.html" class="fixed bottom-6 right-6 bg-[#007782] text-white px-5 py-3 rounded-full shadow-2xl z-50 flex items-center gap-2 hover:bg-[#005c65] transition-all font-semibold" style="text-decoration: none;">
+        <span class="material-symbols-outlined">home</span>
+        Back to Home
+    </a>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const sidebar = document.getElementById('mobile-sidebar');
+            if(menuBtn && sidebar) {
+                menuBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    sidebar.classList.toggle('-translate-x-full');
+                });
+                // Close sidebar when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!sidebar.contains(e.target) && !menuBtn.contains(e.target) && !sidebar.classList.contains('-translate-x-full')) {
+                        sidebar.classList.add('-translate-x-full');
+                    }
+                });
+            }
+        });
+    </script>
+    
+</body></html>

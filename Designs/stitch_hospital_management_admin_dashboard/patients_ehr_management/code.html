@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦷</text></svg>"><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-container": "#c1f7ff", "outline-variant": "#bdc8ca", "on-error-container": "#93000a", "error": "#ba1a1a", "primary-container": "#007782", "on-error": "#ffffff", "on-tertiary-container": "#9ffdfc", "surface-container": "#ebeef0", "error-container": "#ffdad6", "outline": "#6e797b", "on-tertiary-fixed-variant": "#00504f", "inverse-on-surface": "#eef1f3", "primary-fixed-dim": "#7cd4e0", "on-surface-variant": "#3e494a", "on-secondary-fixed-variant": "#004880", "surface-container-highest": "#e0e3e5", "on-primary-fixed": "#001f23", "secondary-fixed-dim": "#a2c9ff", "surface": "#f7fafc", "primary-fixed": "#99f0fd", "on-secondary": "#ffffff", "inverse-surface": "#2d3133", "tertiary": "#005d5d", "on-primary-fixed-variant": "#004f56", "background": "#f7fafc", "surface-variant": "#e0e3e5", "surface-container-lowest": "#ffffff", "surface-container-low": "#f1f4f6", "on-surface": "#181c1e", "tertiary-fixed": "#94f2f1", "on-primary": "#ffffff", "surface-container-high": "#e5e9eb", "surface-dim": "#d7dadc", "secondary-fixed": "#d3e4ff", "tertiary-container": "#007877", "on-background": "#181c1e", "on-secondary-fixed": "#001c38", "inverse-primary": "#7cd4e0", "surface-bright": "#f7fafc", "primary": "#005c65", "surface-tint": "#006972", "secondary": "#1560a4", "on-tertiary-fixed": "#002020", "on-tertiary": "#ffffff", "secondary-container": "#7cb7ff", "tertiary-fixed-dim": "#77d6d4", "on-secondary-container": "#00477e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-xs": "0.25rem", "margin": "2rem", "gutter": "1.25rem", "space-md": "1rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "space-xl": "2.25rem", "gutter-mobile": "0.75rem" }, "fontFamily": { "label-md": ["Inter"], "body-lg": ["Inter"], "headline-xl-mobile": ["Inter"], "label-sm": ["Inter"], "headline-sm": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "headline-xl": ["Inter"], "label-lg": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"] }, "fontSize": { "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-xl": ["36px", { "lineHeight": "44px", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside id="mobile-sidebar" class="fixed left-0 top-0 h-full w-72 transform -translate-x-full lg:translate-x-0 transition-transform duration-300 shadow-2xl lg:shadow-none bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><img alt="MedPulse Clinical Portal Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WjFg7SzpEtNSAYVe3vmMrmSbWnu5y7spK0GFTkHDoG4HxEa78RPfarI5VvyCdHt1w6P8qVHs3H-7EwXdyZRvNDMpIsqgNCKey19uPya3gO9yNRdLOP_hC_LJIwZ476ZH6v-U7kDql8JKfIGpF4jL229Aela4iYGZS4v4DMA-VyloARh7OybQG8C8eXCje3WFjHvwG_V9pEkJjdMr8aI9QIZZYUATR5L75BO0e9RB-xznye349W4pNMogc"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">MedPulse</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Clinical Portal</span></div></div><div class="px-space-md py-space-sm"><span class="font-label-sm text-label-sm uppercase text-on-surface-variant px-space-sm tracking-wider font-semibold">Clinical Management</span></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-[0_2px_6px_rgba(0,119,130,0.15)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all duration-150" data-path="dashboard" href="../admin_executive_dashboard/code.html"><span class="material-symbols-outlined text-primary text-xl">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all duration-150" data-path="doctors" href="../doctors_directory_scheduling/code.html"><span class="material-symbols-outlined text-primary text-xl">stethoscope</span><span>Doctors</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-all duration-150 bg-primary-container text-on-primary font-semibold shadow-[0_2px_6px_rgba(0,119,130,0.15)]" data-path="patients" href="../patients_ehr_management/code.html"><span class="material-symbols-outlined text-primary text-xl">personal_injury</span><span>Patients</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all duration-150" data-path="receptionists" href="../receptionists_front_desk_triage/code.html"><span class="material-symbols-outlined text-primary text-xl">desk</span><span>Receptionists</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all duration-150" data-path="billing-team" href="../billing_team_financial_management/code.html"><span class="material-symbols-outlined text-primary text-xl">receipt_long</span><span>Billing Team</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all duration-150" data-path="laboratory" href="../laboratory_diagnostic_operations/code.html"><span class="material-symbols-outlined text-primary text-xl">biotech</span><span>Laboratory</span></a></nav></div><div class="p-space-md flex flex-col gap-space-sm bg-surface-container-low"><div class="pt-space-xs"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all duration-150" data-path="settings-audit-logs" href="#"><span class="material-symbols-outlined text-outline text-xl">settings_suggest</span><span>Settings &amp; Audit Logs</span></a></div><div class="p-space-sm rounded-xl bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex flex-col gap-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="h-2 w-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm font-semibold text-tertiary">Online</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">24ms</span></div><div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-space-xs"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs text-primary">verified_user</span>HIPAA Compliant</span><span class="font-semibold text-primary">TLS 1.3</span></div></div></div></aside><div class="pl-0 lg:pl-72"><header class="fixed top-0 left-0 lg:left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between gap-space-md">
+
+    <button id="mobile-menu-btn" class="lg:hidden p-2 text-on-surface hover:bg-surface-container rounded-lg mr-auto z-50">
+        <span class="material-symbols-outlined text-2xl">menu</span>
+    </button>
+    <div class="flex-1 max-w-xl"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-xl">search</span><input class="w-full h-10 pl-11 pr-space-md bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-primary shadow-[0_1px_4px_rgba(0,0,0,0.02)] transition-all" placeholder="Search patients, doctors, lab results, invoices..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant"><span class="material-symbols-outlined text-sm text-tertiary">health_and_safety</span><span class="font-label-sm text-label-sm font-semibold">Code Green: Normal Operations</span></div><button class="flex items-center gap-space-xs px-space-md h-10 rounded-lg bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary transition-all duration-150 font-label-lg text-label-lg shadow-[0_2px_8px_rgba(0,119,130,0.18)]"><span class="material-symbols-outlined text-lg">add</span><span>New Admission / Record</span></button><div class="flex items-center gap-space-xs pl-space-xs"><div class="relative"><button class="h-10 w-10 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all relative"><span class="material-symbols-outlined text-2xl">notifications</span><span class="absolute top-2 right-2 h-2.5 w-2.5 rounded-full bg-error ring-2 ring-surface"></span></button></div><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-all cursor-pointer"><span class="material-symbols-outlined text-primary text-base">local_hospital</span><span class="font-label-md text-label-md text-on-surface">Central Memorial Campus</span><span class="material-symbols-outlined text-on-surface-variant text-sm">expand_more</span></div></div><div class="flex items-center gap-space-sm pl-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEKECHsVBXfptnexfYHdSzOadxVoSAIGJ14Mv_WAk7vKYeiN2TGVTahT5gHlmOvlEuoBOvxQrwuW7Fuly_Jx2MX07aJSxO5iYKEUTLjvYLXtAO4yaQWgY_UvJ8idUsBsEV1r1zyAu1M8_-nYhpsEeET8rkPRL7Y73BJCOAK6SbB40YH0VMoAFMs7iyzOlmwxsnHL5tnKldmUiKBl6w4IX9K9VbY-6RsC2X9vsr2Z3xt1T2Xip1IMWf"/><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold">Dr. Sneha Lal, MD</span><span class="font-label-sm text-label-sm text-secondary font-medium">Chief Clinical Admin</span></div></div></div></header><main class="relative pt-16 w-full px-space-xl py-space-lg bg-surface min-h-screen"><div class="flex flex-col w-full gap-space-lg">
+<!-- Top Command & Triage Summary Bar -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Central Inpatient &amp; Outpatient Registry</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed-variant">
+          Live Sync • 4m ago
+        </span>
+</div>
+<div class="flex items-baseline gap-space-md flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Patient Directory &amp; EHR Registry</h1>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ward Occupancy: <span class="font-semibold text-primary">87.4%</span> (Capacity: 1,428 beds)</span>
+</div>
+</div>
+<!-- Quick Action Dock -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="h-10 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-all flex items-center gap-space-xs shadow-sm" onclick="openModal('transfer')">
+<span class="material-symbols-outlined text-lg text-secondary">swap_horiz</span>
+<span>Transfer Ward</span>
+</button>
+<button class="h-10 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-all flex items-center gap-space-xs shadow-sm" onclick="openModal('discharge')">
+<span class="material-symbols-outlined text-lg text-primary">exit_to_app</span>
+<span>Generate Discharge Summary</span>
+</button>
+<button class="h-10 px-space-lg rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-all flex items-center gap-space-xs shadow-md" onclick="openModal('admission')">
+<span class="material-symbols-outlined text-lg">person_add</span>
+<span>+ New Patient Admission</span>
+</button>
+</div>
+</div>
+<!-- Realtime Admission & Flow Metrics Bento -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Stat 1: Total Registered -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-all"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Total Registered</span>
+<div class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">groups</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl text-on-surface">14,820</span>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-sm">trending_up</span> +3.8%
+        </span>
+</div>
+<div class="mt-space-sm pt-space-xs">
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 78%"></div>
+</div>
+<div class="flex justify-between items-center text-label-sm font-label-sm text-on-surface-variant mt-1.5">
+<span>Active In-System</span>
+<span>78% active cohort</span>
+</div>
+</div>
+</div>
+<!-- Stat 2: Currently Admitted -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-secondary/5 rounded-full blur-2xl group-hover:bg-secondary/10 transition-all"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Currently Admitted</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-lg">hotel</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl text-on-surface">1,248</span>
+<span class="inline-flex px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">87.4% Beds</span>
+</div>
+<div class="mt-space-sm pt-space-xs">
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full" style="width: 72%"></div>
+<div class="bg-error h-full" style="width: 15%"></div>
+</div>
+<div class="flex justify-between items-center text-label-sm font-label-sm text-on-surface-variant mt-1.5">
+<span>1,061 Wards • 187 ICU/Stepdown</span>
+</div>
+</div>
+</div>
+<!-- Stat 3: Discharged Today -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-tertiary/5 rounded-full blur-2xl group-hover:bg-tertiary/10 transition-all"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Discharged Today</span>
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-lg">task_alt</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl text-on-surface">64</span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-sm">schedule</span> On Schedule
+        </span>
+</div>
+<div class="mt-space-sm pt-space-xs">
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 92%"></div>
+</div>
+<div class="flex justify-between items-center text-label-sm font-label-sm text-on-surface-variant mt-1.5">
+<span>Target: 70 discharges</span>
+<span class="font-semibold text-tertiary">91% cleared</span>
+</div>
+</div>
+</div>
+<!-- Stat 4: New Admissions -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-primary-container/10 rounded-full blur-2xl"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">New Admissions</span>
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">meeting_room</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl text-on-surface">82</span>
+<span class="inline-flex px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+          19 Triage ER
+        </span>
+</div>
+<div class="mt-space-sm pt-space-xs">
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 65%"></div>
+<div class="bg-secondary h-full" style="width: 35%"></div>
+</div>
+<div class="flex justify-between items-center text-label-sm font-label-sm text-on-surface-variant mt-1.5">
+<span>63 Scheduled • 19 Emergency</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Analytical Demographics & ALOS Visual Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- 8 cols: Patient Inpatient vs Outpatient Trend chart -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between flex-wrap gap-space-sm mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Monthly Patient Intake Flow &amp; Acuity</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Comparative tracking of Inpatient Admissions vs. Outpatient Encounters</p>
+</div>
+<div class="flex items-center gap-space-md text-label-sm font-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-primary"></span>
+<span class="text-on-surface">Inpatient (Teal)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-secondary"></span>
+<span class="text-on-surface">Outpatient (Blue)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-surface-container-highest"></span>
+<span class="text-on-surface-variant">Capacity Baseline</span>
+</div>
+</div>
+</div>
+<!-- High-precision SVG Bar & Trajectory Chart -->
+<div class="w-full h-52 flex flex-col justify-end">
+<svg class="w-full h-full overflow-visible text-outline" preserveaspectratio="none" viewbox="0 0 800 170">
+<!-- Background Grid lines -->
+<line stroke="currentColor" stroke-dasharray="4" stroke-opacity="0.1" x1="0" x2="800" y1="20" y2="20"></line>
+<line stroke="currentColor" stroke-dasharray="4" stroke-opacity="0.1" x1="0" x2="800" y1="70" y2="70"></line>
+<line stroke="currentColor" stroke-dasharray="4" stroke-opacity="0.1" x1="0" x2="800" y1="120" y2="120"></line>
+<line stroke="currentColor" stroke-opacity="0.2" x1="0" x2="800" y1="165" y2="165"></line>
+<!-- Week 1 -->
+<rect class="fill-primary transition-all duration-300 hover:opacity-80" height="105" rx="4" width="22" x="50" y="60"></rect>
+<rect class="fill-secondary transition-all duration-300 hover:opacity-80" height="130" rx="4" width="22" x="76" y="35"></rect>
+<!-- Week 2 -->
+<rect class="fill-primary transition-all duration-300 hover:opacity-80" height="117" rx="4" width="22" x="160" y="48"></rect>
+<rect class="fill-secondary transition-all duration-300 hover:opacity-80" height="137" rx="4" width="22" x="186" y="28"></rect>
+<!-- Week 3 -->
+<rect class="fill-primary transition-all duration-300 hover:opacity-80" height="93" rx="4" width="22" x="270" y="72"></rect>
+<rect class="fill-secondary transition-all duration-300 hover:opacity-80" height="120" rx="4" width="22" x="296" y="45"></rect>
+<!-- Week 4 -->
+<rect class="fill-primary transition-all duration-300 hover:opacity-80" height="127" rx="4" width="22" x="380" y="38"></rect>
+<rect class="fill-secondary transition-all duration-300 hover:opacity-80" height="150" rx="4" width="22" x="406" y="15"></rect>
+<!-- Week 5 -->
+<rect class="fill-primary transition-all duration-300 hover:opacity-80" height="110" rx="4" width="22" x="490" y="55"></rect>
+<rect class="fill-secondary transition-all duration-300 hover:opacity-80" height="133" rx="4" width="22" x="516" y="32"></rect>
+<!-- Week 6 -->
+<rect class="fill-primary transition-all duration-300 hover:opacity-80" height="123" rx="4" width="22" x="600" y="42"></rect>
+<rect class="fill-secondary transition-all duration-300 hover:opacity-80" height="143" rx="4" width="22" x="626" y="22"></rect>
+<!-- Week 7 (Current) -->
+<rect class="fill-primary transition-all duration-300 hover:opacity-80" height="125" rx="4" width="22" x="710" y="40"></rect>
+<rect class="fill-secondary transition-all duration-300 hover:opacity-80" height="147" rx="4" width="22" x="736" y="18"></rect>
+<!-- Target Curve Overlay -->
+<path class="opacity-40" d="M 61 40 Q 173 22 283 50 T 503 35 T 723 20" fill="none" stroke="#007782" stroke-dasharray="6 4" stroke-linecap="round" stroke-width="2.5"></path>
+</svg>
+</div>
+<div class="flex justify-between items-center text-label-sm font-label-sm text-on-surface-variant pt-space-xs px-4">
+<span>Oct 01 - Oct 07</span>
+<span>Oct 08 - Oct 14</span>
+<span>Oct 15 - Oct 21</span>
+<span>Oct 22 - Oct 28</span>
+<span>Oct 29 - Nov 04</span>
+<span>Nov 05 - Nov 11</span>
+<span class="font-bold text-primary">Current Week</span>
+</div>
+</div>
+<!-- 4 cols: Demographics, Acuity & ALOS KPI card -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Demographics Breakdown -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between flex-1">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Cohort Demographics</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Age &amp; Patient Mix</span>
+</div>
+<span class="material-symbols-outlined text-primary text-xl">pie_chart</span>
+</div>
+<div class="space-y-space-sm my-auto">
+<!-- Adult -->
+<div>
+<div class="flex justify-between items-center text-label-sm font-label-sm mb-1">
+<span class="text-on-surface font-semibold flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span> Adult (19-64 yrs)
+              </span>
+<span class="text-on-surface font-bold">54% <span class="text-outline font-normal">(8,002)</span></span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 54%"></div>
+</div>
+</div>
+<!-- Geriatric -->
+<div>
+<div class="flex justify-between items-center text-label-sm font-label-sm mb-1">
+<span class="text-on-surface font-semibold flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> Geriatric (65+ yrs)
+              </span>
+<span class="text-on-surface font-bold">34% <span class="text-outline font-normal">(5,038)</span></span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 34%"></div>
+</div>
+</div>
+<!-- Pediatric -->
+<div>
+<div class="flex justify-between items-center text-label-sm font-label-sm mb-1">
+<span class="text-on-surface font-semibold flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container"></span> Pediatric (&lt;18 yrs)
+              </span>
+<span class="text-on-surface font-bold">12% <span class="text-outline font-normal">(1,780)</span></span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-tertiary-container h-full rounded-full" style="width: 12%"></div>
+</div>
+</div>
+</div>
+<!-- ALOS KPI Box -->
+<div class="mt-space-md p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-xl">timelapse</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Average Stay (ALOS)</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">3.8 <span class="text-body-sm font-normal text-on-surface-variant">Days</span></span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-semibold">
+            -0.4d Target
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Multi-Parameter Filter Dock -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search Input -->
+<div class="relative flex-1 min-w-[280px]">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-xl pointer-events-none">search</span>
+<input class="w-full h-11 pl-11 pr-space-md bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all" id="patientTableSearch" onkeyup="filterPatientTable()" placeholder="Filter by MRN, patient name, diagnosis, physician, or bed..." type="text"/>
+</div>
+<!-- Multi-select Filter Pills -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 lg:pb-0">
+<!-- Ward Filter -->
+<div class="relative">
+<select class="h-11 px-3 pr-8 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md appearance-none focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer" id="wardFilter" onchange="filterPatientTable()">
+<option value="ALL">All Wards / Wings</option>
+<option value="ICU">Intensive Care (ICU)</option>
+<option value="Ward 3B">Cardiology (Ward 3B)</option>
+<option value="Ward 4A">Pulmonology (Ward 4A)</option>
+<option value="Surgical 2">Surgical Post-Op (2)</option>
+<option value="Pediatrics">Pediatrics North</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-base">expand_more</span>
+</div>
+<!-- Acuity Filter -->
+<div class="relative">
+<select class="h-11 px-3 pr-8 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md appearance-none focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer" id="acuityFilter" onchange="filterPatientTable()">
+<option value="ALL">All Vitals Acuity</option>
+<option value="Stable">Stable</option>
+<option value="Monitored">Monitored</option>
+<option value="Critical Care">Critical Care</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-base">expand_more</span>
+</div>
+<!-- Insurance Filter -->
+<div class="relative">
+<select class="h-11 px-3 pr-8 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md appearance-none focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer" id="insuranceFilter" onchange="filterPatientTable()">
+<option value="ALL">All Insurance Status</option>
+<option value="Pre-authorized">Pre-authorized</option>
+<option value="Claim Pending">Claim Pending</option>
+<option value="Verified">Verified</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-base">expand_more</span>
+</div>
+<!-- Clear Filters button -->
+<button class="h-11 px-3 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container font-label-sm text-label-sm flex items-center gap-1 transition-all" onclick="resetFilters()">
+<span class="material-symbols-outlined text-base">filter_alt_off</span>
+<span>Reset</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Comprehensive Patient Records Table with Drawer Interaction -->
+<div class="relative flex flex-col xl:flex-row gap-space-md items-start">
+<!-- Main Table Container -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col transition-all duration-300" id="tableWrapper">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="patientTable">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3.5 px-space-md">MRN &amp; Demographics</th>
+<th class="py-3.5 px-space-md">Attending Physician</th>
+<th class="py-3.5 px-space-md">Location</th>
+<th class="py-3.5 px-space-md">Admission / Diagnosis</th>
+<th class="py-3.5 px-space-md">Vitals Status</th>
+<th class="py-3.5 px-space-md">Stay &amp; Insurance</th>
+<th class="py-3.5 px-space-md text-right">Clinical Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm text-on-surface">
+<!-- Row 1: Critical Patient -->
+<tr class="hover:bg-surface-container-low/60 transition-colors cursor-pointer group" onclick="selectPatient(this, 'Ananya Verma', '#MRN-89421', '68 yrs • Female • A+', 'Dr. Arjun Verma', 'ICU Bed 04', 'Post-op CABG (Coronary Artery Bypass)', 'Critical Care', '74 bpm', '128/84', '95%', '38.2°C', 'Admitted 2 days ago', 'Pre-authorized', 'Penicillin, Contrast Dye', 'Norepinephrine 0.05 mcg/kg/min, Aspirin 81mg, Cefazolin 1g')">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-bold text-on-surface-variant overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Warm portrait photograph of senior female patient Ananya Verma with soft clinical lighting, crisp focus, muted natural background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5R-AOvXEBbvALib1ECf7moEy03LMquap-fyT6OxPvL9Eznvpa6XUGvhjaDGiBhxNc_xglVIxQrRYfSBSrJrN2HtysYRAB6AklosdyYXmjb76KVWjbMoSalv5fIRnl2HFQBnugf_-Q0gKt7Zv0LfFE051wmxyIi8UAnjaliY-dYiVj2A8rqp_XGBq7vzLALlfciJxyBbSrKa_L6xnAJQsCaA8FafRZ9yKt75Zk1QGXTUimpKYlhLXEY"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Ananya Verma</span>
+<span class="px-1.5 py-0.2 rounded font-label-sm text-label-sm bg-error/10 text-error font-bold">A+</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-mono">#MRN-89421</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">68 yrs • Female</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Dr. Arjun Verma</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Cardiology Dept</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-base">emergency</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">ICU Bed 04</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Intensive Care Wing</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col max-w-[200px]">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate">Post-op CABG</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Coronary bypass monitoring</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-sm font-label-sm font-semibold bg-error/15 text-error">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+                  Critical Care
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Day 2 (48 hrs)</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-medium">
+<span class="material-symbols-outlined text-xs">verified</span> Pre-authorized
+                  </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1.5" onclick="event.stopPropagation()">
+<button class="p-1.5 rounded-lg text-primary hover:bg-primary/10 transition-colors" onclick="quickEHR('Ananya Verma')" title="View EHR Chart">
+<span class="material-symbols-outlined text-xl">description</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:bg-secondary/10 transition-colors" title="Vitals Log">
+<span class="material-symbols-outlined text-xl">vital_signs</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" title="Prescriptions">
+<span class="material-symbols-outlined text-xl">medication</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Monitored Patient -->
+<tr class="hover:bg-surface-container-low/60 transition-colors cursor-pointer group" onclick="selectPatient(this, 'Marcus Chen', '#MRN-78104', '42 yrs • Male • O-', 'Dr. Maya Patel', 'Ward 3B Room 212', 'Acute Respiratory Infection / Asthma', 'Monitored', '88 bpm', '135/88', '94%', '37.8°C', 'Admitted 4 days ago', 'Verified', 'Latex, Sulfa Drugs', 'Albuterol Nebulizer Q4H, Prednisone 40mg, Azithromycin')">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-bold text-on-surface-variant overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of mid-40s Asian male patient Marcus Chen with calm neutral expression in hospital environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu0_mB0BfEvdowNv512nnlltVg5uSZeEgc_4LrBG1JFBRcndIzGmrsFSi47NIic0PK8-i26ZyvoFw_3xUAS10nmX7fgbQmMRgESlJIGnxw00vk5Im8LAX8PKlVA4o6rkbK_RGfl8nSNGlg-Y5QchOlyMTk0bo0tbj48T_L7Am_lZa9dR0D2EN5z-c1l64ZJhNHG4-t3ciIUbwRbmgLXGZJix4ZtRruvn3z7xkkSZ8bLjtW-9Qy7IbR"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Marcus Chen</span>
+<span class="px-1.5 py-0.2 rounded font-label-sm text-label-sm bg-secondary/10 text-secondary font-bold">O-</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-mono">#MRN-78104</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">42 yrs • Male</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Dr. Maya Patel</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Pulmonology Dept</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-outline text-base">meeting_room</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Ward 3B Rm 212</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">East Medical Wing</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col max-w-[200px]">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate">Acute Respiratory Exacerbation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Supplemental O2 2L/min</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-sm font-label-sm font-semibold bg-tertiary-fixed text-on-tertiary-fixed-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Monitored
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Day 4 (96 hrs)</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-medium">
+<span class="material-symbols-outlined text-xs">check_circle</span> Verified BlueCross
+                  </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1.5" onclick="event.stopPropagation()">
+<button class="p-1.5 rounded-lg text-primary hover:bg-primary/10 transition-colors" onclick="quickEHR('Marcus Chen')" title="View EHR Chart">
+<span class="material-symbols-outlined text-xl">description</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:bg-secondary/10 transition-colors" title="Vitals Log">
+<span class="material-symbols-outlined text-xl">vital_signs</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" title="Prescriptions">
+<span class="material-symbols-outlined text-xl">medication</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Stable Inpatient -->
+<tr class="hover:bg-surface-container-low/60 transition-colors cursor-pointer group" onclick="selectPatient(this, 'Priya Patel', '#MRN-91024', '31 yrs • Female • B+', 'Dr. Hemant Luthra', 'Surgical 2 Bed 12', 'Appendectomy Post-op Day 1', 'Stable', '68 bpm', '118/76', '99%', '36.9°C', 'Admitted 1 day ago', 'Verified', 'No Known Allergies (NKDA)', 'Acetaminophen 1g IV, Ondansetron 4mg PRN, IV Fluids NS')">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-bold text-on-surface-variant overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Documentary portrait of young female patient Priya Patel resting in modern medical hospital bed, bright morning ambiance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrvM_e9u9MoN_JobVDfGUQ85RlvqZ5ebgOjEU1OgBFu-DpoVx30wOi1B_si2FdL6J0Y3JM0y2h2CpBOND69eqA0v9YwAXH0jO0vw99W37cDXATQ0D1c_qRO_f-Y45ley062RoFRHEzr2mkYsvhiu1DegtN9zQJcK8aqGzXEG7rBfJOdyMJfLqRGZV8sE2tMPJ4BQJJJHpw9x54Npxab3nw4ssPgbFKk4afMCkTGInS2rU89xx3_4P0"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Priya Patel</span>
+<span class="px-1.5 py-0.2 rounded font-label-sm text-label-sm bg-primary/10 text-primary font-bold">B+</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-mono">#MRN-91024</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">31 yrs • Female</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Dr. Hemant Luthra</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">General Surgery</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-outline text-base">single_bed</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Surgical 2 Rm 12</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">West Surgical Wing</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col max-w-[200px]">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate">Laparoscopic Appendectomy</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Afebrile, tolerating clear liquids</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-sm font-label-sm font-semibold bg-tertiary-fixed text-on-tertiary-fixed-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Stable
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Day 1 (24 hrs)</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-medium">
+<span class="material-symbols-outlined text-xs">check_circle</span> Verified Aetna
+                  </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1.5" onclick="event.stopPropagation()">
+<button class="p-1.5 rounded-lg text-primary hover:bg-primary/10 transition-colors" onclick="quickEHR('Priya Patel')" title="View EHR Chart">
+<span class="material-symbols-outlined text-xl">description</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:bg-secondary/10 transition-colors" title="Vitals Log">
+<span class="material-symbols-outlined text-xl">vital_signs</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" title="Prescriptions">
+<span class="material-symbols-outlined text-xl">medication</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Pending Claim / Endocrine -->
+<tr class="hover:bg-surface-container-low/60 transition-colors cursor-pointer group" onclick="selectPatient(this, 'Arthur Davies', '#MRN-64551', '59 yrs • Male • AB+', 'Dr. Sneha Lal', 'Ward 4A Room 408', 'Type 2 Diabetes / Hyperglycemia', 'Monitored', '82 bpm', '142/90', '97%', '37.1°C', 'Admitted 3 days ago', 'Claim Pending', 'Codeine, Peanuts', 'Insulin Glargine 24u SubQ, Metformin 1000mg, Lisinopril 10mg')">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-bold text-on-surface-variant overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Realistic close up portrait of middle-aged patient Arthur Davies in hospital gown looking thoughtfully at doctor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcFUYp5MmFwB5Qza1QfcpJ3DWLaUxJMv7WDZuIPHs52ajsJvYG2OXuB70WArnYQhH7iJ2IaCIx5-_bdQzEd-z_EPuLNMKJmFmG0S_Sp9VjTk9S-_S5lfb993VKMfcAaB22mcZirk2eSYLpk2AjQetN8NaBHnbCI-_J9EVOlflnz0KyA9mur0PrPHa6bAhCCZGbRmX9WCH6HS6Ih-soIdevsfLdp8xnq1PgPZI3tfyWx5A2qvGDcsD5"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Arthur Davies</span>
+<span class="px-1.5 py-0.2 rounded font-label-sm text-label-sm bg-secondary/10 text-secondary font-bold">AB+</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-mono">#MRN-64551</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">59 yrs • Male</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Dr. Sneha Lal, MD</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Endocrinology / Chief</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-outline text-base">meeting_room</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Ward 4A Rm 408</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Metabolic Care Wing</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col max-w-[200px]">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate">Uncontrolled T2DM / Ketoacidosis</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Blood Glucose stabilizing: 142 mg/dL</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-sm font-label-sm font-semibold bg-tertiary-fixed text-on-tertiary-fixed-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Monitored
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Day 3 (72 hrs)</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-error font-medium">
+<span class="material-symbols-outlined text-xs">pending</span> Claim Pending
+                  </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1.5" onclick="event.stopPropagation()">
+<button class="p-1.5 rounded-lg text-primary hover:bg-primary/10 transition-colors" onclick="quickEHR('Arthur Davies')" title="View EHR Chart">
+<span class="material-symbols-outlined text-xl">description</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:bg-secondary/10 transition-colors" title="Vitals Log">
+<span class="material-symbols-outlined text-xl">vital_signs</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" title="Prescriptions">
+<span class="material-symbols-outlined text-xl">medication</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Pediatric Outpatient Followup -->
+<tr class="hover:bg-surface-container-low/60 transition-colors cursor-pointer group" onclick="selectPatient(this, 'Chloe Bansal', '#MRN-99318', '7 yrs • Female • O+', 'Dr. Lakshman Kumar', 'Pediatrics North 104', 'Acute Otitis Media / Tonsillitis', 'Stable', '92 bpm', '102/64', '99%', '37.3°C', 'Admitted 0 days ago (Day Clinic)', 'Pre-authorized', 'Amoxicillin allergy noted', 'Cefdinir 14mg/kg, Ibuprofen 100mg Q6H PRN')">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-bold text-on-surface-variant overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Gentle portrait of pediatric patient Chloe Bansal sitting in doctor examination room smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxgmhHKz8f3MzghX4YyiPbB5kSIfVF_9nNZFFAa2d17DoY5lwGEEz1dIvfKf2sk3homVoW_Q3Id32NO6bHUpnYEpUwn5aAOQPa_RM-mCmFwHa587FZDjTBaJDKOpECZLvpY7pgY-nLtz9JChAlv7KskEAqPdoxhg7C0a-8WAVdPT20zWyHOy2te-74SHWWNgn5PfVYjZ1sgKRZI6STbwVsG7zl8JGGwhNEteJeaU8MRn7FXihjYLV8"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Chloe Bansal</span>
+<span class="px-1.5 py-0.2 rounded font-label-sm text-label-sm bg-primary/10 text-primary font-bold">O+</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-mono">#MRN-99318</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">7 yrs • Female</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Dr. Lakshman Kumar</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Pediatrics Unit</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-outline text-base">child_care</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Pediatrics N 104</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Children's Pavilion</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col max-w-[200px]">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate">Severe Bilateral Otitis</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Scheduled for outpatient grommet insert</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-sm font-label-sm font-semibold bg-tertiary-fixed text-on-tertiary-fixed-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Stable
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Day Clinic (&lt;12 hrs)</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-medium">
+<span class="material-symbols-outlined text-xs">verified</span> Pre-authorized
+                  </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1.5" onclick="event.stopPropagation()">
+<button class="p-1.5 rounded-lg text-primary hover:bg-primary/10 transition-colors" onclick="quickEHR('Chloe Bansal')" title="View EHR Chart">
+<span class="material-symbols-outlined text-xl">description</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:bg-secondary/10 transition-colors" title="Vitals Log">
+<span class="material-symbols-outlined text-xl">vital_signs</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" title="Prescriptions">
+<span class="material-symbols-outlined text-xl">medication</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Record count Footer -->
+<div class="px-space-md py-3.5 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Showing <span class="font-semibold text-on-surface">5</span> of <span class="font-semibold text-on-surface">1,248</span> active hospital admissions</span>
+<div class="flex items-center gap-space-xs">
+<button class="h-8 px-2.5 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-all flex items-center shadow-sm disabled:opacity-50" disabled="">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+</button>
+<span class="px-2 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold">1</span>
+<button class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-all">2</button>
+<button class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-all">3</button>
+<span class="text-on-surface-variant">...</span>
+<button class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-all">62</button>
+<button class="h-8 px-2.5 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-all flex items-center shadow-sm">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick View EHR Side Drawer (Dynamic on Row Click) -->
+<div class="w-full xl:w-96 shrink-0 bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col gap-space-md border-0 transition-all duration-300" id="quickEhrDrawer">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">folder_shared</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Selected Patient EHR</span>
+</div>
+<button class="p-1 rounded-md text-on-surface-variant hover:bg-surface-container transition-colors" onclick="collapseDrawer()" title="Close Panel">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+<!-- Patient Header Card -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-mono text-label-sm font-label-sm text-primary font-bold" id="drawerMRN">#MRN-89421</span>
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm font-semibold bg-error/15 text-error" id="drawerStatusBadge">Critical Care</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="drawerName">Ananya Verma</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="drawerDemographics">68 yrs • Female • Blood Group: A+</p>
+<div class="pt-space-xs flex items-center gap-1.5 text-label-sm font-label-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-base">domain</span>
+<span id="drawerLocation">ICU Bed 04 • Intensive Care Wing</span>
+</div>
+</div>
+<!-- Realtime Vitals Grid -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Continuous Telemetry</span>
+<span class="inline-flex items-center gap-1 text-label-sm font-label-sm text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span> Streaming
+          </span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<!-- Heart Rate -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Heart Rate</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface" id="drawerHR">74</span>
+<span class="font-body-sm text-body-sm text-outline">bpm</span>
+</div>
+<!-- Heart rate sparkline -->
+<svg class="w-full h-4 mt-1 text-primary" viewbox="0 0 100 20">
+<path d="M 0 10 L 25 10 L 30 2 L 35 18 L 40 5 L 45 12 L 50 10 L 100 10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</div>
+<!-- Blood Pressure -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Blood Pressure</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface" id="drawerBP">128/84</span>
+<span class="font-body-sm text-body-sm text-outline">mmHg</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary mt-1">MAP: 98 mmHg (Optimal)</span>
+</div>
+<!-- SpO2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">SpO2 (Pulse Ox)</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm font-bold text-primary" id="drawerSpO2">95%</span>
+<span class="font-body-sm text-body-sm text-outline">Room Air</span>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 95%"></div>
+</div>
+</div>
+<!-- Temp -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Core Temp</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface" id="drawerTemp">38.2°C</span>
+<span class="font-body-sm text-body-sm text-error font-medium">Mild Pyrexia</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline mt-1">Tympanic Sensor</span>
+</div>
+</div>
+</div>
+<!-- Critical Allergies Alert Box -->
+<div class="p-space-sm rounded-lg bg-error-container/40 flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-error text-xl shrink-0 mt-0.5">warning</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-on-error-container uppercase">Active Allergies</span>
+<span class="font-body-sm text-body-sm text-on-error-container font-semibold" id="drawerAllergies">Penicillin, Contrast Dye</span>
+</div>
+</div>
+<!-- Active Medication Orders -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Active Med Orders (Rx)</span>
+<div class="p-space-sm rounded-lg bg-surface-container-low text-body-sm font-body-sm text-on-surface space-y-1" id="drawerMedsList">
+<div class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Norepinephrine 0.05 mcg/kg/min IV</div>
+<div class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Aspirin 81mg Oral Daily</div>
+<div class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Cefazolin 1g IV Infusion Q8H</div>
+</div>
+</div>
+<!-- Action Tray -->
+<div class="pt-space-xs flex flex-col gap-space-xs mt-auto">
+<button class="w-full h-10 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-all flex items-center justify-center gap-space-xs shadow-sm" onclick="alert('Navigating to full Clinical EHR Chart module...')">
+<span class="material-symbols-outlined text-lg">open_in_new</span>
+<span>Open Full Patient Chart</span>
+</button>
+<button class="w-full h-10 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-all flex items-center justify-center gap-space-xs" onclick="openModal('transfer')">
+<span class="material-symbols-outlined text-lg">sync_alt</span>
+<span>Transfer or Reassign Bed</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Action Modal (Used for New Admission, Discharge & Transfer) -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 hidden items-center justify-center p-4" id="actionModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg shadow-xl flex flex-col gap-space-md animate-in fade-in zoom-in duration-150">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl" id="modalIcon">person_add</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="modalTitle">New Patient Admission</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="modalSubtitle">Register inpatient and allocate hospital bed</span>
+</div>
+</div>
+<button class="p-1 rounded-md text-on-surface-variant hover:bg-surface-container transition-colors" onclick="closeModal()">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<!-- Form Container -->
+<div class="flex flex-col gap-space-sm">
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant">Patient Full Name</label>
+<input class="w-full h-10 mt-1 px-3 bg-surface-container-low rounded-lg text-body-sm focus:outline-none focus:ring-1 focus:ring-primary text-on-surface" placeholder="e.g. Jonathan Singh" type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant">Date of Birth / Age</label>
+<input class="w-full h-10 mt-1 px-3 bg-surface-container-low rounded-lg text-body-sm focus:outline-none focus:ring-1 focus:ring-primary text-on-surface" placeholder="MM/DD/YYYY" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant">Destination Ward</label>
+<select class="w-full h-10 mt-1 px-3 bg-surface-container-low rounded-lg text-body-sm focus:outline-none focus:ring-1 focus:ring-primary text-on-surface">
+<option>Ward 3B - Cardiology</option>
+<option>ICU - Intensive Care</option>
+<option>Ward 4A - Pulmonology</option>
+<option>Surgical 2 - Post-Op</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant">Acuity Level</label>
+<select class="w-full h-10 mt-1 px-3 bg-surface-container-low rounded-lg text-body-sm focus:outline-none focus:ring-1 focus:ring-primary text-on-surface">
+<option>Stable (Routine Observation)</option>
+<option>Monitored (Telemetry Required)</option>
+<option>Critical Care (1:1 Nursing)</option>
+</select>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant">Primary Admitting Diagnosis</label>
+<input class="w-full h-10 mt-1 px-3 bg-surface-container-low rounded-lg text-body-sm focus:outline-none focus:ring-1 focus:ring-primary text-on-surface" placeholder="e.g. Severe Dehydration, Post-Arthroplasty rehab" type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant">Known Allergies</label>
+<input class="w-full h-10 mt-1 px-3 bg-surface-container-low rounded-lg text-body-sm focus:outline-none focus:ring-1 focus:ring-primary text-on-surface" placeholder="e.g. Penicillin, NSAIDs, Latext or NKDA" type="text"/>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md h-10 rounded-lg text-on-surface-variant hover:bg-surface-container font-label-lg text-label-lg transition-colors" onclick="closeModal()">
+          Cancel
+        </button>
+<button class="px-space-lg h-10 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-colors flex items-center gap-1 shadow-sm" onclick="saveModalAction()">
+<span class="material-symbols-outlined text-lg">check</span>
+<span id="modalSubmitText">Confirm Admission</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Dynamic drawer population when a patient row is selected
+  function selectPatient(rowElement, name, mrn, demographics, physician, location, diagnosis, acuity, hr, bp, spo2, temp, duration, insurance, allergies, meds) {
+    // Highlight table row
+    const allRows = document.querySelectorAll('#patientTable tbody tr');
+    allRows.forEach(r => r.classList.remove('bg-surface-container'));
+    rowElement.classList.add('bg-surface-container');
+
+    // Update Drawer Elements
+    document.getElementById('drawerName').textContent = name;
+    document.getElementById('drawerMRN').textContent = mrn;
+    document.getElementById('drawerDemographics').textContent = demographics;
+    document.getElementById('drawerLocation').textContent = location;
+    
+    // Status Badge
+    const badge = document.getElementById('drawerStatusBadge');
+    badge.textContent = acuity;
+    if (acuity === 'Critical Care') {
+      badge.className = 'px-2 py-0.5 rounded-full text-label-sm font-label-sm font-semibold bg-error/15 text-error';
+    } else if (acuity === 'Monitored') {
+      badge.className = 'px-2 py-0.5 rounded-full text-label-sm font-label-sm font-semibold bg-tertiary-fixed text-on-tertiary-fixed-variant';
+    } else {
+      badge.className = 'px-2 py-0.5 rounded-full text-label-sm font-label-sm font-semibold bg-tertiary-fixed text-on-tertiary-fixed-variant';
+    }
+
+    // Telemetry Vitals
+    document.getElementById('drawerHR').textContent = hr.replace(' bpm', '');
+    document.getElementById('drawerBP').textContent = bp;
+    document.getElementById('drawerSpO2').textContent = spo2;
+    document.getElementById('drawerTemp').textContent = temp;
+
+    // Allergies & Meds
+    document.getElementById('drawerAllergies').textContent = allergies;
+    
+    const medsListEl = document.getElementById('drawerMedsList');
+    medsListEl.innerHTML = '';
+    const medItems = meds.split(', ');
+    medItems.forEach(med => {
+      const itemDiv = document.createElement('div');
+      itemDiv.className = 'flex items-center gap-1.5';
+      itemDiv.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span> <span class="truncate">${med}</span>`;
+      medsListEl.appendChild(itemDiv);
+    });
+
+    // Make sure drawer is visible
+    const drawer = document.getElementById('quickEhrDrawer');
+    drawer.classList.remove('hidden');
+  }
+
+  function collapseDrawer() {
+    const drawer = document.getElementById('quickEhrDrawer');
+    drawer.classList.add('hidden');
+  }
+
+  // Fast Table Search & Multi-parameter Filters
+  function filterPatientTable() {
+    const searchVal = document.getElementById('patientTableSearch').value.toLowerCase();
+    const wardVal = document.getElementById('wardFilter').value;
+    const acuityVal = document.getElementById('acuityFilter').value;
+    const insuranceVal = document.getElementById('insuranceFilter').value;
+
+    const rows = document.querySelectorAll('#patientTable tbody tr');
+    rows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      const matchesSearch = text.includes(searchVal);
+      const matchesWard = wardVal === 'ALL' || text.includes(wardVal.toLowerCase());
+      const matchesAcuity = acuityVal === 'ALL' || text.includes(acuityVal.toLowerCase());
+      const matchesInsurance = insuranceVal === 'ALL' || text.includes(insuranceVal.toLowerCase());
+
+      if (matchesSearch && matchesWard && matchesAcuity && matchesInsurance) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  }
+
+  function resetFilters() {
+    document.getElementById('patientTableSearch').value = '';
+    document.getElementById('wardFilter').value = 'ALL';
+    document.getElementById('acuityFilter').value = 'ALL';
+    document.getElementById('insuranceFilter').value = 'ALL';
+    filterPatientTable();
+  }
+
+  // Modal Controllers
+  function openModal(actionType) {
+    const modal = document.getElementById('actionModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalSub = document.getElementById('modalSubtitle');
+    const modalIcon = document.getElementById('modalIcon');
+    const modalSubmit = document.getElementById('modalSubmitText');
+
+    if (actionType === 'admission') {
+      modalTitle.textContent = 'New Patient Admission';
+      modalSub.textContent = 'Register inpatient and allocate clinical bed';
+      modalIcon.textContent = 'person_add';
+      modalSubmit.textContent = 'Admit Patient';
+    } else if (actionType === 'discharge') {
+      modalTitle.textContent = 'Generate Discharge Summary';
+      modalSub.textContent = 'Formulate clinical handover and billing release';
+      modalIcon.textContent = 'exit_to_app';
+      modalSubmit.textContent = 'Authorize Discharge';
+    } else if (actionType === 'transfer') {
+      modalTitle.textContent = 'Inter-Ward Bed Transfer';
+      modalSub.textContent = 'Reassign patient ward, nurse team, and telemetry dock';
+      modalIcon.textContent = 'swap_horiz';
+      modalSubmit.textContent = 'Confirm Bed Move';
+    }
+
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeModal() {
+    const modal = document.getElementById('actionModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+
+  function saveModalAction() {
+    alert('Hospital protocol initiated. EHR audit trail updated with physician signature.');
+    closeModal();
+  }
+
+  function quickEHR(name) {
+    alert('EHR Chart for ' + name + ' accessed. Timestamp logged to HIPAA audit registry.');
+  }
+</script></main></div>
+    <!-- Floating Home Button -->
+    <a href="../../../index.html" class="fixed bottom-6 right-6 bg-[#007782] text-white px-5 py-3 rounded-full shadow-2xl z-50 flex items-center gap-2 hover:bg-[#005c65] transition-all font-semibold" style="text-decoration: none;">
+        <span class="material-symbols-outlined">home</span>
+        Back to Home
+    </a>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const sidebar = document.getElementById('mobile-sidebar');
+            if(menuBtn && sidebar) {
+                menuBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    sidebar.classList.toggle('-translate-x-full');
+                });
+                // Close sidebar when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!sidebar.contains(e.target) && !menuBtn.contains(e.target) && !sidebar.classList.contains('-translate-x-full')) {
+                        sidebar.classList.add('-translate-x-full');
+                    }
+                });
+            }
+        });
+    </script>
+    
+</body></html>
