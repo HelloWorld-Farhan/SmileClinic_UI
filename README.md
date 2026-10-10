@@ -18,6 +18,7 @@
 
 - **Triple Portal Architecture** — Distinct, fully-designed workspaces for Doctors, Administrators, and Patients.
 - **Live Doctor Application** — Production web application deployed at [https://doctor-dental-clinic.vercel.app/](https://doctor-dental-clinic.vercel.app/).
+- **Live Patient Application** — Production web application deployed at [https://patient-dental-clinic.vercel.app/](https://patient-dental-clinic.vercel.app/).
 - **Admin & Staff Workspace** — Centralized dashboard for front desk, billing teams, and executives to manage clinic operations.
 - **Patient Portal Hub** — Personalized patient hub to book appointments, review X-rays, pay bills, and manage dental health records online.
 - **Premium Clinical UI** — Crisp medical teal branding, smooth transitions, glassmorphism, and modern card-based layouts.
