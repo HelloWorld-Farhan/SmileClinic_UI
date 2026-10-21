@@ -27,6 +27,18 @@
 
 ---
 
+## 🔗 Project Repositories
+
+| Repository | Purpose | Status |
+|---|---|---|
+| [SmileClinic_UI](https://github.com/HelloWorld-Farhan/SmileClinic_UI) | Main Landing Hub & Design System | Active |
+| [Doctor_DentalClinic](https://github.com/HelloWorld-Farhan/Doctor_DentalClinic) | Doctor Clinical Portal ([Live](https://doctor-dental-clinic.vercel.app/)) | Active |
+| [Admin_DentalClinic](https://github.com/HelloWorld-Farhan/Admin_DentalClinic) | Admin & Clinic Staff Dashboard | Active |
+| [Patient_DentalClinic](https://github.com/HelloWorld-Farhan/Patient_DentalClinic) | Patient Portal ([Live](https://patient-dental-clinic.vercel.app/)) | Active |
+| [Prescription_DentalClinic](https://github.com/HelloWorld-Farhan/Prescription_DentalClinic) | Prescription Safety & RxGuard Checker | 🚧 Planned (In Development) |
+
+---
+
 ## 🖼 Application Structure
 
 ```text
