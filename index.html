@@ -115,23 +115,29 @@
             </nav>
 
             <!-- Action Buttons -->
-            <div class="flex items-center gap-2.5 sm:gap-3">
+            <div class="flex items-center gap-2 sm:gap-2.5">
+                <a href="https://prescription-dental-clinic.vercel.app/" 
+                   target="_blank" rel="noopener noreferrer"
+                   class="hidden xl:inline-flex items-center gap-1.5 px-3 py-2 rounded-xl border border-teal-600/30 text-teal-800 font-semibold text-xs sm:text-sm hover:bg-teal-50 transition-all">
+                    <span class="material-symbols-outlined text-base text-primary">shield_with_heart</span>
+                    <span>Rx Safety</span>
+                </a>
                 <a href="https://admin-dental-clinic.vercel.app/" 
                    target="_blank" rel="noopener noreferrer"
-                   class="hidden lg:inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-800 font-semibold text-sm hover:bg-slate-100 transition-all">
-                    <span class="material-symbols-outlined text-lg">admin_panel_settings</span>
+                   class="hidden lg:inline-flex items-center gap-1.5 px-3 py-2 rounded-xl border border-slate-300 text-slate-800 font-semibold text-xs sm:text-sm hover:bg-slate-100 transition-all">
+                    <span class="material-symbols-outlined text-base">admin_panel_settings</span>
                     <span>Admin Portal</span>
                 </a>
                 <a href="https://patient-dental-clinic.vercel.app/" 
                    target="_blank" rel="noopener noreferrer"
-                   class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl border border-primary/30 text-primary-dark font-semibold text-sm hover:bg-primary-tint transition-all">
-                    <span class="material-symbols-outlined text-lg">person</span>
+                   class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl border border-primary/30 text-primary-dark font-semibold text-xs sm:text-sm hover:bg-primary-tint transition-all">
+                    <span class="material-symbols-outlined text-base">person</span>
                     <span>Patient Portal</span>
                 </a>
                 <a href="https://doctor-dental-clinic.vercel.app/" 
                    target="_blank" rel="noopener noreferrer"
-                   class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl gradient-teal text-white font-semibold text-sm shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:brightness-105 transition-all">
-                    <span class="material-symbols-outlined text-lg">stethoscope</span>
+                   class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl gradient-teal text-white font-semibold text-xs sm:text-sm shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:brightness-105 transition-all">
+                    <span class="material-symbols-outlined text-base">stethoscope</span>
                     <span>Doctor Portal</span>
                 </a>
             </div>
@@ -200,7 +206,7 @@
                 <p class="text-slate-600 mt-3 text-base">Select your dedicated workspace below to access records, schedules, or clinical management tools.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 
                 <!-- Doctor Portal Card -->
                 <div class="group bg-surface rounded-2xl border border-slate-200/80 shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1.5 flex flex-col overflow-hidden">
@@ -320,6 +326,45 @@
                            target="_blank" rel="noopener noreferrer"
                            class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm shadow-md transition-all">
                             <span>Launch Admin Portal</span>
+                            <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Prescription Safety Portal Card -->
+                <div class="group bg-surface rounded-2xl border border-slate-200/80 shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1.5 flex flex-col overflow-hidden">
+                    <div class="h-44 bg-gradient-to-br from-[#005c65] via-[#007782] to-[#1960a3] flex flex-col items-center justify-center text-white relative overflow-hidden">
+                        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.2),_transparent)]"></div>
+                        <div class="w-16 h-16 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center mb-2 shadow-inner">
+                            <span class="material-symbols-outlined text-4xl text-white">shield_with_heart</span>
+                        </div>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-teal-100">RxGuard Safety Suite</span>
+                    </div>
+                    <div class="p-6 sm:p-8 flex-grow flex flex-col justify-between bg-white">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <h3 class="font-heading font-bold text-2xl text-slate-900 group-hover:text-primary transition-colors">Rx Safety Portal</h3>
+                                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">Live Portal</span>
+                            </div>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Clinical decision support and prescription safety screening. Cross-reference drug interactions, allergy profiles, and organ clearance in real time.
+                            </p>
+                            <ul class="text-xs text-slate-500 space-y-1.5 mb-6">
+                                <li class="flex items-center gap-1.5">
+                                    <span class="material-symbols-outlined text-sm text-primary">check_circle</span> Real-Time Interaction Screening
+                                </li>
+                                <li class="flex items-center gap-1.5">
+                                    <span class="material-symbols-outlined text-sm text-primary">check_circle</span> Beta-Lactam Allergy Cross-Check
+                                </li>
+                                <li class="flex items-center gap-1.5">
+                                    <span class="material-symbols-outlined text-sm text-primary">check_circle</span> Printable Legal Review Reports
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://prescription-dental-clinic.vercel.app/" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl gradient-teal text-white font-semibold text-sm shadow-md shadow-primary/20 hover:brightness-105 transition-all">
+                            <span>Launch Rx Safety Portal</span>
                             <span class="material-symbols-outlined text-lg">arrow_forward</span>
                         </a>
                     </div>
@@ -470,6 +515,7 @@
                         <li><a href="https://patient-dental-clinic.vercel.app/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Patient Portal (Live)</a></li>
                         <li><a href="https://patient-dental-clinic.vercel.app/signup" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Patient Registration</a></li>
                         <li><a href="https://admin-dental-clinic.vercel.app/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Admin & Staff Portal (Live)</a></li>
+                        <li><a href="https://prescription-dental-clinic.vercel.app/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Prescription Safety Portal (Live)</a></li>
                     </ul>
                 </div>
 

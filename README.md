@@ -16,11 +16,13 @@
 
 ## ✨ Features
 
-- **Triple Portal Architecture** — Distinct, fully-designed workspaces for Doctors, Administrators, and Patients.
+- **Quad Portal Architecture** — Distinct, fully-designed workspaces for Doctors, Administrators, Patients, and Prescription Safety Prescribers.
 - **Live Doctor Application** — Production web application deployed at [https://doctor-dental-clinic.vercel.app/](https://doctor-dental-clinic.vercel.app/).
 - **Live Patient Application** — Production web application deployed at [https://patient-dental-clinic.vercel.app/](https://patient-dental-clinic.vercel.app/).
-- **Admin & Staff Workspace** — Centralized dashboard for front desk, billing teams, and executives to manage clinic operations.
+- **Live Prescription Safety Application** — Production web application deployed at [https://prescription-dental-clinic.vercel.app/](https://prescription-dental-clinic.vercel.app/).
+- **Live Admin & Staff Application** — Production web application deployed at [https://admin-dental-clinic.vercel.app/](https://admin-dental-clinic.vercel.app/).
 - **Patient Portal Hub** — Personalized patient hub to book appointments, review X-rays, pay bills, and manage dental health records online.
+- **RxGuard Decision Support** — Real-time drug-drug interaction screening, beta-lactam allergy checks, and clinician override audit logs.
 - **Premium Clinical UI** — Crisp medical teal branding, smooth transitions, glassmorphism, and modern card-based layouts.
 - **Seamless Navigation** — Fully interconnected HTML pages with universal "Back to Home" navigation.
 - **Zero Dependencies** — Pure HTML and Tailwind CSS via CDN for the design templates.
@@ -33,9 +35,9 @@
 |---|---|---|
 | [SmileClinic_UI](https://github.com/HelloWorld-Farhan/SmileClinic_UI) | Main Landing Hub & Design System | Active |
 | [Doctor_DentalClinic](https://github.com/HelloWorld-Farhan/Doctor_DentalClinic) | Doctor Clinical Portal ([Live](https://doctor-dental-clinic.vercel.app/)) | Active |
-| [Admin_DentalClinic](https://github.com/HelloWorld-Farhan/Admin_DentalClinic) | Admin & Clinic Staff Dashboard | Active |
+| [Admin_DentalClinic](https://github.com/HelloWorld-Farhan/Admin_DentalClinic) | Admin & Clinic Staff Dashboard ([Live](https://admin-dental-clinic.vercel.app/)) | Active |
 | [Patient_DentalClinic](https://github.com/HelloWorld-Farhan/Patient_DentalClinic) | Patient Portal ([Live](https://patient-dental-clinic.vercel.app/)) | Active |
-| [Prescription_DentalClinic](https://github.com/HelloWorld-Farhan/Prescription_DentalClinic) | Prescription Safety & RxGuard Checker | Active |
+| [Prescription_DentalClinic](https://github.com/HelloWorld-Farhan/Prescription_DentalClinic) | Prescription Safety & RxGuard Checker ([Live](https://prescription-dental-clinic.vercel.app/)) | Active |
 
 ---
 
