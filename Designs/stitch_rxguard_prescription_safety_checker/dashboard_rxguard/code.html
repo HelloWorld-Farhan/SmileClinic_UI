@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed-dim": "#a2c9ff", "surface-container-highest": "#d8e3fa", "surface-container": "#e7eeff", "primary-fixed": "#99f0fd", "inverse-surface": "#263142", "on-secondary": "#ffffff", "tertiary-fixed": "#94f2f0", "tertiary-fixed-dim": "#77d6d3", "secondary": "#1960a3", "on-primary": "#ffffff", "primary-fixed-dim": "#7cd4e0", "surface": "#f9f9ff", "error-container": "#ffdad6", "background": "#f9f9ff", "outline-variant": "#bdc8ca", "primary-container": "#007782", "on-tertiary-fixed": "#00201f", "on-surface": "#111c2c", "tertiary-container": "#007876", "on-background": "#111c2c", "outline": "#6e797b", "on-error": "#ffffff", "surface-container-lowest": "#ffffff", "secondary-container": "#7db6ff", "surface-variant": "#d8e3fa", "error": "#ba1a1a", "on-surface-variant": "#3e494a", "on-secondary-fixed-variant": "#004881", "on-primary-fixed": "#001f23", "surface-tint": "#006972", "surface-container-low": "#f0f3ff", "on-tertiary": "#ffffff", "inverse-on-surface": "#ebf1ff", "on-tertiary-fixed-variant": "#00504e", "on-secondary-container": "#00477f", "on-primary-container": "#c1f7ff", "surface-container-high": "#dee8ff", "inverse-primary": "#7cd4e0", "on-tertiary-container": "#9ffefb", "surface-dim": "#cfdaf1", "on-error-container": "#93000a", "surface-bright": "#f9f9ff", "primary": "#005c65", "tertiary": "#005d5c", "on-secondary-fixed": "#001c38", "secondary-fixed": "#d3e4ff", "on-primary-fixed-variant": "#004f56" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "gutter-sm": "1rem", "space-xl": "2rem", "gutter": "1.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "margin": "2rem", "margin-sm": "1rem", "space-md": "1rem" }, "fontFamily": { "caption": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"], "subhead": ["Inter"], "body-md-medium": ["Inter"], "headline-lg-mobile": ["Inter"], "body-md": ["Inter"], "label-sm": ["Inter"], "headline-lg": ["Inter"], "headline-md": ["Inter"] }, "fontSize": { "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "subhead": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "body-md-medium": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface"><div class="fixed top-0 inset-x-0 h-8 z-50 bg-secondary-fixed text-on-secondary-fixed-variant flex items-center justify-center px-gutter text-center shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-xs font-body-md-medium text-caption"><span class="material-symbols-outlined text-[16px]">info</span><span>Clinical decision support only. Not a definitive safety declaration. Confirm with a licensed prescriber or pharmacist.</span></div></div><aside class="fixed left-0 top-8 bottom-0 w-72 bg-surface-container-low z-40 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="px-gutter pt-space-lg pb-space-md"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[24px]">shield_with_heart</span></div><div><div class="font-headline-md text-headline-md tracking-tight text-primary">RxGuard</div><div class="font-caption text-caption text-outline">Clinical Decision Support</div></div></div></div><nav class="px-space-md flex flex-col gap-space-xs mt-space-sm" data-active-classes="bg-primary-container text-on-primary font-body-md-medium rounded-lg shadow-[0_4px_20px_rgba(0,119,130,0.06)]"><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-colors bg-primary-container text-on-primary font-body-md-medium rounded-lg shadow-[0_4px_20px_rgba(0,119,130,0.06)]" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="new-check" href="#"><span class="material-symbols-outlined text-[20px]">add_circle</span><span>New Check</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="patients" href="#"><span class="material-symbols-outlined text-[20px]">patient_list</span><span>Patients</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="alerts" href="#"><span class="material-symbols-outlined text-[20px]">warning</span><span>Alerts</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span>Reports</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="audit-log" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span>Audit Log</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="rules-and-data" href="#"><span class="material-symbols-outlined text-[20px]">database</span><span>Rules &amp; Data</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="p-space-md m-space-md bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,119,130,0.06)]"><div class="flex items-center gap-space-xs text-primary font-caption text-caption uppercase"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span>SMART on FHIR v4.0.1</span></div><div class="font-label-sm text-label-sm text-on-surface mt-space-xs">St. Jude Health System</div><div class="font-caption text-caption text-outline mt-0.5">Production Gateway Active</div></div></aside><div class="pl-72"><header class="fixed top-8 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-30 flex items-center justify-between px-gutter"><div class="flex items-center flex-1 max-w-lg"><div class="w-full flex items-center bg-surface-container-lowest rounded-lg px-space-md py-space-xs shadow-[0_4px_20px_rgba(0,119,130,0.06)]"><span class="material-symbols-outlined text-outline text-[20px] mr-space-sm">search</span><input class="bg-transparent border-0 outline-none w-full font-body-md text-body-md text-on-surface placeholder:text-outline" placeholder="Search patient name, MRN, Rx order..." type="text"/><kbd class="font-caption text-caption bg-surface-container-high text-on-surface-variant px-space-sm py-0.5 rounded">⌘K</kbd></div></div><div class="flex items-center gap-gutter"><div class="hidden xl:flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container rounded-full"><span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span><span class="font-label-sm text-label-sm text-on-secondary-container">EMR Integrated</span></div><button aria-label="Clinical Notifications" class="relative p-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2.5 h-2.5 rounded-full bg-error ring-2 ring-surface"></span></button><div class="h-8 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-md"><div class="text-right hidden sm:block"><div class="font-body-md-medium text-body-md-medium text-on-surface">Dr. Sarah Lin, PharmD</div><div class="font-caption text-caption text-primary">Lead Clinical Pharmacist - Inpatient</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-24 min-h-screen bg-background"><div class="max-w-7xl mx-auto px-gutter py-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<!-- TOP CONTEXT & FILTER BAR -->
+<section class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Prescription Safety Dashboard</h1>
+<div class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant font-caption text-caption shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>Auto-synced via FHIR R4: Just now</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Real-time clinical drug-drug, dosing, renal clearance, and interaction screening feed.</p>
+</div>
+<!-- Quick shift / dept / time filter -->
+<div class="flex items-center gap-space-xs flex-wrap">
+<div class="inline-flex p-1 bg-surface-container-high rounded-lg text-on-surface">
+<button class="px-space-md py-1.5 rounded-md font-label-sm text-label-sm bg-surface-container-lowest text-primary shadow-sm font-semibold transition-all" type="button">All Units</button>
+<button class="px-space-md py-1.5 rounded-md font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" type="button">ICU</button>
+<button class="px-space-md py-1.5 rounded-md font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" type="button">Emergency</button>
+<button class="px-space-md py-1.5 rounded-md font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" type="button">Oncology</button>
+<button class="px-space-md py-1.5 rounded-md font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" type="button">Cardiology</button>
+</div>
+<div class="h-6 w-px bg-surface-container-highest mx-space-xs hidden sm:block"></div>
+<select aria-label="Select Time Range" class="bg-surface-container-lowest text-on-surface font-label-sm text-label-sm px-space-md py-2 rounded-lg shadow-sm outline-none cursor-pointer">
+<option>Today</option>
+<option>Last 24 Hours</option>
+<option>Last 7 Days</option>
+</select>
+</div>
+</section>
+<!-- 4 STAT CARDS -->
+<section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1: Checks Today -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-[0_4px_20px_rgba(0,119,130,0.06)] flex flex-col justify-between transition-all hover:shadow-[0_8px_24px_rgba(0,119,130,0.10)]">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-caption text-caption uppercase tracking-wider text-outline font-semibold">Checks Today</span>
+<div class="flex items-baseline gap-space-sm mt-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight">1,284</span>
+<span class="inline-flex items-center font-caption text-caption text-primary font-semibold">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+              +12.4%
+            </span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">fact_check</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container">
+<!-- Mini sparkline representation -->
+<div class="flex items-end gap-1 h-6 mb-space-xs opacity-75">
+<div class="w-full bg-primary-fixed-dim rounded-t h-[40%]"></div>
+<div class="w-full bg-primary-fixed-dim rounded-t h-[60%]"></div>
+<div class="w-full bg-primary-fixed-dim rounded-t h-[55%]"></div>
+<div class="w-full bg-primary-fixed-dim rounded-t h-[80%]"></div>
+<div class="w-full bg-primary-fixed-dim rounded-t h-[70%]"></div>
+<div class="w-full bg-primary-container rounded-t h-[100%]"></div>
+</div>
+<p class="font-caption text-caption text-on-surface-variant truncate">189 auto-verified, 1,095 prescriber checked</p>
+</div>
+</div>
+<!-- Card 2: Alerts Awaiting Review -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-[0_4px_20px_rgba(0,119,130,0.06)] flex flex-col justify-between transition-all hover:shadow-[0_8px_24px_rgba(0,119,130,0.10)]">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-caption text-caption uppercase tracking-wider text-outline font-semibold">Alerts In Queue</span>
+<div class="flex items-baseline gap-space-sm mt-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight">23</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-caption text-caption bg-[#FEF3C7] text-[#975A16] font-semibold">Action Req.</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-[#FEF3C7] flex items-center justify-center text-[#975A16]">
+<span class="material-symbols-outlined text-[22px]">pending_actions</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Median queue wait: <strong>3.8 mins</strong></span>
+<span class="material-symbols-outlined text-outline text-[16px]">schedule</span>
+</div>
+</div>
+<!-- Card 3: High-Severity Open Alerts -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-[0_4px_20px_rgba(0,119,130,0.06)] flex flex-col justify-between transition-all hover:shadow-[0_8px_24px_rgba(0,119,130,0.10)] relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 rounded-full bg-error-container/30 pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-caption text-caption uppercase tracking-wider text-outline font-semibold">High-Severity Open</span>
+<div class="flex items-baseline gap-space-sm mt-space-xs">
+<span class="font-headline-lg text-headline-lg text-error tracking-tight font-bold">7</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-[#FFDAD6] text-[#BA1A1A] font-semibold">
+<span class="material-symbols-outlined text-[14px]">error</span>
+              Urgent
+            </span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-[#FFDAD6] flex items-center justify-center text-[#BA1A1A]">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container">
+<p class="font-caption text-caption text-on-surface-variant">Critical contraindicated combinations flagged</p>
+</div>
+</div>
+<!-- Card 4: Unable to Assess Count -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-[0_4px_20px_rgba(0,119,130,0.06)] flex flex-col justify-between transition-all hover:shadow-[0_8px_24px_rgba(0,119,130,0.10)]">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-caption text-caption uppercase tracking-wider text-outline font-semibold">Unable to Assess</span>
+<div class="flex items-baseline gap-space-sm mt-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight">4</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-[#FAF5FF] text-[#553C9A] font-semibold">
+<span class="material-symbols-outlined text-[13px]">help</span>
+              Missing Lab
+            </span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-[#FAF5FF] flex items-center justify-center text-[#553C9A]">
+<span class="material-symbols-outlined text-[22px]">rule</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container">
+<p class="font-caption text-caption text-on-surface-variant truncate">Missing lab values / novel compounding</p>
+</div>
+</div>
+</section>
+<!-- 2-COLUMN MAIN CONTENT (8 cols Left / 4 cols Right) -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN (8 cols): Recent Checks Table -->
+<div class="lg:col-span-8 flex flex-col gap-space-md bg-surface-container-lowest rounded-2xl p-space-lg shadow-[0_4px_20px_rgba(0,119,130,0.06)]">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm border-b border-surface-container">
+<div>
+<div class="flex items-center gap-space-xs">
+<h2 class="font-subhead text-subhead text-on-surface tracking-tight">Recent Screening Checks</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-caption text-caption font-semibold">1,284 total</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">Live clinical interaction and regimen evaluation stream</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="flex items-center bg-surface-container-low px-space-md py-1.5 rounded-lg text-on-surface">
+<span class="material-symbols-outlined text-outline text-[18px] mr-1.5">filter_list</span>
+<input class="bg-transparent text-body-md font-body-md outline-none text-on-surface placeholder:text-outline w-36 sm:w-44" placeholder="Filter patient or drug..." type="text"/>
+</div>
+<button aria-label="Refresh check feed" class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- Table Wrapper -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse min-w-[700px]">
+<thead>
+<tr class="text-outline font-caption text-caption uppercase tracking-wider border-b border-surface-container">
+<th class="py-space-sm px-space-xs">Check ID</th>
+<th class="py-space-sm px-space-xs">Patient Key</th>
+<th class="py-space-sm px-space-xs">Prescribed Regimen</th>
+<th class="py-space-sm px-space-xs">Highest Severity</th>
+<th class="py-space-sm px-space-xs">Reviewer / Status</th>
+<th class="py-space-sm px-space-xs text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-md text-body-md text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-xs">
+<div class="flex items-center gap-1 font-mono font-medium text-caption text-primary">
+<span>#CHK-8921</span>
+<button aria-label="Copy check ID" class="text-outline hover:text-primary" type="button"><span class="material-symbols-outlined text-[14px]">content_copy</span></button>
+</div>
+<span class="font-caption text-caption text-outline">4m ago</span>
+</td>
+<td class="py-space-md px-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">shield</span>
+<span class="font-body-md-medium text-body-md-medium font-semibold">PT-9042-X</span>
+</div>
+<span class="font-caption text-caption text-outline">Ward 4B • Post-Op</span>
+</td>
+<td class="py-space-md px-space-xs max-w-xs">
+<div class="font-body-md-medium text-body-md-medium text-on-surface">Warfarin Sodium 5mg</div>
+<div class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-error">add</span>
+<span>Fluconazole 200mg (Oral)</span>
+</div>
+</td>
+<td class="py-space-md px-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-[#FFDAD6] text-[#BA1A1A] font-semibold">
+<span class="material-symbols-outlined text-[14px]">error</span>
+                  High Severity
+                </span>
+</td>
+<td class="py-space-md px-space-xs">
+<div class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-primary font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Dr. Lin (Assigned)
+                </div>
+<div class="font-caption text-caption text-outline">Pharmacist consult req.</div>
+</td>
+<td class="py-space-md px-space-xs text-right">
+<button class="px-space-md py-1 rounded-lg text-primary bg-primary-fixed/20 hover:bg-primary-fixed/40 transition-colors font-label-sm text-label-sm font-semibold" type="button">Inspect</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-xs">
+<div class="flex items-center gap-1 font-mono font-medium text-caption text-primary">
+<span>#CHK-8920</span>
+<button aria-label="Copy check ID" class="text-outline hover:text-primary" type="button"><span class="material-symbols-outlined text-[14px]">content_copy</span></button>
+</div>
+<span class="font-caption text-caption text-outline">12m ago</span>
+</td>
+<td class="py-space-md px-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">shield</span>
+<span class="font-body-md-medium text-body-md-medium font-semibold">PT-3811-M</span>
+</div>
+<span class="font-caption text-caption text-outline">Cardiology Step-down</span>
+</td>
+<td class="py-space-md px-space-xs max-w-xs">
+<div class="font-body-md-medium text-body-md-medium text-on-surface">Lisinopril 20mg</div>
+<div class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-outline">add</span>
+<span>Spironolactone 25mg + KCl supplement</span>
+</div>
+</td>
+<td class="py-space-md px-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-[#FEF3C7] text-[#975A16] font-semibold">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                  Moderate
+                </span>
+</td>
+<td class="py-space-md px-space-xs">
+<div class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  In Triage Queue
+                </div>
+<div class="font-caption text-caption text-outline">K+ monitoring flagged</div>
+</td>
+<td class="py-space-md px-space-xs text-right">
+<button class="px-space-md py-1 rounded-lg text-primary bg-primary-fixed/20 hover:bg-primary-fixed/40 transition-colors font-label-sm text-label-sm font-semibold" type="button">Inspect</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-xs">
+<div class="flex items-center gap-1 font-mono font-medium text-caption text-primary">
+<span>#CHK-8919</span>
+<button aria-label="Copy check ID" class="text-outline hover:text-primary" type="button"><span class="material-symbols-outlined text-[14px]">content_copy</span></button>
+</div>
+<span class="font-caption text-caption text-outline">28m ago</span>
+</td>
+<td class="py-space-md px-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">shield</span>
+<span class="font-body-md-medium text-body-md-medium font-semibold">PT-7729-K</span>
+</div>
+<span class="font-caption text-caption text-outline">Rheumatology Clinic</span>
+</td>
+<td class="py-space-md px-space-xs max-w-xs">
+<div class="font-body-md-medium text-body-md-medium text-on-surface">Methotrexate 15mg/wk</div>
+<div class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-error">add</span>
+<span>Amoxicillin/Clav 875mg BID</span>
+</div>
+</td>
+<td class="py-space-md px-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-[#FFDAD6] text-[#BA1A1A] font-semibold">
+<span class="material-symbols-outlined text-[14px]">error</span>
+                  High Severity
+                </span>
+</td>
+<td class="py-space-md px-space-xs">
+<div class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-primary font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+                  Dr. Lin (Reviewing)
+                </div>
+<div class="font-caption text-caption text-outline">Clearance risk warning</div>
+</td>
+<td class="py-space-md px-space-xs text-right">
+<button class="px-space-md py-1 rounded-lg text-primary bg-primary-fixed/20 hover:bg-primary-fixed/40 transition-colors font-label-sm text-label-sm font-semibold" type="button">Inspect</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-xs">
+<div class="flex items-center gap-1 font-mono font-medium text-caption text-primary">
+<span>#CHK-8918</span>
+<button aria-label="Copy check ID" class="text-outline hover:text-primary" type="button"><span class="material-symbols-outlined text-[14px]">content_copy</span></button>
+</div>
+<span class="font-caption text-caption text-outline">45m ago</span>
+</td>
+<td class="py-space-md px-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">shield</span>
+<span class="font-body-md-medium text-body-md-medium font-semibold">PT-1249-C</span>
+</div>
+<span class="font-caption text-caption text-outline">Internal Medicine</span>
+</td>
+<td class="py-space-md px-space-xs max-w-xs">
+<div class="font-body-md-medium text-body-md-medium text-on-surface">Levothyroxine 100mcg</div>
+<div class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-outline">add</span>
+<span>Calcium Carbonate 1200mg</span>
+</div>
+</td>
+<td class="py-space-md px-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-[#EBF8FF] text-[#2B6CB0] font-semibold">
+<span class="material-symbols-outlined text-[14px]">info</span>
+                  Low Severity
+                </span>
+</td>
+<td class="py-space-md px-space-xs">
+<div class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-[#2B6CB0]">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                  Resolved (Dr. Chen)
+                </div>
+<div class="font-caption text-caption text-outline">Dosing schedule staggered</div>
+</td>
+<td class="py-space-md px-space-xs text-right">
+<button class="px-space-md py-1 rounded-lg text-primary bg-primary-fixed/20 hover:bg-primary-fixed/40 transition-colors font-label-sm text-label-sm font-semibold" type="button">Inspect</button>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-xs">
+<div class="flex items-center gap-1 font-mono font-medium text-caption text-primary">
+<span>#CHK-8917</span>
+<button aria-label="Copy check ID" class="text-outline hover:text-primary" type="button"><span class="material-symbols-outlined text-[14px]">content_copy</span></button>
+</div>
+<span class="font-caption text-caption text-outline">1h ago</span>
+</td>
+<td class="py-space-md px-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">shield</span>
+<span class="font-body-md-medium text-body-md-medium font-semibold">PT-5503-L</span>
+</div>
+<span class="font-caption text-caption text-outline">Surgical ICU</span>
+</td>
+<td class="py-space-md px-space-xs max-w-xs">
+<div class="font-body-md-medium text-body-md-medium text-on-surface">Vancomycin IV 1.5g q12h</div>
+<div class="font-caption text-caption text-[#553C9A] font-medium">Pending: Current Serum Cr / eGFR</div>
+</td>
+<td class="py-space-md px-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-[#FAF5FF] text-[#553C9A] font-semibold">
+<span class="material-symbols-outlined text-[14px]">help</span>
+                  Unable to Assess
+                </span>
+</td>
+<td class="py-space-md px-space-xs">
+<div class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-[#553C9A]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#553C9A]"></span>
+                  Awaiting Renal Lab
+                </div>
+<div class="font-caption text-caption text-outline">Stat draw queued 20m ago</div>
+</td>
+<td class="py-space-md px-space-xs text-right">
+<button class="px-space-md py-1 rounded-lg text-primary bg-primary-fixed/20 hover:bg-primary-fixed/40 transition-colors font-label-sm text-label-sm font-semibold" type="button">Inspect</button>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-xs">
+<div class="flex items-center gap-1 font-mono font-medium text-caption text-primary">
+<span>#CHK-8916</span>
+<button aria-label="Copy check ID" class="text-outline hover:text-primary" type="button"><span class="material-symbols-outlined text-[14px]">content_copy</span></button>
+</div>
+<span class="font-caption text-caption text-outline">1h 15m ago</span>
+</td>
+<td class="py-space-md px-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">shield</span>
+<span class="font-body-md-medium text-body-md-medium font-semibold">PT-1104-E</span>
+</div>
+<span class="font-caption text-caption text-outline">Pulmonology Unit</span>
+</td>
+<td class="py-space-md px-space-xs max-w-xs">
+<div class="font-body-md-medium text-body-md-medium text-on-surface">Atorvastatin 80mg Daily</div>
+<div class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-error">add</span>
+<span>Clarithromycin 500mg BID</span>
+</div>
+</td>
+<td class="py-space-md px-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-[#FFDAD6] text-[#BA1A1A] font-semibold">
+<span class="material-symbols-outlined text-[14px]">error</span>
+                  High Severity
+                </span>
+</td>
+<td class="py-space-md px-space-xs">
+<div class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-error font-medium">
+<span class="material-symbols-outlined text-[14px]">priority_high</span>
+                  Awaiting Clinician Action
+                </div>
+<div class="font-caption text-caption text-outline">Rhabdomyolysis alert</div>
+</td>
+<td class="py-space-md px-space-xs text-right">
+<button class="px-space-md py-1 rounded-lg text-primary bg-primary-fixed/20 hover:bg-primary-fixed/40 transition-colors font-label-sm text-label-sm font-semibold" type="button">Inspect</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination / Footer of Left Card -->
+<div class="flex flex-col sm:flex-row items-center justify-between pt-space-md border-t border-surface-container gap-space-sm">
+<span class="font-caption text-caption text-on-surface-variant">Showing latest 6 of 1,284 screening checks</span>
+<div class="flex items-center gap-space-md">
+<a class="font-label-sm text-label-sm text-primary hover:underline font-semibold flex items-center gap-1" href="#">
+<span>View Full Audit Registry</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN (4 cols): Action CTA & Critical Review Queue -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- CTAs Card -->
+<div class="flex flex-col gap-space-sm">
+<button class="w-full flex items-center justify-center gap-space-sm bg-primary-container text-on-primary py-space-md px-space-lg rounded-lg shadow-sm hover:bg-[#006068] transition-all group font-label-md text-label-md font-semibold" type="button">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110">add_circle</span>
+<span>Start New Safety Check</span>
+</button>
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="flex items-center justify-center gap-1 py-2 px-space-sm rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container shadow-sm font-label-sm text-label-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">cloud_download</span>
+<span>Batch EHR Sync</span>
+</button>
+<button class="flex items-center justify-center gap-1 py-2 px-space-sm rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container shadow-sm font-label-sm text-label-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">qr_code_scanner</span>
+<span>Scan Rx Barcode</span>
+</button>
+</div>
+</div>
+<!-- High Priority Queue Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-[0_4px_20px_rgba(0,119,130,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-subhead text-subhead text-on-surface">Needs Your Review</h2>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-[#FFDAD6] text-[#BA1A1A] font-semibold">3 Critical</span>
+</div>
+<span class="font-caption text-caption text-outline cursor-pointer hover:text-primary">Urgency ↓</span>
+</div>
+<!-- Priority Item 1 -->
+<div class="bg-surface-container-low/70 rounded-xl p-space-md flex flex-col gap-space-xs transition-all hover:bg-surface-container-low">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-semibold text-on-surface">PT-9042-X</span>
+<span class="text-outline text-caption font-caption">• Warfarin + Fluconazole</span>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-caption text-caption bg-[#FFDAD6] text-[#BA1A1A] font-semibold shrink-0">High</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant leading-snug">
+<strong>CYP2C9 Inhibition:</strong> 3.8x estimated INR surge. Immediate severe GI or systemic hemorrhage risk.
+          </p>
+<div class="flex items-center justify-between font-caption text-caption text-outline mt-1">
+<span>Dr. R. Vance (Cardiology)</span>
+<span>4m ago</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-xs">
+<button class="flex-1 py-1.5 px-space-sm bg-primary-container text-on-primary rounded-lg font-label-sm text-label-sm font-semibold hover:bg-[#006068] transition-colors text-center" type="button">
+              Review &amp; Intervene
+            </button>
+<button class="p-1.5 text-outline hover:text-on-surface rounded-lg bg-surface-container-lowest" title="Dismiss with justification" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Priority Item 2 -->
+<div class="bg-surface-container-low/70 rounded-xl p-space-md flex flex-col gap-space-xs transition-all hover:bg-surface-container-low">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-semibold text-on-surface">PT-7729-K</span>
+<span class="text-outline text-caption font-caption">• Methotrexate + Augmentin</span>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-caption text-caption bg-[#FFDAD6] text-[#BA1A1A] font-semibold shrink-0">High</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant leading-snug">
+<strong>Renal Tubular Secretion:</strong> Penicillin competition slows MTX elimination; acute bone marrow suppression threat.
+          </p>
+<div class="flex items-center justify-between font-caption text-caption text-outline mt-1">
+<span>Dr. M. Torres (Rheumatology)</span>
+<span>28m ago</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-xs">
+<button class="flex-1 py-1.5 px-space-sm bg-primary-container text-on-primary rounded-lg font-label-sm text-label-sm font-semibold hover:bg-[#006068] transition-colors text-center" type="button">
+              Review &amp; Intervene
+            </button>
+<button class="p-1.5 text-outline hover:text-on-surface rounded-lg bg-surface-container-lowest" title="Quick Contact Prescriber" type="button">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</button>
+</div>
+</div>
+<!-- Priority Item 3 -->
+<div class="bg-surface-container-low/70 rounded-xl p-space-md flex flex-col gap-space-xs transition-all hover:bg-surface-container-low">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-semibold text-on-surface">PT-1104-E</span>
+<span class="text-outline text-caption font-caption">• Statin + Clarithromycin</span>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-caption text-caption bg-[#FFDAD6] text-[#BA1A1A] font-semibold shrink-0">High</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant leading-snug">
+<strong>CYP3A4 Potent Blockade:</strong> Atorvastatin AUC increases &gt;800%. Severe rhabdomyolysis and myopathy cascade.
+          </p>
+<div class="flex items-center justify-between font-caption text-caption text-outline mt-1">
+<span>Dr. K. Patel (Inpatient Med)</span>
+<span>1h ago</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-xs">
+<button class="w-full py-1.5 px-space-sm bg-primary-container text-on-primary rounded-lg font-label-sm text-label-sm font-semibold hover:bg-[#006068] transition-colors text-center" type="button">
+              Review &amp; Intervene
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BOTTOM ROW: 2-CARD SPLIT GRID (~7 cols / 5 cols) -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Left Card (7 cols): Severity Distribution Chart -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-2xl p-space-lg shadow-[0_4px_20px_rgba(0,119,130,0.06)] flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-subhead text-subhead text-on-surface tracking-tight">Alert Severity Distribution</h2>
+<p class="font-caption text-caption text-on-surface-variant">Last 7 days cumulative screening results across 8,420 orders</p>
+</div>
+<!-- Legend Pills matching style guide -->
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-caption font-caption bg-[#FFDAD6] text-[#BA1A1A] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#BA1A1A]"></span> High
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-caption font-caption bg-[#FEF3C7] text-[#975A16] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#B7791F]"></span> Mod
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-caption font-caption bg-[#EBF8FF] text-[#2B6CB0] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#2B6CB0]"></span> Low
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-caption font-caption bg-[#FAF5FF] text-[#553C9A] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#553C9A]"></span> Incomplete
+          </span>
+</div>
+</div>
+<!-- Visual Stacked Bar Chart Graphic -->
+<div class="my-space-lg">
+<div class="h-44 w-full flex items-end justify-between gap-3 pt-6 pb-2 px-2">
+<!-- Mon -->
+<div class="flex-1 flex flex-col items-center gap-2 group">
+<div class="font-caption text-caption text-outline group-hover:text-primary transition-colors">1.1k</div>
+<div class="w-full max-w-[40px] flex flex-col-reverse rounded-t overflow-hidden h-32 bg-surface-container-high">
+<div class="bg-[#2B6CB0] w-full h-[58%]" title="Low: 58%"></div>
+<div class="bg-[#B7791F] w-full h-[26%]" title="Moderate: 26%"></div>
+<div class="bg-[#BA1A1A] w-full h-[12%]" title="High: 12%"></div>
+<div class="bg-[#553C9A] w-full h-[4%]" title="Unable: 4%"></div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant font-medium">Mon</span>
+</div>
+<!-- Tue -->
+<div class="flex-1 flex flex-col items-center gap-2 group">
+<div class="font-caption text-caption text-outline group-hover:text-primary transition-colors">1.3k</div>
+<div class="w-full max-w-[40px] flex flex-col-reverse rounded-t overflow-hidden h-36 bg-surface-container-high">
+<div class="bg-[#2B6CB0] w-full h-[62%]" title="Low: 62%"></div>
+<div class="bg-[#B7791F] w-full h-[22%]" title="Moderate: 22%"></div>
+<div class="bg-[#BA1A1A] w-full h-[11%]" title="High: 11%"></div>
+<div class="bg-[#553C9A] w-full h-[5%]" title="Unable: 5%"></div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant font-medium">Tue</span>
+</div>
+<!-- Wed -->
+<div class="flex-1 flex flex-col items-center gap-2 group">
+<div class="font-caption text-caption text-outline group-hover:text-primary transition-colors">1.2k</div>
+<div class="w-full max-w-[40px] flex flex-col-reverse rounded-t overflow-hidden h-34 bg-surface-container-high">
+<div class="bg-[#2B6CB0] w-full h-[55%]" title="Low: 55%"></div>
+<div class="bg-[#B7791F] w-full h-[28%]" title="Moderate: 28%"></div>
+<div class="bg-[#BA1A1A] w-full h-[14%]" title="High: 14%"></div>
+<div class="bg-[#553C9A] w-full h-[3%]" title="Unable: 3%"></div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant font-medium">Wed</span>
+</div>
+<!-- Thu -->
+<div class="flex-1 flex flex-col items-center gap-2 group">
+<div class="font-caption text-caption text-outline group-hover:text-primary transition-colors">1.4k</div>
+<div class="w-full max-w-[40px] flex flex-col-reverse rounded-t overflow-hidden h-40 bg-surface-container-high">
+<div class="bg-[#2B6CB0] w-full h-[64%]" title="Low: 64%"></div>
+<div class="bg-[#B7791F] w-full h-[21%]" title="Moderate: 21%"></div>
+<div class="bg-[#BA1A1A] w-full h-[11%]" title="High: 11%"></div>
+<div class="bg-[#553C9A] w-full h-[4%]" title="Unable: 4%"></div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant font-medium">Thu</span>
+</div>
+<!-- Fri -->
+<div class="flex-1 flex flex-col items-center gap-2 group">
+<div class="font-caption text-caption text-outline group-hover:text-primary transition-colors">1.5k</div>
+<div class="w-full max-w-[40px] flex flex-col-reverse rounded-t overflow-hidden h-44 bg-surface-container-high">
+<div class="bg-[#2B6CB0] w-full h-[59%]" title="Low: 59%"></div>
+<div class="bg-[#B7791F] w-full h-[24%]" title="Moderate: 24%"></div>
+<div class="bg-[#BA1A1A] w-full h-[13%]" title="High: 13%"></div>
+<div class="bg-[#553C9A] w-full h-[4%]" title="Unable: 4%"></div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant font-medium">Fri</span>
+</div>
+<!-- Sat -->
+<div class="flex-1 flex flex-col items-center gap-2 group">
+<div class="font-caption text-caption text-outline group-hover:text-primary transition-colors">860</div>
+<div class="w-full max-w-[40px] flex flex-col-reverse rounded-t overflow-hidden h-24 bg-surface-container-high">
+<div class="bg-[#2B6CB0] w-full h-[65%]" title="Low: 65%"></div>
+<div class="bg-[#B7791F] w-full h-[20%]" title="Moderate: 20%"></div>
+<div class="bg-[#BA1A1A] w-full h-[10%]" title="High: 10%"></div>
+<div class="bg-[#553C9A] w-full h-[5%]" title="Unable: 5%"></div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant font-medium">Sat</span>
+</div>
+<!-- Sun (Today) -->
+<div class="flex-1 flex flex-col items-center gap-2 group">
+<div class="font-caption text-caption text-primary font-bold">1.3k</div>
+<div class="w-full max-w-[40px] flex flex-col-reverse rounded-t overflow-hidden h-36 bg-surface-container-high ring-2 ring-primary/30">
+<div class="bg-[#2B6CB0] w-full h-[60%]" title="Low: 60%"></div>
+<div class="bg-[#B7791F] w-full h-[23%]" title="Moderate: 23%"></div>
+<div class="bg-[#BA1A1A] w-full h-[14%]" title="High: 14%"></div>
+<div class="bg-[#553C9A] w-full h-[3%]" title="Unable: 3%"></div>
+</div>
+<span class="font-caption text-caption text-primary font-bold">Today</span>
+</div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span><strong>96.2% safe clearance rate:</strong> 32 critical adverse drug events averted this week.</span>
+</div>
+<span class="text-outline hidden sm:inline">Engine throughput: 110ms / check</span>
+</div>
+</div>
+<!-- Right Card (5 cols): Knowledge Base & Rules Engine Sync -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-2xl p-space-lg shadow-[0_4px_20px_rgba(0,119,130,0.06)] flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container">
+<div>
+<h2 class="font-subhead text-subhead text-on-surface tracking-tight">Clinical Rules Engine</h2>
+<p class="font-caption text-caption text-on-surface-variant">Knowledge bases &amp; regulatory clearance status</p>
+</div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container font-caption text-caption text-primary font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            Active
+          </div>
+</div>
+<!-- Meta Specification Table -->
+<div class="flex flex-col divide-y divide-surface-container font-body-md text-body-md">
+<div class="py-2.5 flex items-center justify-between">
+<span class="text-outline font-caption text-caption">CDS Rules Engine</span>
+<span class="font-mono text-caption text-on-surface font-medium">v4.18.2-prod (FDA Black-Box Synced)</span>
+</div>
+<div class="py-2.5 flex items-center justify-between">
+<span class="text-outline font-caption text-caption">Drug Master Catalog</span>
+<span class="font-mono text-caption text-on-surface font-medium">RxNorm 2025-02-B / FDB v11.4</span>
+</div>
+<div class="py-2.5 flex items-center justify-between">
+<span class="text-outline font-caption text-caption">Pharmacogenomics</span>
+<span class="font-mono text-caption text-on-surface font-medium">CPIC Level 1A &amp; Beers Criteria 2024.1</span>
+</div>
+<div class="py-2.5 flex items-center justify-between">
+<span class="text-outline font-caption text-caption">Last Successful Sync</span>
+<span class="text-caption text-on-surface font-medium">Today at 03:00 UTC (Cycle: 24h)</span>
+</div>
+<div class="py-2.5 flex items-center justify-between">
+<span class="text-outline font-caption text-caption">Next Scheduled Pull</span>
+<span class="text-caption text-primary font-medium">In 14 hours (Automated night-cycle)</span>
+</div>
+</div>
+</div>
+<!-- Certification & Link Footer -->
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex flex-col gap-2">
+<div class="flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">security</span>
+<span>FDA SaMD Class II &amp; ISO 13485 QMS Certified</span>
+</div>
+<a class="text-primary hover:underline font-semibold font-caption text-caption" href="#">Change Log</a>
+</div>
+</div>
+</div>
+</section>
+</div></div></main><footer class="w-full bg-surface-container-low py-space-lg"><div class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row items-center justify-between text-on-surface-variant font-caption text-caption gap-space-sm"><div>© 2025 RxGuard Healthcare Technologies. Regulated Clinical Authentication Portal &amp; Decision Support Engine.</div><div class="flex items-center gap-space-md"><span>HIPAA / HITECH Compliant</span><span>CDS Authority Level 3</span></div></div></footer></div></body></html>

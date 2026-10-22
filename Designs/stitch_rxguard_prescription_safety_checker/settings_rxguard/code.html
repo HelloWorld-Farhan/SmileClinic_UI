@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed-dim": "#a2c9ff", "surface-container-highest": "#d8e3fa", "surface-container": "#e7eeff", "primary-fixed": "#99f0fd", "inverse-surface": "#263142", "on-secondary": "#ffffff", "tertiary-fixed": "#94f2f0", "tertiary-fixed-dim": "#77d6d3", "secondary": "#1960a3", "on-primary": "#ffffff", "primary-fixed-dim": "#7cd4e0", "surface": "#f9f9ff", "error-container": "#ffdad6", "background": "#f9f9ff", "outline-variant": "#bdc8ca", "primary-container": "#007782", "on-tertiary-fixed": "#00201f", "on-surface": "#111c2c", "tertiary-container": "#007876", "on-background": "#111c2c", "outline": "#6e797b", "on-error": "#ffffff", "surface-container-lowest": "#ffffff", "secondary-container": "#7db6ff", "surface-variant": "#d8e3fa", "error": "#ba1a1a", "on-surface-variant": "#3e494a", "on-secondary-fixed-variant": "#004881", "on-primary-fixed": "#001f23", "surface-tint": "#006972", "surface-container-low": "#f0f3ff", "on-tertiary": "#ffffff", "inverse-on-surface": "#ebf1ff", "on-tertiary-fixed-variant": "#00504e", "on-secondary-container": "#00477f", "on-primary-container": "#c1f7ff", "surface-container-high": "#dee8ff", "inverse-primary": "#7cd4e0", "on-tertiary-container": "#9ffefb", "surface-dim": "#cfdaf1", "on-error-container": "#93000a", "surface-bright": "#f9f9ff", "primary": "#005c65", "tertiary": "#005d5c", "on-secondary-fixed": "#001c38", "secondary-fixed": "#d3e4ff", "on-primary-fixed-variant": "#004f56" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "gutter-sm": "1rem", "space-xl": "2rem", "gutter": "1.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "margin": "2rem", "margin-sm": "1rem", "space-md": "1rem" }, "fontFamily": { "caption": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"], "subhead": ["Inter"], "body-md-medium": ["Inter"], "headline-lg-mobile": ["Inter"], "body-md": ["Inter"], "label-sm": ["Inter"], "headline-lg": ["Inter"], "headline-md": ["Inter"] }, "fontSize": { "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "subhead": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "body-md-medium": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface"><div class="fixed top-0 inset-x-0 h-8 z-50 bg-secondary-fixed text-on-secondary-fixed-variant flex items-center justify-center px-gutter text-center shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-xs font-body-md-medium text-caption"><span class="material-symbols-outlined text-[16px]">info</span><span>Clinical decision support only. Not a definitive safety declaration. Confirm with a licensed prescriber or pharmacist.</span></div></div><aside class="fixed left-0 top-8 bottom-0 w-72 bg-surface-container-low z-40 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="px-gutter pt-space-lg pb-space-md"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[24px]">shield_with_heart</span></div><div><div class="font-headline-md text-headline-md tracking-tight text-primary">RxGuard</div><div class="font-caption text-caption text-outline">Clinical Decision Support</div></div></div></div><nav class="px-space-md flex flex-col gap-space-xs mt-space-sm" data-active-classes="bg-primary-container text-on-primary font-body-md-medium rounded-lg shadow-[0_4px_20px_rgba(0,119,130,0.06)]"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="new-check" href="#"><span class="material-symbols-outlined text-[20px]">add_circle</span><span>New Check</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="patients" href="#"><span class="material-symbols-outlined text-[20px]">patient_list</span><span>Patients</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="alerts" href="#"><span class="material-symbols-outlined text-[20px]">warning</span><span>Alerts</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span>Reports</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="audit-log" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span>Audit Log</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="rules-and-data" href="#"><span class="material-symbols-outlined text-[20px]">database</span><span>Rules &amp; Data</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="p-space-md m-space-md bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,119,130,0.06)]"><div class="flex items-center gap-space-xs text-primary font-caption text-caption uppercase"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span>SMART on FHIR v4.0.1</span></div><div class="font-label-sm text-label-sm text-on-surface mt-space-xs">St. Jude Health System</div><div class="font-caption text-caption text-outline mt-0.5">Production Gateway Active</div></div></aside><div class="pl-72"><header class="fixed top-8 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-30 flex items-center justify-between px-gutter"><div class="flex items-center flex-1 max-w-lg"><div class="w-full flex items-center bg-surface-container-lowest rounded-lg px-space-md py-space-xs shadow-[0_4px_20px_rgba(0,119,130,0.06)]"><span class="material-symbols-outlined text-outline text-[20px] mr-space-sm">search</span><input class="bg-transparent border-0 outline-none w-full font-body-md text-body-md text-on-surface placeholder:text-outline" placeholder="Search patient name, MRN, Rx order..." type="text"/><kbd class="font-caption text-caption bg-surface-container-high text-on-surface-variant px-space-sm py-0.5 rounded">⌘K</kbd></div></div><div class="flex items-center gap-gutter"><div class="hidden xl:flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container rounded-full"><span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span><span class="font-label-sm text-label-sm text-on-secondary-container">EMR Integrated</span></div><button aria-label="Clinical Notifications" class="relative p-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2.5 h-2.5 rounded-full bg-error ring-2 ring-surface"></span></button><div class="h-8 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-md"><div class="text-right hidden sm:block"><div class="font-body-md-medium text-body-md-medium text-on-surface">Dr. Sarah Lin, PharmD</div><div class="font-caption text-caption text-primary">Lead Clinical Pharmacist - Inpatient</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-24 min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Content Canvas Container -->
+<div class="max-w-7xl mx-auto px-gutter py-space-xl w-full flex flex-col gap-space-lg">
+<!-- Top System Header & Clinical Profile Overview -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-2xl shadow-[0_4px_20px_rgba(0,119,130,0.06)] border border-[#E2E8F0]">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-caption text-caption tracking-wide uppercase">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Enterprise Decision Governance · Version 4.12</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">System Settings</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Manage organizational clinical governance, FHIR data privacy retention boundaries, multi-factor credential security, and clinician authorization roles.
+        </p>
+</div>
+<!-- Quick Session Badge / Contextual Clinician Strip -->
+<div class="flex items-center gap-space-md p-space-sm pl-space-md bg-surface-container-low rounded-xl border border-surface-container-highest">
+<div class="relative">
+<div class="w-11 h-11 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-subhead text-subhead font-bold">
+            MV
+          </div>
+<span class="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-emerald-600 rounded-full ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col pr-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md-medium text-body-md-medium text-on-surface">Marcus Vance, PharmD</span>
+<span class="px-2 py-0.5 rounded-full text-[11px] bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm">Active Session</span>
+</div>
+<div class="font-caption text-caption text-outline flex items-center gap-1.5 mt-0.5">
+<span>Lic #PH-98241</span>
+<span>•</span>
+<span class="text-primary font-medium">Inpatient Central Pharmacy (Station 4B)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Navigation Tabs Bar -->
+<div class="flex items-center justify-between border-b border-surface-container-highest pb-px overflow-x-auto">
+<nav class="flex items-center gap-space-sm" id="settings-tab-nav" role="tablist">
+<button aria-selected="false" class="tab-btn px-space-md py-2.5 rounded-lg font-body-md-medium text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-space-xs" data-tab-target="tab-profile" role="tab" type="button">
+<span class="material-symbols-outlined text-[18px]">account_circle</span>
+<span>Profile</span>
+</button>
+<button aria-selected="true" class="tab-btn active px-space-md py-2.5 rounded-lg font-body-md-medium text-body-md bg-primary-container text-on-primary shadow-sm flex items-center gap-space-xs transition-all" data-tab-target="tab-privacy" role="tab" type="button">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+<span>Privacy &amp; Retention</span>
+<span class="ml-1.5 px-1.5 py-0.2 rounded-full text-[10px] bg-on-primary/20 text-on-primary font-semibold tracking-wide">TIER 3</span>
+</button>
+<button aria-selected="false" class="tab-btn px-space-md py-2.5 rounded-lg font-body-md-medium text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-space-xs" data-tab-target="tab-security" role="tab" type="button">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span>Security &amp; Hardware 2FA</span>
+</button>
+<button aria-selected="false" class="tab-btn px-space-md py-2.5 rounded-lg font-body-md-medium text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-space-xs" data-tab-target="tab-users" role="tab" type="button">
+<span class="material-symbols-outlined text-[18px]">group</span>
+<span>Users &amp; Roles</span>
+<span class="ml-1 px-1.5 py-0.2 rounded-full text-[11px] bg-surface-container-high text-on-surface-variant font-medium">5 Active</span>
+</button>
+</nav>
+<div class="hidden sm:flex items-center gap-space-xs text-outline font-caption text-caption">
+<span class="material-symbols-outlined text-[16px] text-primary">sync</span>
+<span>Auto-sync with St. Jude IAM: <strong>Synced 4m ago</strong></span>
+</div>
+</div>
+<!-- TAB PANEL 1: PRIVACY & RETENTION (DEFAULT ACTIVE) -->
+<div class="tab-panel flex flex-col gap-space-lg" id="tab-privacy">
+<!-- HIPAA / Regulatory Compliance Alert Strip -->
+<div class="rounded-xl p-space-md bg-[#EBF8FF] border border-[#BEE3F8] text-[#2B6CB0] flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[24px] text-[#2B6CB0] shrink-0 mt-0.5">verified_user</span>
+<div>
+<div class="font-body-md-medium text-body-md-medium text-[#1A4F7C] flex items-center gap-space-xs">
+<span>HIPAA &amp; GDPR Data Minimization Standards — Active Policy: Tier 3 Clinical Safeguard</span>
+</div>
+<p class="font-body-md text-body-md text-[#2B6CB0] mt-0.5">
+              Strict payload redaction enforces synthetic tokenization prior to routing to decision engine. Raw identifiers are never transmitted to LLM reasoning pipelines.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[12px] font-medium bg-emerald-100 text-emerald-800 border border-emerald-200">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            Audit Validated
+          </span>
+<button class="px-space-md py-1.5 rounded-lg text-[13px] font-medium text-[#2B6CB0] bg-white border border-[#BEE3F8] hover:bg-sky-50 transition-colors shadow-2xs">
+            Export Policy JSON
+          </button>
+</div>
+</div>
+<!-- Main Privacy Bento Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left: Minimization Checklist Toggles (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl border border-[#E2E8F0] shadow-[0_4px_20px_rgba(0,119,130,0.06)]">
+<div class="flex items-center justify-between pb-space-md border-b border-[#EDF2F7]">
+<div>
+<h3 class="font-subhead text-subhead text-on-surface">Data Minimization Parameters</h3>
+<p class="font-body-md text-body-md text-outline">Granular field redaction passed during CDS rule execution and ML inference</p>
+</div>
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-primary/10 text-primary">5 Fields Scrutinized</span>
+</div>
+<!-- Toggles List -->
+<div class="flex flex-col divide-y divide-[#EDF2F7]">
+<!-- Toggle 1 -->
+<div class="py-space-md flex items-start justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md-medium text-body-md-medium text-on-surface">Pseudonymize Patient Primary Identifier</span>
+<span class="material-symbols-outlined text-outline text-[16px]" title="Replaces MRN and full legal name with cryptographic surrogate key">info</span>
+</div>
+<p class="font-body-md text-body-md text-outline mt-0.5">
+                    Transformed as <code class="px-1.5 py-0.5 bg-surface-container text-primary rounded font-mono text-[12px]">PT-XXXX-8921</code> for external AI safety verification models.
+                  </p>
+</div>
+<!-- Accessible Toggle Switch (Checked) -->
+<label class="relative inline-flex items-center cursor-pointer shrink-0 mt-1">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Toggle 2 -->
+<div class="py-space-md flex items-start justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md-medium text-body-md-medium text-on-surface">Retain Exact Date of Birth vs. Age in Years</span>
+<span class="px-2 py-0.2 rounded-full text-[11px] bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm">Safe Harbor</span>
+</div>
+<p class="font-body-md text-body-md text-outline mt-0.5">
+                    Store and transmit normalized age integer (e.g., 64y) only. Exact day and month scrubbed to prevent micro-targeting.
+                  </p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0 mt-1">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Toggle 3 -->
+<div class="py-space-md flex items-start justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md-medium text-body-md-medium text-on-surface">Include Raw Clinical Free-Text Notes</span>
+<span class="px-2 py-0.2 rounded-full text-[11px] bg-[#ffdad6] text-[#ba1a1a] font-label-sm">Privacy Risk</span>
+</div>
+<p class="font-body-md text-body-md text-outline mt-0.5">
+                    Filter out unstructured clinical progress notes before third-party verification to eliminate accidental PII leakage.
+                  </p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0 mt-1">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Toggle 4 -->
+<div class="py-space-md flex items-start justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md-medium text-body-md-medium text-on-surface">Store Exact Biological Sex &amp; Pregnancy Status</span>
+<span class="px-2 py-0.2 rounded-full text-[11px] bg-tertiary-fixed text-on-tertiary-fixed font-label-sm">Mandatory for Dosing</span>
+</div>
+<p class="font-body-md text-body-md text-outline mt-0.5">
+                    Critical physiological biomarker indispensable for teratogenic cross-checking, FDA Black Box warnings, and renal equations.
+                  </p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0 mt-1">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Toggle 5 -->
+<div class="py-space-md flex items-start justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md-medium text-body-md-medium text-on-surface">Cache Estimated GFR &amp; Serum Creatinine Labs</span>
+<span class="px-2 py-0.2 rounded-full text-[11px] bg-surface-container-high text-on-surface font-label-sm">90d Window</span>
+</div>
+<p class="font-body-md text-body-md text-outline mt-0.5">
+                    Lab parameters are restricted to an active 90-day clinical relevance window, after which values are purged from memory caches.
+                  </p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0 mt-1">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Ephemeral Purge Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl border border-[#E2E8F0] shadow-[0_4px_20px_rgba(0,119,130,0.06)] flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary-container/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">auto_delete</span>
+</div>
+<div>
+<h4 class="font-subhead text-subhead text-on-surface">Automated Ephemeral Purge</h4>
+<p class="font-body-md text-body-md text-outline mt-0.5">
+                  Automatically wipe unconfirmed drafts and transient clinician session caches after 48 hours of inactivity.
+                </p>
+<div class="flex items-center gap-space-sm mt-space-sm text-caption text-primary font-caption">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Next scheduled batch sweep: Today at 02:00 UTC</span>
+</div>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0 mt-1">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+<!-- Right: Retention Policies & Consent Editor (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Source Document Retention Period Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl border border-[#E2E8F0] shadow-[0_4px_20px_rgba(0,119,130,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">document_scanner</span>
+<h3 class="font-subhead text-subhead text-on-surface">Artifact Retention Life-Cycle</h3>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-md-medium text-body-md-medium text-on-surface" for="retention-select">
+                Original Rx Image &amp; OCR Artifact Retention
+              </label>
+<div class="relative">
+<select class="w-full h-10 pl-space-md pr-10 bg-surface-container-low border border-[#CBD5E0] rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-primary/20 appearance-none" id="retention-select">
+<option>Immediate deletion after confirmation</option>
+<option>24 hours</option>
+<option selected="">7 days (recommended clinical audit window)</option>
+<option>30 days</option>
+<option>Custom policy...</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-outline pointer-events-none text-[20px]">expand_more</span>
+</div>
+<p class="font-caption text-caption text-outline mt-1 leading-relaxed">
+                Prescription scans and handwritten OCR captures will be permanently scrubbed from encrypted S3 buckets upon expiry.
+              </p>
+</div>
+<!-- Retention Storage Visual Metric -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-xs border border-surface-container-highest">
+<div class="flex justify-between items-center font-caption text-caption">
+<span class="text-on-surface-variant font-medium">Encrypted OCR Scratchpad Buffer</span>
+<span class="text-primary font-bold">1.4 GB / 10 GB (14%)</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 14%;"></div>
+</div>
+<span class="text-[11px] text-outline">Next shredder cycle runs in 11h 24m</span>
+</div>
+</div>
+<!-- Consent Text Template Editor -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl border border-[#E2E8F0] shadow-[0_4px_20px_rgba(0,119,130,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">edit_note</span>
+<h3 class="font-subhead text-subhead text-on-surface">Patient CDS Consent Language</h3>
+</div>
+<span class="text-[11px] font-mono text-outline bg-surface-container px-2 py-0.5 rounded">v2.3 (Active)</span>
+</div>
+<p class="font-body-md text-body-md text-outline">
+              Presented to patients during portal check-in or read by admissions staff before initiating pharmacist checks.
+            </p>
+<div class="flex flex-col gap-space-xs">
+<textarea class="w-full p-space-md bg-surface-container-low border border-[#CBD5E0] rounded-xl font-mono text-[13px] text-on-surface leading-relaxed focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-primary/20 resize-y" rows="6">I consent to the pseudonymized processing of prescription data, current medications, allergies, and relevant laboratory biomarkers by RxGuard CDS for the sole purpose of detecting medication safety conflicts, teratogenic interactions, and contraindications. Identifiers are cryptographically isolated in accordance with HIPAA §164.514(b).</textarea>
+<div class="flex items-center justify-between font-caption text-caption text-outline">
+<span>Variables permitted: <code>{{PATIENT_NAME}}</code>, <code>{{CLINIC_NAME}}</code></span>
+<span>384 characters</span>
+</div>
+</div>
+<!-- Actions Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<button class="px-space-md py-2 rounded-lg font-body-md text-body-md text-outline hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+                Restore Default
+              </button>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2 rounded-lg font-body-md-medium text-body-md text-primary hover:bg-primary/5 border border-primary transition-colors" type="button">
+                  Save Draft
+                </button>
+<button class="px-space-md py-2 rounded-lg font-body-md-medium text-body-md bg-primary-container hover:bg-[#006068] text-on-primary transition-colors shadow-sm" type="button">
+                  Publish v2.4
+                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB PANEL 2: SECURITY & HARDWARE 2FA -->
+<div class="tab-panel hidden flex flex-col gap-space-lg" id="tab-security">
+<!-- Security Status Dashboard Row -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-2xl border border-[#E2E8F0] shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">shield</span>
+</div>
+<div>
+<div class="font-caption text-caption text-outline uppercase font-semibold">Credential Health</div>
+<div class="font-subhead text-subhead text-on-surface">Maximum Tier</div>
+<span class="text-[12px] text-emerald-700 font-medium">Zero breaches detected</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-2xl border border-[#E2E8F0] shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-sky-100 text-[#1960a3] flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">key</span>
+</div>
+<div>
+<div class="font-caption text-caption text-outline uppercase font-semibold">2FA Compliance</div>
+<div class="font-subhead text-subhead text-on-surface">100% Enforced</div>
+<span class="text-[12px] text-secondary font-medium">FIPS 140-3 Hardware Key</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-2xl border border-[#E2E8F0] shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-900 flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">devices</span>
+</div>
+<div>
+<div class="font-caption text-caption text-outline uppercase font-semibold">Active Sessions</div>
+<div class="font-subhead text-subhead text-on-surface">3 Authorized Nodes</div>
+<span class="text-[12px] text-amber-800 font-medium">All on St. Jude Intranet</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left: Password & Two Factor (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Password Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl border border-[#E2E8F0] shadow-[0_4px_20px_rgba(0,119,130,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">password</span>
+<h3 class="font-subhead text-subhead text-on-surface">Update Clinician Password</h3>
+</div>
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault()">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Current Password</label>
+<input class="h-10 px-space-md rounded-lg border border-[#CBD5E0] bg-surface-container-low font-body-md text-body-md focus:border-primary-container focus:ring-2 focus:ring-primary/20 outline-none" type="password" value="••••••••••••••••"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">New Clinical Password</label>
+<input class="h-10 px-space-md rounded-lg border border-[#CBD5E0] bg-white font-body-md text-body-md focus:border-primary-container focus:ring-2 focus:ring-primary/20 outline-none" placeholder="Minimum 14 characters" type="password"/>
+<!-- Clinical Entropy Meter -->
+<div class="mt-2 flex flex-col gap-1">
+<div class="flex justify-between items-center text-[11px] font-caption">
+<span class="text-outline">Entropy strength check</span>
+<span class="text-emerald-700 font-medium">Strong (94 bits)</span>
+</div>
+<div class="grid grid-cols-4 gap-1 h-1.5 w-full">
+<div class="bg-emerald-600 rounded-full"></div>
+<div class="bg-emerald-600 rounded-full"></div>
+<div class="bg-emerald-600 rounded-full"></div>
+<div class="bg-emerald-600 rounded-full"></div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Confirm New Password</label>
+<input class="h-10 px-space-md rounded-lg border border-[#CBD5E0] bg-white font-body-md text-body-md focus:border-primary-container focus:ring-2 focus:ring-primary/20 outline-none" placeholder="Re-type new password" type="password"/>
+</div>
+<button class="w-full mt-2 h-10 rounded-lg bg-primary-container hover:bg-[#006068] text-on-primary font-body-md-medium text-body-md-medium shadow-sm transition-colors" type="submit">
+                Update Password
+              </button>
+</form>
+</div>
+<!-- Two-Factor Authentication Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl border border-[#E2E8F0] shadow-[0_4px_20px_rgba(0,119,130,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">security</span>
+<h3 class="font-subhead text-subhead text-on-surface">Two-Factor Authentication</h3>
+</div>
+<span class="px-2.5 py-0.5 rounded-full text-[11px] font-label-sm bg-emerald-100 text-emerald-800">FIPS 140-3 Compliant</span>
+</div>
+<p class="font-body-md text-body-md text-outline">
+              Requires 6-digit TOTP code or WebAuthn hardware YubiKey at every clinical sign-in.
+            </p>
+<div class="p-space-md rounded-xl bg-surface-container-low border border-surface-container-highest flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-primary-container/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">phonelink_lock</span>
+</div>
+<div>
+<div class="font-body-md-medium text-body-md-medium text-on-surface">TOTP Authenticator &amp; YubiKey</div>
+<div class="font-caption text-caption text-outline">Configured: YubiKey 5C NFC + 1 Phone</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-emerald-600 text-[22px]">check_circle</span>
+</div>
+<button class="w-full h-10 rounded-lg border border-primary text-primary hover:bg-primary/5 font-body-md-medium text-body-md-medium transition-colors" type="button">
+              Reconfigure Authenticator App
+            </button>
+</div>
+</div>
+<!-- Right: Active Authorized Sessions (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl border border-[#E2E8F0] shadow-[0_4px_20px_rgba(0,119,130,0.06)] flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm border-b border-[#EDF2F7]">
+<div>
+<h3 class="font-subhead text-subhead text-on-surface">Active Clinical Sessions</h3>
+<p class="font-body-md text-body-md text-outline">Nodes with valid JSON Web Tokens currently authorized under your credentials</p>
+</div>
+<button class="px-3 py-1.5 rounded-lg text-error bg-error-container/60 hover:bg-error-container text-[13px] font-body-md-medium transition-colors self-start sm:self-auto flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">logout</span>
+<span>Terminate Remote Sessions</span>
+</button>
+</div>
+<!-- Sessions List -->
+<div class="flex flex-col gap-space-md">
+<!-- Session 1: Current -->
+<div class="p-space-md rounded-xl bg-surface-container-low border border-primary-container/30 flex flex-col sm:flex-row sm:items-center justify-between gap-space-md relative overflow-hidden">
+<div class="absolute top-0 left-0 bottom-0 w-1 bg-primary-container"></div>
+<div class="flex items-start gap-space-md pl-1">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">desktop_windows</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-body-md-medium text-body-md-medium text-on-surface">Workstation 4B – Pharmacy Dispense</span>
+<span class="px-2 py-0.2 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800 uppercase tracking-wide">This Device</span>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant mt-0.5">Chrome 122 on macOS Sonoma • IP: 10.240.12.84</div>
+<div class="font-caption text-caption text-primary flex items-center gap-1 mt-1">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span>Active Now • Hospital Intranet Fiber (VLAN 14)</span>
+</div>
+</div>
+</div>
+<div class="shrink-0 flex items-center self-end sm:self-center">
+<span class="px-3 py-1 rounded text-caption font-caption bg-surface-container-high text-on-surface-variant font-mono">Session ID: #SES-9812</span>
+</div>
+</div>
+<!-- Session 2: Tablet -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest border border-[#E2E8F0] hover:border-[#CBD5E0] transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">tablet_mac</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md-medium text-body-md-medium text-on-surface">Clinic Tablet Cart #12 – Inpatient Ward 3</span>
+<div class="font-body-md text-body-md text-on-surface-variant mt-0.5">Safari on iPadOS 17.2 • IP: 10.240.18.201</div>
+<div class="font-caption text-caption text-outline flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px]">history</span>
+<span>Last active 22 mins ago • Ward 3 Wi-Fi Mesh</span>
+</div>
+</div>
+</div>
+<button class="shrink-0 px-space-md py-1.5 rounded-lg border border-[#CBD5E0] text-on-surface hover:bg-error-container hover:text-error hover:border-transparent text-[13px] font-body-md-medium transition-colors" type="button">
+                  Revoke
+                </button>
+</div>
+<!-- Session 3: Consultation Terminal -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest border border-[#E2E8F0] hover:border-[#CBD5E0] transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">terminal</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md-medium text-body-md-medium text-on-surface">Consultation Room 2 Terminal</span>
+<div class="font-body-md text-body-md text-on-surface-variant mt-0.5">Firefox 120 on Windows 11 • IP: 10.240.15.110</div>
+<div class="font-caption text-caption text-outline flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px]">history</span>
+<span>Last active 3 hours ago • Outpatient Wing</span>
+</div>
+</div>
+</div>
+<button class="shrink-0 px-space-md py-1.5 rounded-lg border border-[#CBD5E0] text-on-surface hover:bg-error-container hover:text-error hover:border-transparent text-[13px] font-body-md-medium transition-colors" type="button">
+                  Revoke
+                </button>
+</div>
+</div>
+<!-- Hardware Security Token Advisory -->
+<div class="p-space-md rounded-xl bg-surface-container-low text-on-surface flex items-start gap-space-sm border border-surface-container-highest mt-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5 shrink-0">info</span>
+<p class="font-caption text-caption text-outline leading-relaxed">
+                Hospital Information Security policy requires full credential re-authentication every 12 hours on fixed workstations, and 4 hours on mobile bedside tablet carts.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB PANEL 3: USERS AND ROLES -->
+<div class="tab-panel hidden flex flex-col gap-space-lg" id="tab-users">
+<!-- Users Management Card -->
+<div class="bg-surface-container-lowest rounded-2xl border border-[#E2E8F0] shadow-[0_4px_20px_rgba(0,119,130,0.06)] overflow-hidden">
+<!-- Filter and Search Header -->
+<div class="p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md border-b border-[#EDF2F7]">
+<div class="flex items-center gap-space-md flex-1 max-w-xl">
+<div class="w-full flex items-center bg-surface-container-low rounded-lg px-space-md py-2 border border-[#CBD5E0] focus-within:border-primary-container focus-within:ring-2 focus-within:ring-primary/20">
+<span class="material-symbols-outlined text-outline text-[20px] mr-space-sm">search</span>
+<input class="w-full bg-transparent border-0 outline-none font-body-md text-body-md text-on-surface placeholder:text-outline" placeholder="Filter by clinician name, license, email, or dept..." type="text"/>
+</div>
+<div class="relative shrink-0">
+<select class="h-10 pl-space-md pr-8 bg-surface-container-low border border-[#CBD5E0] rounded-lg font-body-md text-body-md text-on-surface appearance-none focus:outline-none focus:border-primary-container">
+<option>All Roles (4)</option>
+<option>Clinicians</option>
+<option>Pharmacists</option>
+<option>Reviewers</option>
+<option>Admins</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+<button class="h-10 px-space-lg rounded-lg bg-primary-container hover:bg-[#006068] text-on-primary font-body-md-medium text-body-md-medium flex items-center gap-space-xs shadow-sm transition-colors shrink-0" type="button">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+<span>Invite Clinician / User</span>
+</button>
+</div>
+<!-- Users Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/60 border-b border-[#EDF2F7] text-on-surface-variant font-label-sm text-label-sm">
+<th class="py-space-md px-space-lg">Clinician / User</th>
+<th class="py-space-md px-space-md">Role Authorization</th>
+<th class="py-space-md px-space-md">Department</th>
+<th class="py-space-md px-space-md">Hardware 2FA</th>
+<th class="py-space-md px-space-md">Last Activity</th>
+<th class="py-space-md px-space-lg text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-[#EDF2F7] font-body-md text-body-md">
+<!-- User 1: Dr. Elena Rostova -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-semibold text-[13px]">
+                      ER
+                    </div>
+<div>
+<div class="font-body-md-medium text-body-md-medium text-on-surface">Dr. Elena Rostova, MD</div>
+<div class="font-caption text-caption text-outline">e.rostova@stjude-health.org</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[12px] font-medium bg-blue-50 text-blue-800 border border-blue-200">
+<span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                    Clinician
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-on-surface">Nephrology</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 text-[12px] text-emerald-700 font-medium">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                    Enabled
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-outline font-caption text-caption">12 mins ago</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="inline-flex items-center gap-space-xs">
+<button class="p-1 rounded text-outline hover:text-primary hover:bg-surface-container" title="Edit Permissions">
+<span class="material-symbols-outlined text-[20px]">manage_accounts</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-error hover:bg-surface-container" title="Suspend Access">
+<span class="material-symbols-outlined text-[20px]">block</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- User 2: Marcus Vance -->
+<tr class="hover:bg-surface-container-low/40 transition-colors bg-primary-container/5">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-semibold text-[13px]">
+                      MV
+                    </div>
+<div>
+<div class="font-body-md-medium text-body-md-medium text-on-surface flex items-center gap-1.5">
+<span>Marcus Vance, PharmD</span>
+<span class="px-1.5 py-0.2 rounded text-[10px] bg-primary/10 text-primary font-bold">YOU</span>
+</div>
+<div class="font-caption text-caption text-outline">m.vance@stjude-health.org</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[12px] font-medium bg-teal-50 text-teal-800 border border-teal-200">
+<span class="w-1.5 h-1.5 rounded-full bg-teal-600"></span>
+                    Pharmacist
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-on-surface">Lead Clinical Pharmacist</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 text-[12px] text-emerald-700 font-medium">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                    Enabled
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-primary font-caption text-caption font-medium">Active now</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="inline-flex items-center gap-space-xs">
+<button class="p-1 rounded text-outline hover:text-primary hover:bg-surface-container" title="Edit Permissions">
+<span class="material-symbols-outlined text-[20px]">manage_accounts</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-error hover:bg-surface-container" title="Suspend Access">
+<span class="material-symbols-outlined text-[20px]">block</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- User 3: Sarah Jenkins -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-full bg-amber-100 text-amber-900 flex items-center justify-center font-semibold text-[13px]">
+                      SJ
+                    </div>
+<div>
+<div class="font-body-md-medium text-body-md-medium text-on-surface">Sarah Jenkins, RN</div>
+<div class="font-caption text-caption text-outline">s.jenkins@stjude-health.org</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[12px] font-medium bg-amber-50 text-amber-800 border border-amber-200">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                    Reviewer
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-on-surface">Patient Safety Officer</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 text-[12px] text-emerald-700 font-medium">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                    Enabled
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-outline font-caption text-caption">Yesterday at 16:45</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="inline-flex items-center gap-space-xs">
+<button class="p-1 rounded text-outline hover:text-primary hover:bg-surface-container" title="Edit Permissions">
+<span class="material-symbols-outlined text-[20px]">manage_accounts</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-error hover:bg-surface-container" title="Suspend Access">
+<span class="material-symbols-outlined text-[20px]">block</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- User 4: David Chen -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-full bg-purple-100 text-purple-900 flex items-center justify-center font-semibold text-[13px]">
+                      DC
+                    </div>
+<div>
+<div class="font-body-md-medium text-body-md-medium text-on-surface">David Chen, CISSP</div>
+<div class="font-caption text-caption text-outline">d.chen@stjude-health.org</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[12px] font-medium bg-purple-50 text-purple-800 border border-purple-200">
+<span class="w-1.5 h-1.5 rounded-full bg-purple-600"></span>
+                    Admin
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-on-surface">Health Informatics &amp; Security</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 text-[12px] text-emerald-700 font-medium">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                    Enabled (YubiKey)
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-outline font-caption text-caption">Oct 24, 08:30</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="inline-flex items-center gap-space-xs">
+<button class="p-1 rounded text-outline hover:text-primary hover:bg-surface-container" title="Edit Permissions">
+<span class="material-symbols-outlined text-[20px]">manage_accounts</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-error hover:bg-surface-container" title="Suspend Access">
+<span class="material-symbols-outlined text-[20px]">block</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- User 5: Dr. Aisha Patel -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-semibold text-[13px]">
+                      AP
+                    </div>
+<div>
+<div class="font-body-md-medium text-body-md-medium text-on-surface">Dr. Aisha Patel, DO</div>
+<div class="font-caption text-caption text-outline">a.patel@stjude-health.org</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[12px] font-medium bg-blue-50 text-blue-800 border border-blue-200">
+<span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                    Clinician
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-on-surface">Emergency Medicine</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 text-[12px] text-amber-700 font-medium">
+<span class="material-symbols-outlined text-[16px]">pending</span>
+                    Enrollment Pending
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-outline font-caption text-caption">Oct 22, 14:12</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="inline-flex items-center gap-space-xs">
+<button class="p-1 rounded text-outline hover:text-primary hover:bg-surface-container" title="Edit Permissions">
+<span class="material-symbols-outlined text-[20px]">manage_accounts</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-error hover:bg-surface-container" title="Suspend Access">
+<span class="material-symbols-outlined text-[20px]">block</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination / Footer -->
+<div class="px-space-lg py-space-md bg-surface-container-low/40 border-t border-[#EDF2F7] flex items-center justify-between text-caption font-caption text-outline">
+<div>Showing 5 of 5 verified clinicians · St. Jude Directory Linked</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-2.5 py-1 rounded border border-[#E2E8F0] opacity-50 cursor-not-allowed" disabled="">Previous</button>
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary">1</button>
+<button class="px-2.5 py-1 rounded border border-[#E2E8F0] opacity-50 cursor-not-allowed" disabled="">Next</button>
+</div>
+</div>
+</div>
+<!-- Roles Explanatory Callout Grid / Role Governance Legend -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl border border-[#E2E8F0] shadow-[0_4px_20px_rgba(0,119,130,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-subhead text-subhead text-on-surface">Role Privilege Matrix &amp; Clinical Scopes</h3>
+<p class="font-body-md text-body-md text-outline">Institutional boundaries enforced at CDS execution runtime</p>
+</div>
+<span class="px-2.5 py-1 rounded text-caption font-mono bg-surface-container text-on-surface-variant">RBAC Schema 3.2</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md mt-space-xs">
+<!-- Role 1: Clinician -->
+<div class="p-space-md rounded-xl bg-surface-container-low border border-blue-200/60 flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+<span class="font-body-md-medium text-body-md-medium text-on-surface">Clinician</span>
+</div>
+<p class="font-body-md text-body-md text-outline">
+              Run new interaction checks, review patient CDS risk alerts, and submit preliminary prescription orders.
+            </p>
+<div class="mt-auto pt-space-xs text-[11px] font-caption text-blue-800 font-medium">Read/Run • No Override Auth</div>
+</div>
+<!-- Role 2: Pharmacist -->
+<div class="p-space-md rounded-xl bg-surface-container-low border border-teal-200/60 flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-teal-600"></span>
+<span class="font-body-md-medium text-body-md-medium text-on-surface">Pharmacist</span>
+</div>
+<p class="font-body-md text-body-md text-outline">
+              Final sign-off on interactions, override alerts with documented justification, and dispense clearance.
+            </p>
+<div class="mt-auto pt-space-xs text-[11px] font-caption text-teal-800 font-medium">Full Clinical Authority • Sign-off</div>
+</div>
+<!-- Role 3: Reviewer -->
+<div class="p-space-md rounded-xl bg-surface-container-low border border-amber-200/60 flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-amber-600"></span>
+<span class="font-body-md-medium text-body-md-medium text-on-surface">Reviewer</span>
+</div>
+<p class="font-body-md text-body-md text-outline">
+              Read-only oversight to historical audit trails, safety incident metrics, overrides, and QA logs.
+            </p>
+<div class="mt-auto pt-space-xs text-[11px] font-caption text-amber-800 font-medium">Read-Only • Quality Assurance</div>
+</div>
+<!-- Role 4: Admin -->
+<div class="p-space-md rounded-xl bg-surface-container-low border border-purple-200/60 flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-purple-600"></span>
+<span class="font-body-md-medium text-body-md-medium text-on-surface">Admin</span>
+</div>
+<p class="font-body-md text-body-md text-outline">
+              Manage enterprise tenant settings, data retention policies, rule weights, and clinician invitations.
+            </p>
+<div class="mt-auto pt-space-xs text-[11px] font-caption text-purple-800 font-medium">Super-User • Governance Control</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB PANEL 4: PROFILE PANEL -->
+<div class="tab-panel hidden flex flex-col gap-space-lg" id="tab-profile">
+<!-- Profile Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl border border-[#E2E8F0] shadow-[0_4px_20px_rgba(0,119,130,0.06)] flex flex-col md:flex-row items-start justify-between gap-space-lg">
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-lg">
+<div class="relative">
+<div class="w-24 h-24 rounded-2xl bg-primary-container text-on-primary flex items-center justify-center font-headline-lg text-headline-lg shadow-md">
+              MV
+            </div>
+<button class="absolute -bottom-2 -right-2 p-1.5 bg-surface-container-lowest text-primary rounded-lg border border-[#CBD5E0] shadow hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</button>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h2 class="font-headline-md text-headline-md text-on-surface">Marcus Vance, PharmD</h2>
+<span class="px-2.5 py-0.5 rounded-full text-[12px] font-medium bg-teal-50 text-teal-800 border border-teal-200">Pharmacist Sign-Off Authority</span>
+</div>
+<p class="font-body-md text-body-md text-outline mt-0.5">Lead Clinical Pharmacist • License #PH-98241 (State Board of Pharmacy)</p>
+<div class="flex items-center gap-space-md text-caption font-caption text-on-surface-variant mt-space-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">domain</span> St. Jude Central Hospital</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">local_hospital</span> Inpatient Central Pharmacy (4B)</span>
+</div>
+</div>
+</div>
+<div class="flex flex-row md:flex-col items-center md:items-end gap-space-sm w-full md:w-auto">
+<button class="flex-1 md:flex-none px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-body-md-medium text-body-md shadow-sm hover:bg-[#006068] transition-colors">
+            Edit Clinical Profile
+          </button>
+<span class="text-caption font-caption text-outline">NPI: 1982740928</span>
+</div>
+</div>
+<!-- Notification Preferences & CDS Delegation -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl border border-[#E2E8F0] shadow-sm flex flex-col gap-space-md">
+<h3 class="font-subhead text-subhead text-on-surface">Prescription Alert Routing</h3>
+<p class="font-body-md text-body-md text-outline">How critical drug-drug interaction triggers reach your personal workstation</p>
+<div class="flex flex-col gap-space-sm divide-y divide-[#EDF2F7]">
+<div class="pt-space-xs flex items-center justify-between">
+<div>
+<div class="font-body-md-medium text-body-md-medium text-on-surface">Severe / Fatal CDS Interrupts</div>
+<div class="font-caption text-caption text-outline">Visual modal takeover + audio chime</div>
+</div>
+<input checked="" class="w-4 h-4 text-primary rounded border-[#CBD5E0]" type="checkbox"/>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div>
+<div class="font-body-md-medium text-body-md-medium text-on-surface">Emergency SMS Notifications</div>
+<div class="font-caption text-caption text-outline">During On-Call Night Shifts only</div>
+</div>
+<input checked="" class="w-4 h-4 text-primary rounded border-[#CBD5E0]" type="checkbox"/>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div>
+<div class="font-body-md-medium text-body-md-medium text-on-surface">Batch Shift Quality Summaries</div>
+<div class="font-caption text-caption text-outline">Emailed at end of each 8-hour rotation</div>
+</div>
+<input class="w-4 h-4 text-primary rounded border-[#CBD5E0]" type="checkbox"/>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl border border-[#E2E8F0] shadow-sm flex flex-col gap-space-md">
+<h3 class="font-subhead text-subhead text-on-surface">Clinical Signing Delegation</h3>
+<p class="font-body-md text-body-md text-outline">Backup pharmacist authorized to clear severe interactions in your absence</p>
+<div class="p-space-md rounded-xl bg-surface-container-low border border-surface-container-highest flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center font-medium">
+                ER
+              </div>
+<div>
+<div class="font-body-md-medium text-body-md-medium text-on-surface">Dr. Elena Rostova, MD</div>
+<div class="font-caption text-caption text-outline">Designated On-Duty Escalation Proxy</div>
+</div>
+</div>
+<span class="px-2 py-1 rounded text-caption font-medium bg-emerald-100 text-emerald-800">Active Proxy</span>
+</div>
+<button class="w-full mt-auto py-2 rounded-lg border border-[#CBD5E0] text-on-surface hover:bg-surface-container font-body-md-medium text-body-md transition-colors">
+            Manage Coverage Delegations
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initSettingsTabs() {
+    const tabButtons = document.querySelectorAll('#settings-tab-nav .tab-btn');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-tab-target');
+
+        // Reset state on all tabs
+        tabButtons.forEach(b => {
+          b.setAttribute('aria-selected', 'false');
+          b.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+          b.classList.add('text-on-surface-variant');
+        });
+
+        // Set active on clicked button
+        btn.setAttribute('aria-selected', 'true');
+        btn.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+        btn.classList.remove('text-on-surface-variant');
+
+        // Hide all panels, then reveal target
+        tabPanels.forEach(panel => {
+          panel.classList.add('hidden');
+        });
+        const targetPanel = document.getElementById(targetId);
+        if (targetPanel) {
+          targetPanel.classList.remove('hidden');
+        }
+      });
+    });
+  })();
+</script></main><footer class="w-full bg-surface-container-low py-space-lg"><div class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row items-center justify-between text-on-surface-variant font-caption text-caption gap-space-sm"><div>© 2025 RxGuard Healthcare Technologies. Regulated Clinical Authentication Portal &amp; Decision Support Engine.</div><div class="flex items-center gap-space-md"><span>HIPAA / HITECH Compliant</span><span>CDS Authority Level 3</span></div></div></footer></div></body></html>

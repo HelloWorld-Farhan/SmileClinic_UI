@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed": "#d3e4ff", "surface-dim": "#cfdaf1", "on-primary-fixed-variant": "#004f56", "on-primary-fixed": "#001f23", "outline-variant": "#bdc8ca", "on-background": "#111c2c", "on-tertiary-container": "#9ffefb", "surface": "#f9f9ff", "on-secondary-container": "#00477f", "on-tertiary-fixed-variant": "#00504e", "secondary-fixed-dim": "#a2c9ff", "primary-container": "#007782", "on-tertiary": "#ffffff", "inverse-primary": "#7cd4e0", "surface-variant": "#d8e3fa", "surface-container-low": "#f0f3ff", "on-surface-variant": "#3e494a", "tertiary-fixed-dim": "#77d6d3", "primary-fixed": "#99f0fd", "on-secondary-fixed-variant": "#004881", "on-surface": "#111c2c", "primary-fixed-dim": "#7cd4e0", "tertiary-container": "#007876", "inverse-on-surface": "#ebf1ff", "error": "#ba1a1a", "on-error": "#ffffff", "surface-container": "#e7eeff", "on-secondary-fixed": "#001c38", "on-secondary": "#ffffff", "outline": "#6e797b", "surface-tint": "#006972", "surface-container-high": "#dee8ff", "secondary": "#1960a3", "on-primary": "#ffffff", "tertiary-fixed": "#94f2f0", "on-primary-container": "#c1f7ff", "surface-container-highest": "#d8e3fa", "inverse-surface": "#263142", "error-container": "#ffdad6", "on-error-container": "#93000a", "tertiary": "#005d5c", "surface-bright": "#f9f9ff", "on-tertiary-fixed": "#00201f", "secondary-container": "#7db6ff", "background": "#f9f9ff", "surface-container-lowest": "#ffffff", "primary": "#005c65" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-sm": "1rem", "space-md": "1rem", "gutter-sm": "1rem", "space-xl": "2rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter": "1.5rem", "space-xs": "0.25rem", "margin": "2rem" }, "fontFamily": { "subhead": ["Inter"], "headline-md": ["Inter"], "headline-lg-mobile": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"], "body-md-medium": ["Inter"], "label-md": ["Inter"], "caption": ["Inter"], "body-md": ["Inter"], "headline-lg": ["Inter"] }, "fontSize": { "subhead": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md-medium": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><div class="fixed top-0 left-0 right-0 z-50 flex items-center justify-center h-8 bg-surface-container text-secondary font-body-md-medium text-caption px-margin-sm shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-[15px] mr-space-xs text-secondary">info</span><span>Clinical decision support only. Not a definitive safety declaration. Confirm with a licensed prescriber or pharmacist.</span></div><header class="fixed top-8 left-0 right-0 z-40 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,119,130,0.06)] flex items-center justify-between px-gutter"><div class="flex items-center gap-space-lg w-72"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">shield_with_heart</span></div><div><div class="font-headline-md text-headline-md text-primary tracking-tight leading-none">RxGuard</div><div class="font-caption text-caption text-on-surface-variant font-medium mt-0.5">Clinical Decision Support</div></div></div></div><div class="flex-1 max-w-xl mx-gutter"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px] pointer-events-none">search</span><input class="w-full h-10 pl-10 pr-12 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container outline-none transition-all" placeholder="Search patient, MRN, Rx order..." type="text"/><kbd class="absolute right-space-md text-[11px] font-medium text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-1.5 px-space-md py-1 rounded-full bg-surface-container-low text-on-surface"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm font-medium">EMR Integrated</span></div><button aria-label="Notifications" class="relative p-2 rounded-lg hover:bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="text-right hidden sm:block"><div class="font-body-md-medium text-body-md-medium text-on-surface">Dr. Sarah Lin, PharmD</div><div class="font-caption text-caption text-primary font-medium">Lead Clinical Pharmacist - Inpatient</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-24 bottom-0 w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,119,130,0.06)] z-30 flex flex-col justify-between py-space-md"><nav class="px-space-md space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="new-check" href="#"><span class="material-symbols-outlined text-[20px]">add_moderator</span><span>New Check</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="patients" href="#"><span class="material-symbols-outlined text-[20px]">groups</span><span>Patients</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="alerts" href="#"><span class="material-symbols-outlined text-[20px]">warning</span><span>Alerts</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">description</span><span>Reports</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="audit-log" href="#"><span class="material-symbols-outlined text-[20px]">history_toggle_off</span><span>Audit Log</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="rules-and-data" href="#"><span class="material-symbols-outlined text-[20px]">database</span><span>Rules &amp; Data</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span>Settings</span></a></nav><div class="px-space-md pt-space-md"><div class="p-space-md rounded-lg bg-surface-container-low flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">hub</span><div class="font-caption text-caption text-on-surface-variant leading-tight"><span class="font-semibold text-on-surface block mb-0.5">SMART on FHIR v4.0.1</span>St. Jude Health System<br/><span class="text-tertiary font-medium">Production Gateway Active</span></div></div></div></aside><div class="pl-72"><main class="w-full min-h-screen pt-24 bg-surface p-space-lg"><div class="flex flex-col w-full space-y-space-md">
+<!-- Compliance Immutable Banner -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-body-md-medium text-body-md-medium text-on-surface">Immutable Clinical Audit Ledger</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-lowest text-tertiary font-caption text-caption">
+<span class="material-symbols-outlined text-[14px]">verified</span> Cryptographically Signed
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Audit records are read-only and tamper-evident per 21 CFR Part 11 and HIPAA Security Rule § 164.312(b). Real-time block anchoring enabled.
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-end md:self-auto">
+<div class="text-right hidden lg:block">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Active Ledger Block</div>
+<div class="font-caption text-caption text-primary font-mono">#0x8F94...3B7E</div>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">fingerprint</span>
+<span>Audit Authority Root</span>
+</button>
+</div>
+</div>
+<!-- Header Action Bar & Event Stats -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-md text-headline-md text-on-surface">System Audit Trail</h1>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-caption text-caption">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+          Live Sync
+        </span>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant flex items-center gap-space-sm mt-0.5">
+<span>Displaying <strong class="text-on-surface font-semibold">1,428</strong> tamper-evident events</span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">check_circle</span>
+          Last synced: Just now (09:24:02 EDT)
+        </span>
+</div>
+</div>
+<!-- Export and Report Controls -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md h-10 rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-colors font-label-md text-label-md shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export CSV</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md h-10 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+<span>Export Signed Trail (PDF)</span>
+</button>
+<div class="h-6 w-px bg-surface-variant mx-1 hidden sm:block"></div>
+<button aria-label="Refresh Trail" class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- Multi-Field Clinical Filter Bar -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-space-sm">
+<!-- Date Range -->
+<div class="flex flex-col gap-1">
+<label class="font-caption text-caption text-on-surface-variant">Time Range</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-2.5 text-[18px] text-on-surface-variant pointer-events-none">calendar_today</span>
+<select class="w-full h-10 pl-9 pr-7 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md appearance-none outline-none focus:bg-surface-container-lowest focus:shadow-sm">
+<option>Last 7 Days (Apr 8–15)</option>
+<option>Today (Apr 15, 2025)</option>
+<option>Last 24 Hours</option>
+<option>Last 30 Days</option>
+<option>Custom Epoch Range...</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 text-[18px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Actor Dropdown -->
+<div class="flex flex-col gap-1">
+<label class="font-caption text-caption text-on-surface-variant">Actor / Principal</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-2.5 text-[18px] text-on-surface-variant pointer-events-none">badge</span>
+<select class="w-full h-10 pl-9 pr-7 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md appearance-none outline-none focus:bg-surface-container-lowest focus:shadow-sm">
+<option>All Actors</option>
+<option>Dr. Sarah Lin, PharmD</option>
+<option>Dr. Arthur Vance, MD</option>
+<option>System (CDS Rule Engine)</option>
+<option>EMR Bridge Ingestion Service</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 text-[18px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Action Type -->
+<div class="flex flex-col gap-1">
+<label class="font-caption text-caption text-on-surface-variant">Action Type</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-2.5 text-[18px] text-on-surface-variant pointer-events-none">rule</span>
+<select class="w-full h-10 pl-9 pr-7 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md appearance-none outline-none focus:bg-surface-container-lowest focus:shadow-sm">
+<option>All Actions</option>
+<option>Clinical Override</option>
+<option>Prescription Ingestion</option>
+<option>Alert Acknowledged</option>
+<option>Safety Check Executed</option>
+<option>Patient Context Update</option>
+<option>OCR Parameter Remapped</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 text-[18px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Patient Key / MRN Input -->
+<div class="flex flex-col gap-1">
+<label class="font-caption text-caption text-on-surface-variant">Patient Key / MRN</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-2.5 text-[18px] text-on-surface-variant pointer-events-none">person_search</span>
+<input class="w-full h-10 pl-9 pr-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:bg-surface-container-lowest focus:shadow-sm placeholder:text-on-surface-variant/60" placeholder="e.g. MRN-HASH-9042-X" type="text" value="MRN-HASH-9042-X"/>
+</div>
+</div>
+<!-- Rule ID Input -->
+<div class="flex flex-col gap-1">
+<label class="font-caption text-caption text-on-surface-variant">Rule ID / Monograph</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-2.5 text-[18px] text-on-surface-variant pointer-events-none">tag</span>
+<input class="w-full h-10 pl-9 pr-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:bg-surface-container-lowest focus:shadow-sm placeholder:text-on-surface-variant/60" placeholder="e.g. RULE-RENAL-042" type="text"/>
+</div>
+</div>
+<!-- Disposition Dropdown -->
+<div class="flex flex-col gap-1">
+<label class="font-caption text-caption text-on-surface-variant">Audit Disposition</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-2.5 text-[18px] text-on-surface-variant pointer-events-none">filter_alt</span>
+<select class="w-full h-10 pl-9 pr-7 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md appearance-none outline-none focus:bg-surface-container-lowest focus:shadow-sm">
+<option>All Dispositions</option>
+<option>Overridden</option>
+<option>Acknowledged</option>
+<option>Auto-Cleared</option>
+<option>Blocked / Severe</option>
+<option>Escalated</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 text-[18px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Active Filters & Reset -->
+<div class="flex flex-wrap items-center justify-between pt-space-xs gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">Active Filter:</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-caption text-caption">
+          MRN: <strong class="font-semibold text-primary">MRN-HASH-9042-X</strong>
+<button class="hover:text-error ml-1 leading-none"><span class="material-symbols-outlined text-[13px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-caption text-caption">
+          Time: <strong class="font-semibold text-primary">Last 7 Days</strong>
+<button class="hover:text-error ml-1 leading-none"><span class="material-symbols-outlined text-[13px]">close</span></button>
+</span>
+</div>
+<button class="text-primary hover:text-on-primary-fixed-variant font-caption text-caption font-semibold flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[14px]">restart_alt</span>
+        Reset All Filters
+      </button>
+</div>
+</div>
+<!-- Main Audit Table with Side Detail Drawer -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Audit Events Table Section (8 Cols on XL) -->
+<div class="xl:col-span-7 2xl:col-span-8 bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Ledger Stream</span>
+<span class="font-caption text-caption text-on-surface-variant">Click any entry to inspect cryptographic payload</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-caption text-caption tracking-wider uppercase">
+<th class="py-3 px-space-md">Timestamp</th>
+<th class="py-3 px-space-sm">Actor</th>
+<th class="py-3 px-space-sm">Action Type</th>
+<th class="py-3 px-space-sm">Check / Order</th>
+<th class="py-3 px-space-sm hidden lg:table-cell">Engine / DB</th>
+<th class="py-3 px-space-md text-right">Disposition</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-md text-body-md">
+<!-- Row 1: Selected Row -->
+<tr class="bg-surface-container cursor-pointer transition-colors hover:bg-surface-container-high">
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="font-mono font-medium text-on-surface text-[13px]">2025-04-14 09:22:14</div>
+<div class="font-caption text-caption text-on-surface-variant">EDT • Seq #104928</div>
+</td>
+<td class="py-3.5 px-space-sm whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-caption font-semibold shrink-0">SL</div>
+<div>
+<div class="font-body-md-medium text-body-md-medium text-on-surface leading-tight">Dr. Sarah Lin</div>
+<div class="font-caption text-caption text-primary">PharmD (Lead)</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="font-body-md-medium text-on-surface">Clinical Override</div>
+<div class="font-caption text-caption text-on-surface-variant truncate max-w-[150px]">Renal Dose Warning</div>
+</td>
+<td class="py-3.5 px-space-sm whitespace-nowrap">
+<div class="font-mono text-[12px] font-semibold text-primary">CHK-2025-8841</div>
+<div class="font-caption text-caption text-on-surface-variant font-mono">ORD-VANCE-1092</div>
+</td>
+<td class="py-3.5 px-space-sm whitespace-nowrap hidden lg:table-cell">
+<div class="font-caption text-caption text-on-surface">CPIC v2025.2.1</div>
+<div class="font-caption text-caption text-on-surface-variant font-mono text-[10px]">RxNorm 2025-02-B</div>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">report</span>
+                  Overridden
+                </span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low cursor-pointer transition-colors">
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="font-mono font-medium text-on-surface text-[13px]">2025-04-14 09:15:02</div>
+<div class="font-caption text-caption text-on-surface-variant">EDT • Seq #104927</div>
+</td>
+<td class="py-3.5 px-space-sm whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-caption font-semibold shrink-0">AV</div>
+<div>
+<div class="font-body-md-medium text-body-md-medium text-on-surface leading-tight">Dr. Arthur Vance</div>
+<div class="font-caption text-caption text-on-surface-variant">Attending MD</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="font-body-md-medium text-on-surface">Prescription Ingested</div>
+<div class="font-caption text-caption text-on-surface-variant truncate max-w-[150px]">Ciprofloxacin 500mg</div>
+</td>
+<td class="py-3.5 px-space-sm whitespace-nowrap">
+<div class="font-mono text-[12px] font-semibold text-primary">CHK-2025-8841</div>
+<div class="font-caption text-caption text-on-surface-variant font-mono">ORD-VANCE-1092</div>
+</td>
+<td class="py-3.5 px-space-sm whitespace-nowrap hidden lg:table-cell">
+<div class="font-caption text-caption text-on-surface">inp-v1.4 / out-v2.1</div>
+<div class="font-caption text-caption text-on-surface-variant font-mono text-[10px]">FHIR-Bundle-4.0</div>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">info</span>
+                  Acknowledged
+                </span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low cursor-pointer transition-colors">
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="font-mono font-medium text-on-surface text-[13px]">2025-04-14 09:14:59</div>
+<div class="font-caption text-caption text-on-surface-variant">EDT • Seq #104926</div>
+</td>
+<td class="py-3.5 px-space-sm whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center font-caption shrink-0">
+<span class="material-symbols-outlined text-[15px]">smart_toy</span>
+</div>
+<div>
+<div class="font-body-md-medium text-body-md-medium text-on-surface leading-tight">CDS Engine v4.2</div>
+<div class="font-caption text-caption text-tertiary">Automated Rule Exec</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="font-body-md-medium text-on-surface">Safety Check Executed</div>
+<div class="font-caption text-caption text-error font-medium truncate max-w-[150px]">Renal Alert Triggered</div>
+</td>
+<td class="py-3.5 px-space-sm whitespace-nowrap">
+<div class="font-mono text-[12px] font-semibold text-primary">CHK-2025-8841</div>
+<div class="font-caption text-caption text-on-surface-variant font-mono">RULE-FLQ-01</div>
+</td>
+<td class="py-3.5 px-space-sm whitespace-nowrap hidden lg:table-cell">
+<div class="font-caption text-caption text-on-surface">v2025.2.1-CPIC</div>
+<div class="font-caption text-caption text-on-surface-variant font-mono text-[10px]">FirstDatapank-1.2</div>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+                  Blocked / Severe
+                </span>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low cursor-pointer transition-colors">
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="font-mono font-medium text-on-surface text-[13px]">2025-04-14 08:48:30</div>
+<div class="font-caption text-caption text-on-surface-variant">EDT • Seq #104925</div>
+</td>
+<td class="py-3.5 px-space-sm whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-caption font-semibold shrink-0">SL</div>
+<div>
+<div class="font-body-md-medium text-body-md-medium text-on-surface leading-tight">Dr. Sarah Lin</div>
+<div class="font-caption text-caption text-primary">PharmD (Lead)</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="font-body-md-medium text-on-surface">Patient Metric Update</div>
+<div class="font-caption text-caption text-on-surface-variant truncate max-w-[150px]">eGFR re-evaluated (42)</div>
+</td>
+<td class="py-3.5 px-space-sm whitespace-nowrap">
+<div class="font-mono text-[12px] font-semibold text-primary">CHK-2025-8839</div>
+<div class="font-caption text-caption text-on-surface-variant font-mono">LAB-BIO-4412</div>
+</td>
+<td class="py-3.5 px-space-sm whitespace-nowrap hidden lg:table-cell">
+<div class="font-caption text-caption text-on-surface">inp-v1.3</div>
+<div class="font-caption text-caption text-on-surface-variant font-mono text-[10px]">LOINC-Core-24</div>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check</span>
+                  Auto-Cleared
+                </span>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low cursor-pointer transition-colors">
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="font-mono font-medium text-on-surface text-[13px]">2025-04-13 18:30:12</div>
+<div class="font-caption text-caption text-on-surface-variant">EDT • Seq #104924</div>
+</td>
+<td class="py-3.5 px-space-sm whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center font-caption shrink-0">
+<span class="material-symbols-outlined text-[15px]">smart_toy</span>
+</div>
+<div>
+<div class="font-body-md-medium text-body-md-medium text-on-surface leading-tight">CDS Engine v4.2</div>
+<div class="font-caption text-caption text-tertiary">OCR Parser</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="font-body-md-medium text-on-surface">OCR Mapping Check</div>
+<div class="font-caption text-caption text-on-surface-variant truncate max-w-[150px]">Handwriting Confidence 98%</div>
+</td>
+<td class="py-3.5 px-space-sm whitespace-nowrap">
+<div class="font-mono text-[12px] font-semibold text-primary">CHK-2025-8820</div>
+<div class="font-caption text-caption text-on-surface-variant font-mono">SCAN-RX-771</div>
+</td>
+<td class="py-3.5 px-space-sm whitespace-nowrap hidden lg:table-cell">
+<div class="font-caption text-caption text-on-surface">OCR-Engine-v3</div>
+<div class="font-caption text-caption text-on-surface-variant font-mono text-[10px]">RxNorm 2025-02-B</div>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+                  Escalated
+                </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Footer -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-caption text-caption">
+<div class="flex items-center gap-space-sm">
+<span>Showing <strong class="text-on-surface font-medium">1–5</strong> of 1,428 audit records</span>
+<div class="flex items-center gap-1 pl-space-sm">
+<span>Rows:</span>
+<select class="bg-surface-container-lowest rounded px-2 py-0.5 text-on-surface font-caption text-caption outline-none">
+<option>5 per page</option>
+<option>10 per page</option>
+<option>25 per page</option>
+<option>50 per page</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant disabled:opacity-30" disabled="">
+<span class="material-symbols-outlined text-[18px]">first_page</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant disabled:opacity-30" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary font-bold">1</span>
+<span class="px-2 py-0.5 rounded hover:bg-surface-container text-on-surface cursor-pointer">2</span>
+<span class="px-2 py-0.5 rounded hover:bg-surface-container text-on-surface cursor-pointer">3</span>
+<span class="px-1 text-on-surface-variant">...</span>
+<span class="px-2 py-0.5 rounded hover:bg-surface-container text-on-surface cursor-pointer">143</span>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">last_page</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Audit Event Detail Drawer / Inspection Panel (5 Cols on XL) -->
+<div class="xl:col-span-5 2xl:col-span-4 bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Drawer Header -->
+<div class="p-space-md bg-surface-container-low flex items-start justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-subhead text-subhead text-on-surface">Event Detail</span>
+<span class="font-mono text-[11px] px-2 py-0.5 rounded bg-surface-container font-semibold text-primary">EVT-99482-SEC</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1 font-caption text-caption text-tertiary">
+<span class="material-symbols-outlined text-[14px]">format_image_left</span>
+<span>Cryptographic Sig: Valid &amp; Sealed</span>
+</div>
+</div>
+<button aria-label="Close Inspector" class="p-1 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- SHA-256 Stamp & Core Metadata -->
+<div class="p-space-md space-y-space-md">
+<!-- Fingerprint Strip -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<span>SHA-256 Ledger Anchor</span>
+<span class="text-tertiary font-medium">Block Height #94,882</span>
+</div>
+<div class="font-mono text-[10px] text-on-surface-variant bg-surface-container-lowest p-2 rounded break-all select-all">
+            e8b7c4a1993bf40d826a7e02df352934a34b22cb15949174df4e680a6c0bb2ec
+          </div>
+</div>
+<!-- Overview Context -->
+<div class="grid grid-cols-2 gap-space-sm text-body-md">
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-caption text-caption text-on-surface-variant block mb-0.5">Actor &amp; Credential</span>
+<span class="font-body-md-medium text-body-md-medium text-on-surface block">Dr. Sarah Lin, PharmD</span>
+<span class="font-caption text-caption text-primary">Lic #PH-8841-NY</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-caption text-caption text-on-surface-variant block mb-0.5">Event Execution Time</span>
+<span class="font-body-md-medium text-body-md-medium text-on-surface block font-mono text-[13px]">2025-04-14 09:22:14</span>
+<span class="font-caption text-caption text-on-surface-variant">Client Delta +14ms</span>
+</div>
+</div>
+<!-- Prescription Context Banner -->
+<div class="p-space-sm rounded-lg bg-surface-container-high/60 flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">medication</span>
+<div class="min-w-0 flex-1">
+<div class="font-caption text-caption text-on-surface-variant uppercase font-semibold">Order / Subject Target</div>
+<div class="font-body-md-medium text-body-md-medium text-on-surface truncate">Ciprofloxacin 500 mg PO BID</div>
+<div class="font-caption text-caption text-on-surface-variant font-mono">CHK-2025-8841 • MRN-HASH-9042-X</div>
+</div>
+</div>
+<!-- Before / After Diff Viewer -->
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Before / After State Diff</span>
+<span class="font-caption text-caption text-on-surface-variant">JSON Payload Mutation</span>
+</div>
+<div class="space-y-space-sm font-mono text-[12px]">
+<!-- Diff Item 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="font-caption text-caption text-on-surface-variant font-mono text-[11px]">field: clearance_status</span>
+<div class="p-1.5 rounded bg-error-container/60 text-on-error-container line-through text-[11px] truncate">
+                - "FLAGGED_RENAL_ACCUMULATION"
+              </div>
+<div class="p-1.5 rounded bg-surface-container text-tertiary font-semibold text-[11px] truncate">
+                + "OVERRIDDEN_PRESCRIBER_NOTIFIED"
+              </div>
+</div>
+<!-- Diff Item 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="font-caption text-caption text-on-surface-variant font-mono text-[11px]">field: override_rationale</span>
+<div class="p-1.5 rounded bg-error-container/60 text-on-error-container line-through text-[11px]">
+                - null
+              </div>
+<div class="p-1.5 rounded bg-surface-container text-on-surface font-body-md text-caption leading-relaxed font-sans">
+                + <span class="font-semibold text-primary font-sans">"Prescriber Dr. Vance consulted via telephone at 09:18. Confirmed short 3-day course with mandatory serum creatinine &amp; hydration monitoring."</span>
+</div>
+</div>
+<!-- Diff Item 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="font-caption text-caption text-on-surface-variant font-mono text-[11px]">field: pharmacist_review_disposition</span>
+<div class="p-1.5 rounded bg-error-container/60 text-on-error-container line-through text-[11px] truncate">
+                - "PENDING_REVIEW"
+              </div>
+<div class="p-1.5 rounded bg-surface-container text-tertiary font-semibold text-[11px] truncate">
+                + "OVERRIDDEN_APPROVED"
+              </div>
+</div>
+</div>
+</div>
+<!-- Environmental & Engine Fingerprint -->
+<div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider block mb-space-xs">Audit Environment Fingerprint</span>
+<div class="rounded-lg bg-surface-container-low p-space-sm space-y-2 font-caption text-caption">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Rule Engine</span>
+<span class="font-mono text-on-surface font-semibold">RxGuard-Engine v4.2.1-prod</span>
+</div>
+<div class="flex items-start justify-between gap-space-sm">
+<span class="text-on-surface-variant shrink-0">Rule Definition</span>
+<span class="font-mono text-on-surface text-right">RULE-FLQ-RENAL-01 (eGFR &lt; 50)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Drug Reference DB</span>
+<span class="font-mono text-on-surface">RxNorm 2025-02-B / FDB 2025</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Client Terminal IP</span>
+<span class="font-mono text-on-surface">10.240.14.88 (Pharm-Term-04)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Authentication Mechanism</span>
+<span class="text-primary font-medium">Smart-Card PIV + OAuth2 PKCE</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Action Footer -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between gap-space-sm">
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+<span>Raw JSON Block</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Verify Proof Online</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bottom Regulatory Notice Footer Strip -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest text-on-surface-variant shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-sm font-caption text-caption">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span>Ledger integrity validated continuously via Merkle-tree accumulator. Zero schema deviations detected.</span>
+</div>
+<div class="flex items-center gap-space-md font-mono text-[11px]">
+<span>SHA: 4d82...f93b</span>
+<span>•</span>
+<span>NIST FIPS 140-3 Compliant</span>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low py-space-md px-gutter text-center shadow-[0_1px_8px_rgba(0,119,130,0.04)]"><div class="font-caption text-caption text-on-surface-variant">© 2025 RxGuard Healthcare Technologies. Regulated Clinical Authentication Portal &amp; Decision Support Engine. | HIPAA / HITECH Compliant | CDS Authority Level 3</div></footer></div></body></html>

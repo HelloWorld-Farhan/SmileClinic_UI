@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed-dim": "#a2c9ff", "surface-container-highest": "#d8e3fa", "surface-container": "#e7eeff", "primary-fixed": "#99f0fd", "inverse-surface": "#263142", "on-secondary": "#ffffff", "tertiary-fixed": "#94f2f0", "tertiary-fixed-dim": "#77d6d3", "secondary": "#1960a3", "on-primary": "#ffffff", "primary-fixed-dim": "#7cd4e0", "surface": "#f9f9ff", "error-container": "#ffdad6", "background": "#f9f9ff", "outline-variant": "#bdc8ca", "primary-container": "#007782", "on-tertiary-fixed": "#00201f", "on-surface": "#111c2c", "tertiary-container": "#007876", "on-background": "#111c2c", "outline": "#6e797b", "on-error": "#ffffff", "surface-container-lowest": "#ffffff", "secondary-container": "#7db6ff", "surface-variant": "#d8e3fa", "error": "#ba1a1a", "on-surface-variant": "#3e494a", "on-secondary-fixed-variant": "#004881", "on-primary-fixed": "#001f23", "surface-tint": "#006972", "surface-container-low": "#f0f3ff", "on-tertiary": "#ffffff", "inverse-on-surface": "#ebf1ff", "on-tertiary-fixed-variant": "#00504e", "on-secondary-container": "#00477f", "on-primary-container": "#c1f7ff", "surface-container-high": "#dee8ff", "inverse-primary": "#7cd4e0", "on-tertiary-container": "#9ffefb", "surface-dim": "#cfdaf1", "on-error-container": "#93000a", "surface-bright": "#f9f9ff", "primary": "#005c65", "tertiary": "#005d5c", "on-secondary-fixed": "#001c38", "secondary-fixed": "#d3e4ff", "on-primary-fixed-variant": "#004f56" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "gutter-sm": "1rem", "space-xl": "2rem", "gutter": "1.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "margin": "2rem", "margin-sm": "1rem", "space-md": "1rem" }, "fontFamily": { "caption": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"], "subhead": ["Inter"], "body-md-medium": ["Inter"], "headline-lg-mobile": ["Inter"], "body-md": ["Inter"], "label-sm": ["Inter"], "headline-lg": ["Inter"], "headline-md": ["Inter"] }, "fontSize": { "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "subhead": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "body-md-medium": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface"><div class="fixed top-0 inset-x-0 h-8 z-50 bg-secondary-fixed text-on-secondary-fixed-variant flex items-center justify-center px-gutter text-center shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-xs font-body-md-medium text-caption"><span class="material-symbols-outlined text-[16px]">info</span><span>Clinical decision support only. Not a definitive safety declaration. Confirm with a licensed prescriber or pharmacist.</span></div></div><aside class="fixed left-0 top-8 bottom-0 w-72 bg-surface-container-low z-40 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="px-gutter pt-space-lg pb-space-md"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[24px]">shield_with_heart</span></div><div><div class="font-headline-md text-headline-md tracking-tight text-primary">RxGuard</div><div class="font-caption text-caption text-outline">Clinical Decision Support</div></div></div></div><nav class="px-space-md flex flex-col gap-space-xs mt-space-sm" data-active-classes="bg-primary-container text-on-primary font-body-md-medium rounded-lg shadow-[0_4px_20px_rgba(0,119,130,0.06)]"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="new-check" href="#"><span class="material-symbols-outlined text-[20px]">add_circle</span><span>New Check</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="patients" href="#"><span class="material-symbols-outlined text-[20px]">patient_list</span><span>Patients</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="alerts" href="#"><span class="material-symbols-outlined text-[20px]">warning</span><span>Alerts</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span>Reports</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="audit-log" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span>Audit Log</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="rules-and-data" href="#"><span class="material-symbols-outlined text-[20px]">database</span><span>Rules &amp; Data</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="p-space-md m-space-md bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(0,119,130,0.06)]"><div class="flex items-center gap-space-xs text-primary font-caption text-caption uppercase"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span>SMART on FHIR v4.0.1</span></div><div class="font-label-sm text-label-sm text-on-surface mt-space-xs">St. Jude Health System</div><div class="font-caption text-caption text-outline mt-0.5">Production Gateway Active</div></div></aside><div class="pl-72"><header class="fixed top-8 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-30 flex items-center justify-between px-gutter"><div class="flex items-center flex-1 max-w-lg"><div class="w-full flex items-center bg-surface-container-lowest rounded-lg px-space-md py-space-xs shadow-[0_4px_20px_rgba(0,119,130,0.06)]"><span class="material-symbols-outlined text-outline text-[20px] mr-space-sm">search</span><input class="bg-transparent border-0 outline-none w-full font-body-md text-body-md text-on-surface placeholder:text-outline" placeholder="Search patient name, MRN, Rx order..." type="text"/><kbd class="font-caption text-caption bg-surface-container-high text-on-surface-variant px-space-sm py-0.5 rounded">⌘K</kbd></div></div><div class="flex items-center gap-gutter"><div class="hidden xl:flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container rounded-full"><span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span><span class="font-label-sm text-label-sm text-on-secondary-container">EMR Integrated</span></div><button aria-label="Clinical Notifications" class="relative p-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2.5 h-2.5 rounded-full bg-error ring-2 ring-surface"></span></button><div class="h-8 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-md"><div class="text-right hidden sm:block"><div class="font-body-md-medium text-body-md-medium text-on-surface">Dr. Sarah Lin, PharmD</div><div class="font-caption text-caption text-primary">Lead Clinical Pharmacist - Inpatient</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-24 min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Top Document Controls & Breadcrumb Bar -->
+<header class="sticky top-0 z-20 w-full bg-surface-container-lowest px-gutter py-space-sm shadow-sm">
+<div class="max-w-[1340px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-space-xs text-caption font-caption text-outline">
+<span>Reports</span>
+<span>/</span>
+<span class="text-on-surface font-body-md-medium">Verification Audit #REP-2025-0419-892</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-secondary text-caption font-caption">
+<span class="material-symbols-outlined text-[13px]">description</span>
+            Clinical Verification &amp; Decision Support Report (A4 Printable Document)
+          </span>
+<span class="text-caption font-caption text-outline hidden lg:inline">• Verified Safe Harbor Export</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs w-full md:w-auto justify-end">
+<!-- Zoom Controller -->
+<div class="flex items-center bg-surface-container-low rounded-lg px-2 py-1 gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" id="zoom-out" title="Zoom Out">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<select class="bg-transparent text-label-sm font-label-sm text-on-surface outline-none cursor-pointer px-1 py-0.5" id="zoom-select">
+<option value="0.8">Fit to Page (80%)</option>
+<option selected="" value="1.0">100% (Standard)</option>
+<option value="1.15">Fit to Width (115%)</option>
+<option value="0.75">75% Compact</option>
+</select>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" id="zoom-in" title="Zoom In">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<!-- Action Buttons -->
+<button class="inline-flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-surface-container text-secondary hover:bg-surface-container-high transition-colors text-label-md font-label-md" onclick="window.print()">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download PDF</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-colors shadow-sm text-label-md font-label-md" onclick="window.print()">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Print Report</span>
+</button>
+<a class="inline-flex items-center gap-1 px-space-sm py-1.5 rounded-lg text-outline hover:text-on-surface text-label-md font-label-md transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">close</span>
+<span class="hidden sm:inline">Close Preview</span>
+</a>
+</div>
+</div>
+</header>
+<!-- Dark Slate PDF Presentation Viewport -->
+<main class="w-full bg-[#1E293B] py-space-xl px-space-sm sm:px-gutter flex flex-col items-center min-h-[calc(100vh-120px)] transition-all">
+<!-- Floating Document Canvas Pagination Indicator -->
+<div class="mb-space-md flex items-center gap-space-md bg-inverse-surface/90 text-inverse-on-surface px-4 py-1.5 rounded-full shadow-lg backdrop-blur-md text-label-sm font-label-sm">
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-fixed animate-pulse"></span>
+<span>A4 Format (210 × 297 mm)</span>
+</div>
+<span class="text-outline-variant">•</span>
+<span>Page 1 of 2</span>
+<span class="text-outline-variant">•</span>
+<span class="text-secondary-fixed">Confidential Inpatient Audit</span>
+</div>
+<!-- Scalable Document Container Wrapper -->
+<div class="w-full flex justify-center transition-transform duration-200 origin-top" id="document-scale-container">
+<!-- High-Fidelity A4 White Sheet (Simulated Physical Paper) -->
+<article class="w-full max-w-[820px] bg-[#FFFFFF] text-[#0F172A] rounded-sm shadow-2xl p-6 sm:p-10 flex flex-col gap-6 selection:bg-surface-container-high">
+<!-- SECTION A: Document Clinical Masthead & Verification Header -->
+<header class="flex flex-col gap-4 pb-4">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[28px]">shield_with_heart</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md tracking-tight text-primary leading-tight">RxGuard CDS Engine</div>
+<div class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Clinical Decision Support &amp; Verification Protocol</div>
+</div>
+</div>
+<div class="text-left sm:text-right">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-surface-container text-primary font-caption text-caption uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Audit Authenticated</span>
+</div>
+<div class="text-caption font-caption text-outline mt-1 font-mono">HASH: SHA256-4f8b9e892c21a</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl">
+<h1 class="font-headline-md text-headline-md text-on-surface mb-3 tracking-tight">PRESCRIPTION SAFETY &amp; CDS VERIFICATION REPORT</h1>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-y-3 gap-x-4 text-caption font-caption">
+<div>
+<span class="text-outline block uppercase tracking-wider text-[10px]">Report Identifier</span>
+<span class="font-body-md-medium text-on-surface font-mono">REP-2025-0419-892</span>
+</div>
+<div>
+<span class="text-outline block uppercase tracking-wider text-[10px]">Session Tracking ID</span>
+<span class="font-body-md-medium text-on-surface font-mono">SES-4910-EHR-SYN</span>
+</div>
+<div>
+<span class="text-outline block uppercase tracking-wider text-[10px]">Timestamp (UTC)</span>
+<span class="font-body-md-medium text-on-surface">2025-04-14 09:32:18 UTC</span>
+</div>
+<div>
+<span class="text-outline block uppercase tracking-wider text-[10px]">Clinical Facility</span>
+<span class="font-body-md-medium text-on-surface">St. Jude Health System — Inpatient</span>
+</div>
+<div>
+<span class="text-outline block uppercase tracking-wider text-[10px]">Reviewing Pharmacist</span>
+<span class="font-body-md-medium text-on-surface">Dr. Sarah Lin, PharmD (ID #PH-88412)</span>
+</div>
+<div>
+<span class="text-outline block uppercase tracking-wider text-[10px]">Attestation Protocol</span>
+<span class="font-body-md-medium text-on-surface">CDS § 10.4 / HIPAA Safe Harbor</span>
+</div>
+</div>
+</div>
+</header>
+<!-- SECTION B: Overall Clinical Assessment Banner -->
+<section class="bg-surface-container rounded-xl p-4 flex flex-col gap-2">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="text-label-md font-label-md text-on-surface">Overall Screening Status:</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-on-primary text-label-sm font-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[15px]">rate_review</span>
+<span>Needs Professional Review</span>
+</span>
+</div>
+<div class="text-caption font-caption text-secondary font-body-md-medium">
+              Dispensing Release: <strong class="text-on-surface">Conditioned on Prescriber Consultation</strong>
+</div>
+</div>
+<div class="text-caption font-caption text-on-surface-variant bg-surface-container-lowest/80 p-2.5 rounded-lg flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">info</span>
+<span>Clinical decision support only. Not a definitive safety declaration. Confirm with a licensed prescriber or pharmacist. Quantitative Check Matrix: <strong>9 Checks Evaluated</strong> • <strong>2 Alerts Flagged</strong> • <strong>1 Overridden</strong> • <strong>1 Acknowledged</strong> • <strong>0 Unresolved Blockers</strong></span>
+</div>
+</section>
+<!-- SECTION C & D: Bento Grid (Patient Demographics + Candidate Rx) -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-4">
+<!-- C: Patient Context (Pseudonymized Safe Harbor) -->
+<div class="md:col-span-5 bg-surface-container-low rounded-xl p-4 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-2 mb-2">
+<span class="font-label-md text-label-md text-primary">Patient Demographics</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-caption font-caption font-mono">De-Identified</span>
+</div>
+<div class="space-y-2 text-caption font-caption">
+<div class="flex justify-between">
+<span class="text-outline">Patient MRN Hash:</span>
+<span class="font-mono font-body-md-medium text-on-surface">MRN-HASH-9042-X</span>
+</div>
+<div class="flex justify-between">
+<span class="text-outline">Age &amp; Gender:</span>
+<span class="font-body-md-medium text-on-surface">64y Male</span>
+</div>
+<div class="flex justify-between">
+<span class="text-outline">Weight / Height:</span>
+<span class="font-body-md-medium text-on-surface">78.5 kg / 178 cm (BSA: 1.96 m²)</span>
+</div>
+<div class="pt-1.5 flex flex-col gap-1">
+<span class="text-outline block">Renal Clearance Profile:</span>
+<div class="bg-surface-container-lowest p-2 rounded flex flex-col gap-1">
+<div class="flex justify-between text-on-surface">
+<span>eGFR (CKD-EPI):</span>
+<span class="font-body-md-medium text-error">42 mL/min/1.73m² (Stage 3b)</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Serum Creatinine:</span>
+<span class="font-body-md-medium">1.82 mg/dL</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>CrCl (Cockcroft-Gault):</span>
+<span class="font-body-md-medium">41.2 mL/min</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="text-[10px] font-caption text-outline mt-3 pt-2">
+              Unit: Inpatient Infectious Disease / Nephrology consult
+            </div>
+</div>
+<!-- D: Candidate Prescription Details -->
+<div class="md:col-span-7 bg-surface-container-lowest p-4 rounded-xl shadow-sm">
+<div class="flex items-center justify-between pb-2 mb-2">
+<span class="font-label-md text-label-md text-primary">Evaluated Prescription Order</span>
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary text-caption font-caption">New Candidate Rx</span>
+</div>
+<div class="space-y-2.5">
+<div>
+<div class="font-subhead text-subhead text-on-surface font-semibold">Ciprofloxacin HCl (Brand: Cipro)</div>
+<div class="text-caption font-caption text-outline font-mono">RxNorm: 197507 • ATC: J01MA02 • Class: Fluoroquinolone</div>
+</div>
+<div class="grid grid-cols-2 gap-2 text-caption font-caption bg-surface-container-low p-2.5 rounded-lg">
+<div>
+<span class="text-outline block">Dosage Form:</span>
+<span class="font-body-md-medium text-on-surface">500 mg Oral Tablet (Film-Coated)</span>
+</div>
+<div>
+<span class="text-outline block">Sig &amp; Frequency:</span>
+<span class="font-body-md-medium text-on-surface">1 tab PO Q12H × 7 days</span>
+</div>
+<div>
+<span class="text-outline block">Total Quantity:</span>
+<span class="font-body-md-medium text-on-surface">14 Tablets (0 Refills)</span>
+</div>
+<div>
+<span class="text-outline block">Clinical Indication:</span>
+<span class="font-body-md-medium text-on-surface">Pyelonephritis (ICD-10: N10)</span>
+</div>
+</div>
+<div class="text-caption font-caption flex flex-col sm:flex-row justify-between text-on-surface-variant gap-1 pt-1">
+<div>
+<span class="text-outline">Prescriber: </span>
+<span class="font-body-md-medium">Dr. Arthur Vance, MD</span>
+<span class="font-mono text-[10px] text-outline"> (NPI: 1092837482)</span>
+</div>
+<div class="text-[10px] font-mono text-outline">
+                  E-Prescribe Scan: SHA256: 89fa2...a98 verified
+                </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION E: Active Medications & Allergy Profile -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Active Medications -->
+<div class="bg-surface-container-low p-4 rounded-xl">
+<div class="font-label-md text-label-md text-on-surface mb-2 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">medication</span>
+<span>Concurrent Medications Profile</span>
+</div>
+<ul class="space-y-2 text-caption font-caption">
+<li class="bg-surface-container-lowest p-2.5 rounded-lg">
+<div class="flex justify-between items-start">
+<span class="font-body-md-medium text-on-surface">Coumadin (Warfarin Sodium)</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-error-container text-on-error-container font-medium">NTI Drug</span>
+</div>
+<div class="text-on-surface-variant mt-0.5">5 mg Oral PO, Once Daily at bedtime</div>
+<div class="text-outline text-[10px] mt-1">Target INR 2.0-3.0 • Indication: Atrial Fibrillation</div>
+</li>
+<li class="bg-surface-container-lowest p-2.5 rounded-lg">
+<div class="flex justify-between items-start">
+<span class="font-body-md-medium text-on-surface">CoQ10 (Ubiquinone)</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-surface-container text-on-surface-variant">Supplement</span>
+</div>
+<div class="text-on-surface-variant mt-0.5">100 mg Softgel PO, Twice daily with meals</div>
+</li>
+</ul>
+</div>
+<!-- Documented Allergies -->
+<div class="bg-surface-container-low p-4 rounded-xl">
+<div class="font-label-md text-label-md text-on-surface mb-2 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error text-[18px]">emergency</span>
+<span>Allergies &amp; Hypersensitivities</span>
+</div>
+<ul class="space-y-2 text-caption font-caption">
+<li class="bg-surface-container-lowest p-2 rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-body-md-medium text-error">Penicillins (Amoxicillin, Ampicillin)</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-error-container text-on-error-container font-medium">Severe / Confirmed</span>
+</div>
+<div class="text-on-surface-variant mt-0.5">Reaction: Facial angioedema &amp; acute urticaria</div>
+</li>
+<li class="bg-surface-container-lowest p-2 rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-body-md-medium text-on-surface">Lisinopril</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-surface-container-high text-on-surface-variant">Intolerance</span>
+</div>
+<div class="text-on-surface-variant mt-0.5">Side Effect: Persistent nocturnal dry cough</div>
+</li>
+<li class="bg-surface-container-lowest p-2 rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-body-md-medium text-on-surface">Codeine</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-surface-container-high text-on-surface-variant">Mild Intolerance</span>
+</div>
+<div class="text-on-surface-variant mt-0.5">Reaction: Severe nausea / gastric upset</div>
+</li>
+</ul>
+</div>
+</section>
+<!-- SECTION F: Safety Alerts & CDS Rule Evaluations Table -->
+<section class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Algorithmic Safety Evaluations &amp; Clinical Rules</span>
+<span class="text-caption font-caption text-outline">Engine Query Duration: 142 ms</span>
+</div>
+<div class="overflow-x-auto rounded-xl bg-surface-container-lowest shadow-sm">
+<table class="w-full text-left text-caption font-caption">
+<thead class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<tr>
+<th class="py-2.5 px-3">Severity</th>
+<th class="py-2.5 px-3">Clinical Finding &amp; Interplay</th>
+<th class="py-2.5 px-3">Evidence Source &amp; Rule ID</th>
+<th class="py-2.5 px-3">Recommended Action</th>
+<th class="py-2.5 px-3 text-right">Reviewer Status</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<!-- Row 1 -->
+<tr class="bg-surface-container-lowest">
+<td class="py-3 px-3 align-top">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[13px]">error</span>
+                      High
+                    </span>
+</td>
+<td class="py-3 px-3 align-top">
+<div class="font-body-md-medium text-on-surface">Fluoroquinolone + Reduced Renal Clearance</div>
+<div class="text-on-surface-variant mt-0.5 text-[11px]">eGFR 42 mL/min/1.73m² (CrCl 41.2). Ciprofloxacin accumulation may heighten neurotoxicity and QTc prolongation.</div>
+</td>
+<td class="py-3 px-3 align-top">
+<div class="font-mono text-[10px] text-primary">RENAL-ADJ-CIPRO-04</div>
+<div class="text-outline text-[10px]">FDA Boxed / KDIGO 2024</div>
+</td>
+<td class="py-3 px-3 align-top text-on-surface-variant">
+                    Reduce oral dose to 250–500 mg Q18–24H based on renal trajectory.
+                  </td>
+<td class="py-3 px-3 align-top text-right">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-[11px] font-medium">
+                      Overridden
+                    </span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="bg-surface-container-low/50">
+<td class="py-3 px-3 align-top">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#FEFCBF] text-[#B7791F] font-label-sm text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[13px]">warning</span>
+                      Moderate
+                    </span>
+</td>
+<td class="py-3 px-3 align-top">
+<div class="font-body-md-medium text-on-surface">Drug-Drug: Ciprofloxacin + Warfarin</div>
+<div class="text-on-surface-variant mt-0.5 text-[11px]">CYP1A2 inhibition and gut microbiome disruption may significantly increase INR and bleeding risk.</div>
+</td>
+<td class="py-3 px-3 align-top">
+<div class="font-mono text-[10px] text-primary">DDI-WARFARIN-CIPRO-12</div>
+<div class="text-outline text-[10px]">Lexicomp / FDB v2025.2</div>
+</td>
+<td class="py-3 px-3 align-top text-on-surface-variant">
+                    Monitor INR on Days 2, 4, and 7; anticipate 20-30% Warfarin dose reduction.
+                  </td>
+<td class="py-3 px-3 align-top text-right">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-medium">
+                      Acknowledged
+                    </span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="bg-surface-container-lowest">
+<td class="py-3 px-3 align-top">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[13px]">info</span>
+                      Info
+                    </span>
+</td>
+<td class="py-3 px-3 align-top">
+<div class="font-body-md-medium text-on-surface">Polyvalent Cation Chelation Timing</div>
+<div class="text-on-surface-variant mt-0.5 text-[11px]">Space ingestion ≥2h before or 6h after multivalent ions/dairy supplements.</div>
+</td>
+<td class="py-3 px-3 align-top">
+<div class="font-mono text-[10px] text-primary">ADMIN-CHEL-09</div>
+<div class="text-outline text-[10px]">USP Monograph 2024</div>
+</td>
+<td class="py-3 px-3 align-top text-on-surface-variant">
+                    Append nursing MAR administration interval guidance.
+                  </td>
+<td class="py-3 px-3 align-top text-right">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-[11px]">
+                      Resolved
+                    </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- SECTION G: Algorithmic Limitations & Data Quality Disclaimers -->
+<section class="bg-surface-container-low p-4 rounded-xl flex flex-col gap-2">
+<div class="flex items-center gap-2 text-label-md font-label-md text-on-surface">
+<span class="material-symbols-outlined text-outline text-[18px]">verified_user</span>
+<span>Algorithmic Model Limitations &amp; Boundary Disclaimers</span>
+</div>
+<ul class="space-y-1.5 text-caption font-caption text-on-surface-variant list-disc list-inside">
+<li>
+<strong class="text-on-surface">Sparse Longitudinal Baseline:</strong> Only 1 recent serum creatinine recorded in the preceding 7 days; trajectory could represent resolving vs worsening acute kidney injury.
+            </li>
+<li>
+<strong class="text-on-surface">Pharmacogenomic Absence:</strong> Genotype profiles (<code class="font-mono text-[10px]">CYP2C9</code> / <code class="font-mono text-[10px]">VKORC1</code>) absent in EHR stream; population standard pharmacokinetic models utilized.
+            </li>
+<li>
+<strong class="text-on-surface">Self-Reported Supplements:</strong> Reconciliation depends on patient self-reported admission intake history.
+            </li>
+</ul>
+</section>
+<!-- SECTION H: Reviewer Decisions & Digital Attestation Trail -->
+<section class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between pb-2 mb-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">draw</span>
+<span class="font-subhead text-subhead text-on-surface font-semibold">Pharmacist Clinical Decisions &amp; Override Audit</span>
+</div>
+<span class="text-caption font-caption text-primary font-body-md-medium">21 CFR Part 11 Compliant Sign-off</span>
+</div>
+<div class="space-y-3 text-caption font-caption">
+<!-- Decision 1 -->
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-body-md-medium text-on-surface">Decision on Rule: <code class="font-mono text-primary font-bold">RENAL-ADJ-CIPRO-04</code></span>
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-[11px] font-semibold">OVERRIDDEN WITH PROTOCOL</span>
+</div>
+<div class="text-on-surface-variant italic bg-surface-container-lowest p-2.5 rounded">
+                “Prescribing physician Dr. Vance contacted at 09:25. Patient exhibits acute severe pyelonephritis requiring immediate peak bactericidal tissue concentrations. High-dose oral regimen (500mg Q12H) authorized for initial 48-hour attack window under daily renal panel tracking and telemetry. Step-down to 250mg Q12H pre-scheduled for Day 3 if clearance remains below 50 mL/min.”
+              </div>
+</div>
+<!-- Decision 2 -->
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-body-md-medium text-on-surface">Decision on Rule: <code class="font-mono text-primary font-bold">DDI-WARFARIN-CIPRO-12</code></span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-[11px] font-semibold">ACKNOWLEDGED &amp; MONITORED</span>
+</div>
+<div class="text-on-surface-variant italic bg-surface-container-lowest p-2.5 rounded">
+                “Morning baseline INR verified at 2.3. Recurring lab order placed for INR assessment on Days 2, 4, and 7 concurrent with antibiotic cycle.”
+              </div>
+</div>
+<!-- Attestation Box -->
+<div class="bg-surface-container p-3.5 rounded-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">check_circle</span>
+<div class="text-caption font-caption text-on-surface">
+<div class="font-body-md-medium">Reviewer Attestation Statement</div>
+<div>I certify that I have evaluated this prescription against all algorithmic CDS safety flags, verified clinical context directly with the prescriber, and take professional clinical responsibility for this verification.</div>
+</div>
+</div>
+<div class="sm:text-right shrink-0 bg-surface-container-lowest px-3 py-2 rounded-lg">
+<div class="font-body-md-medium text-on-surface text-[12px]">Dr. Sarah Lin, PharmD, BCPS</div>
+<div class="text-[10px] text-outline font-mono">Digital Sig: 0x93FA...E412</div>
+<div class="text-[10px] text-primary">2025-04-14 09:32:18 UTC</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION I: Formal Document Footer -->
+<footer class="pt-4 flex flex-col gap-2 text-[10px] font-caption text-outline">
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pb-2">
+<div>
+<span class="block text-on-surface-variant font-medium">Rules Engine</span>
+<span>RxGuard CDS v4.2.1-prod</span>
+</div>
+<div>
+<span class="block text-on-surface-variant font-medium">Knowledge Base</span>
+<span>FDB &amp; RxNorm 2025-02-B</span>
+</div>
+<div>
+<span class="block text-on-surface-variant font-medium">Guidelines</span>
+<span>CPIC 1A • Beers • KDIGO 24</span>
+</div>
+<div>
+<span class="block text-on-surface-variant font-medium">Explanation Model</span>
+<span>BioMed-CDS-LLM v2.3</span>
+</div>
+</div>
+<div class="text-center sm:text-left pt-2 text-[9px] text-outline">
+            Clinical decision support only. Not a definitive safety declaration. Confirm with a licensed prescriber or pharmacist. Generated in full compliance with 21 CFR Part 11 and HIPAA Security Rule. Electronic Record Signature Verified.
+          </div>
+</footer>
+</article>
+</div>
+<!-- Secondary Sheet Thumbnail / Page 2 Hint for Authenticity -->
+<div class="mt-space-lg flex items-center gap-space-sm text-surface-dim font-caption text-caption">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>End of Preview Page 1 — Pharmacokinetic Curves &amp; Raw Monograph Dossier located on Page 2</span>
+</div>
+</main>
+</div>
+<!-- Inline JavaScript for Client Zoom Simulation -->
+<script>
+  (function() {
+    const zoomSelect = document.getElementById('zoom-select');
+    const zoomInBtn = document.getElementById('zoom-in');
+    const zoomOutBtn = document.getElementById('zoom-out');
+    const container = document.getElementById('document-scale-container');
+
+    if (!zoomSelect || !container) return;
+
+    function applyZoom(scaleVal) {
+      container.style.transform = `scale(${scaleVal})`;
+      // Adjust margin to keep document centered and readable during scale
+      if (scaleVal > 1) {
+        container.style.marginBottom = `${(scaleVal - 1) * 600}px`;
+      } else {
+        container.style.marginBottom = '0px';
+      }
+    }
+
+    zoomSelect.addEventListener('change', (e) => {
+      applyZoom(parseFloat(e.target.value));
+    });
+
+    if (zoomInBtn) {
+      zoomInBtn.addEventListener('click', () => {
+        let current = parseFloat(zoomSelect.value) || 1.0;
+        let next = Math.min(current + 0.15, 1.3).toFixed(2);
+        zoomSelect.value = next;
+        applyZoom(parseFloat(next));
+      });
+    }
+
+    if (zoomOutBtn) {
+      zoomOutBtn.addEventListener('click', () => {
+        let current = parseFloat(zoomSelect.value) || 1.0;
+        let prev = Math.max(current - 0.15, 0.65).toFixed(2);
+        zoomSelect.value = prev;
+        applyZoom(parseFloat(prev));
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-low py-space-lg"><div class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row items-center justify-between text-on-surface-variant font-caption text-caption gap-space-sm"><div>© 2025 RxGuard Healthcare Technologies. Regulated Clinical Authentication Portal &amp; Decision Support Engine.</div><div class="flex items-center gap-space-md"><span>HIPAA / HITECH Compliant</span><span>CDS Authority Level 3</span></div></div></footer></div></body></html>

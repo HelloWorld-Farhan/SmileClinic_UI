@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed": "#d3e4ff", "surface-dim": "#cfdaf1", "on-primary-fixed-variant": "#004f56", "on-primary-fixed": "#001f23", "outline-variant": "#bdc8ca", "on-background": "#111c2c", "on-tertiary-container": "#9ffefb", "surface": "#f9f9ff", "on-secondary-container": "#00477f", "on-tertiary-fixed-variant": "#00504e", "secondary-fixed-dim": "#a2c9ff", "primary-container": "#007782", "on-tertiary": "#ffffff", "inverse-primary": "#7cd4e0", "surface-variant": "#d8e3fa", "surface-container-low": "#f0f3ff", "on-surface-variant": "#3e494a", "tertiary-fixed-dim": "#77d6d3", "primary-fixed": "#99f0fd", "on-secondary-fixed-variant": "#004881", "on-surface": "#111c2c", "primary-fixed-dim": "#7cd4e0", "tertiary-container": "#007876", "inverse-on-surface": "#ebf1ff", "error": "#ba1a1a", "on-error": "#ffffff", "surface-container": "#e7eeff", "on-secondary-fixed": "#001c38", "on-secondary": "#ffffff", "outline": "#6e797b", "surface-tint": "#006972", "surface-container-high": "#dee8ff", "secondary": "#1960a3", "on-primary": "#ffffff", "tertiary-fixed": "#94f2f0", "on-primary-container": "#c1f7ff", "surface-container-highest": "#d8e3fa", "inverse-surface": "#263142", "error-container": "#ffdad6", "on-error-container": "#93000a", "tertiary": "#005d5c", "surface-bright": "#f9f9ff", "on-tertiary-fixed": "#00201f", "secondary-container": "#7db6ff", "background": "#f9f9ff", "surface-container-lowest": "#ffffff", "primary": "#005c65" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-sm": "1rem", "space-md": "1rem", "gutter-sm": "1rem", "space-xl": "2rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter": "1.5rem", "space-xs": "0.25rem", "margin": "2rem" }, "fontFamily": { "subhead": ["Inter"], "headline-md": ["Inter"], "headline-lg-mobile": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"], "body-md-medium": ["Inter"], "label-md": ["Inter"], "caption": ["Inter"], "body-md": ["Inter"], "headline-lg": ["Inter"] }, "fontSize": { "subhead": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md-medium": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><div class="fixed top-0 left-0 right-0 z-50 flex items-center justify-center h-8 bg-surface-container text-secondary font-body-md-medium text-caption px-margin-sm shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-[15px] mr-space-xs text-secondary">info</span><span>Clinical decision support only. Not a definitive safety declaration. Confirm with a licensed prescriber or pharmacist.</span></div><header class="fixed top-8 left-0 right-0 z-40 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,119,130,0.06)] flex items-center justify-between px-gutter"><div class="flex items-center gap-space-lg w-72"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">shield_with_heart</span></div><div><div class="font-headline-md text-headline-md text-primary tracking-tight leading-none">RxGuard</div><div class="font-caption text-caption text-on-surface-variant font-medium mt-0.5">Clinical Decision Support</div></div></div></div><div class="flex-1 max-w-xl mx-gutter"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px] pointer-events-none">search</span><input class="w-full h-10 pl-10 pr-12 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container outline-none transition-all" placeholder="Search patient, MRN, Rx order..." type="text"/><kbd class="absolute right-space-md text-[11px] font-medium text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-1.5 px-space-md py-1 rounded-full bg-surface-container-low text-on-surface"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm font-medium">EMR Integrated</span></div><button aria-label="Notifications" class="relative p-2 rounded-lg hover:bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="text-right hidden sm:block"><div class="font-body-md-medium text-body-md-medium text-on-surface">Dr. Sarah Lin, PharmD</div><div class="font-caption text-caption text-primary font-medium">Lead Clinical Pharmacist - Inpatient</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-24 bottom-0 w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,119,130,0.06)] z-30 flex flex-col justify-between py-space-md"><nav class="px-space-md space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="new-check" href="#"><span class="material-symbols-outlined text-[20px]">add_moderator</span><span>New Check</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="patients" href="#"><span class="material-symbols-outlined text-[20px]">groups</span><span>Patients</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="alerts" href="#"><span class="material-symbols-outlined text-[20px]">warning</span><span>Alerts</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">description</span><span>Reports</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="audit-log" href="#"><span class="material-symbols-outlined text-[20px]">history_toggle_off</span><span>Audit Log</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="rules-and-data" href="#"><span class="material-symbols-outlined text-[20px]">database</span><span>Rules &amp; Data</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span>Settings</span></a></nav><div class="px-space-md pt-space-md"><div class="p-space-md rounded-lg bg-surface-container-low flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">hub</span><div class="font-caption text-caption text-on-surface-variant leading-tight"><span class="font-semibold text-on-surface block mb-0.5">SMART on FHIR v4.0.1</span>St. Jude Health System<br/><span class="text-tertiary font-medium">Production Gateway Active</span></div></div></div></aside><div class="pl-72"><main class="w-full min-h-screen pt-24 bg-surface p-space-lg"><div class="flex flex-col w-full">
+<!-- Top Progress Stepper (Wizard Step 5 of 5) -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-md mb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm text-primary font-headline-md text-headline-md tracking-tight">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+<span>Prescription Verification Engine</span>
+</div>
+<!-- Stepper Trail -->
+<ol class="flex items-center flex-wrap gap-2 text-label-sm font-label-sm">
+<li class="flex items-center gap-1.5 text-on-surface-variant font-medium">
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center text-[11px] font-bold">✓</span>
+<span>1. Context</span>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span>
+</li>
+<li class="flex items-center gap-1.5 text-on-surface-variant font-medium">
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center text-[11px] font-bold">✓</span>
+<span>2. Meds &amp; Allergies</span>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span>
+</li>
+<li class="flex items-center gap-1.5 text-on-surface-variant font-medium">
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center text-[11px] font-bold">✓</span>
+<span>3. New Rx</span>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span>
+</li>
+<li class="flex items-center gap-1.5 text-on-surface-variant font-medium">
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center text-[11px] font-bold">✓</span>
+<span>4. Review Data</span>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span>
+</li>
+<li class="flex items-center gap-1.5 text-primary font-semibold">
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center text-[11px] font-bold">5</span>
+<span class="underline decoration-2 underline-offset-4">5. Results &amp; CDS Report</span>
+</li>
+</ol>
+</div>
+<!-- Active Patient Meta Strip -->
+<div class="mt-space-md pt-space-md bg-surface-container-low rounded-lg p-space-md flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md flex-wrap">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">person</span>
+<span class="font-subhead text-subhead text-on-surface">MRN-HASH-9042-X</span>
+<span class="font-caption text-caption px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">64y Male</span>
+</div>
+<div class="h-4 w-px bg-outline-variant hidden sm:block"></div>
+<div class="flex items-center gap-1 text-label-sm font-label-sm text-on-surface-variant">
+<span>eGFR:</span>
+<span class="font-semibold text-error">42 mL/min/1.73m² (CKD Stage 3b)</span>
+</div>
+<div class="h-4 w-px bg-outline-variant hidden sm:block"></div>
+<div class="flex items-center gap-1 text-label-sm font-label-sm text-on-surface-variant">
+<span>Active Anticoagulant:</span>
+<span class="font-semibold text-secondary">Warfarin (Coumadin) 5mg</span>
+</div>
+<div class="h-4 w-px bg-outline-variant hidden sm:block"></div>
+<div class="flex items-center gap-1 text-label-sm font-label-sm text-on-surface-variant">
+<span>Allergies:</span>
+<span class="font-semibold text-error">Penicillin (Anaphylaxis)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm text-caption font-caption text-on-surface-variant">
+<span>Order <strong>#SES-4910</strong></span>
+<span>•</span>
+<span>Evaluated Just now (142ms)</span>
+</div>
+</div>
+</div>
+<!-- Primary Status & Severity Metric Banner -->
+<div class="w-full bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg mb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-1.5 max-w-2xl">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+            Needs Professional Review
+          </span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container text-on-surface font-mono">
+            Rx: Ciprofloxacin HCl 500mg PO Q12H x 7d (#14 Tabs)
+          </span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">shield</span>
+          Clinical decision support only. This is not a definitive declaration that the prescription is safe or unsafe. Mandatory licensed clinician evaluation required.
+        </p>
+</div>
+<!-- Severity Count Badges -->
+<div class="flex items-center gap-2 flex-wrap">
+<div class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-error-container text-on-error-container">
+<span class="material-symbols-outlined text-[18px] text-error">dangerous</span>
+<div class="text-left">
+<div class="font-headline-md text-headline-md leading-none text-error font-bold">2</div>
+<div class="font-caption text-caption font-medium">High Alert</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-[#b7791f]">warning</span>
+<div class="text-left">
+<div class="font-headline-md text-headline-md leading-none text-on-surface font-bold">1</div>
+<div class="font-caption text-caption font-medium">Moderate</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px] text-secondary">info</span>
+<div class="text-left">
+<div class="font-headline-md text-headline-md leading-none text-secondary font-bold">1</div>
+<div class="font-caption text-caption font-medium">Low / Info</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container-high text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-[#6b46c1]">help_outline</span>
+<div class="text-left">
+<div class="font-headline-md text-headline-md leading-none text-on-surface font-bold">1</div>
+<div class="font-caption text-caption font-medium">Unable to Assess</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+<div class="text-left">
+<div class="font-headline-md text-headline-md leading-none text-tertiary font-bold">5</div>
+<div class="font-caption text-caption font-medium">No Alert Found</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CHECK-BY-CHECK EVALUATION MATRIX (9 Cards) -->
+<div class="mb-space-lg">
+<div class="flex items-center justify-between mb-space-sm">
+<h2 class="font-subhead text-subhead text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">fact_check</span>
+        Systematic Deterministic Safety Battery (9 Modules Evaluated)
+      </h2>
+<span class="font-caption text-caption text-on-surface-variant font-mono">CDS Engine Protocol v4.18.2-SaMD</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- 1. DDI -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="font-body-md-medium text-body-md-medium text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error text-[18px]">sync_problem</span>
+              1. Drug–Drug Interaction
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-error font-caption text-caption font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> High Alert
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-3">
+            Ciprofloxacin inhibits CYP1A2 &amp; CYP3A4, potentiating Warfarin (Coumadin) anticoagulant effect; major bleeding hazard.
+          </p>
+</div>
+<div class="mt-space-md pt-2 flex items-center justify-between text-caption font-caption">
+<span class="text-error font-semibold">Flagged: Potentiation</span>
+<a class="text-primary hover:underline font-medium flex items-center gap-0.5" href="#alert-1">
+            View details <span class="material-symbols-outlined text-[14px]">arrow_downward</span>
+</a>
+</div>
+</div>
+<!-- 2. Dose & Frequency -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="font-body-md-medium text-body-md-medium text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error text-[18px]">speed</span>
+              2. Dose and Frequency
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-error font-caption text-caption font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> High Alert
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-3">
+            Dose 500mg Q12H exceeds recommended renal threshold for eGFR 42 mL/min/1.73m² (recommend 250–500mg Q18–24H).
+          </p>
+</div>
+<div class="mt-space-md pt-2 flex items-center justify-between text-caption font-caption">
+<span class="text-error font-semibold">Renal Mismatch</span>
+<a class="text-primary hover:underline font-medium flex items-center gap-0.5" href="#alert-2">
+            View details <span class="material-symbols-outlined text-[14px]">arrow_downward</span>
+</a>
+</div>
+</div>
+<!-- 3. Allergy & Cross Reactivity -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="font-body-md-medium text-body-md-medium text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">security</span>
+              3. Allergy &amp; Cross-Reactivity
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-caption text-caption font-medium">
+              No alert found
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-3">
+            No IgE-mediated beta-lactam cross-reactivity detected with fluoroquinolone class against reported Penicillin anaphylaxis.
+          </p>
+</div>
+<div class="mt-space-md pt-2 flex items-center justify-between text-caption font-caption">
+<span class="text-tertiary font-medium">Class Cleared</span>
+<button class="text-primary hover:underline font-medium" onclick="alert('Module Log: Penicillin V/G cross-reactivity zero with Fluoroquinolone core.')" type="button">View details</button>
+</div>
+</div>
+<!-- 4. Contraindications -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="font-body-md-medium text-body-md-medium text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[#b7791f] text-[18px]">report_problem</span>
+              4. Contraindications
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-[#fefcbf] text-[#b7791f] font-caption text-caption font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#b7791f]"></span> Moderate
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-3">
+            Relative contraindication in geriatric patient (age 64) with documented baseline QTc prolongation history.
+          </p>
+</div>
+<div class="mt-space-md pt-2 flex items-center justify-between text-caption font-caption">
+<span class="text-[#b7791f] font-semibold">Cardio Precaution</span>
+<a class="text-primary hover:underline font-medium flex items-center gap-0.5" href="#alert-3">
+            View details <span class="material-symbols-outlined text-[14px]">arrow_downward</span>
+</a>
+</div>
+</div>
+<!-- 5. Duplicate Therapy -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="font-body-md-medium text-body-md-medium text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">content_copy</span>
+              5. Duplicate Therapy
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-caption text-caption font-medium">
+              No alert found
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-3">
+            No therapeutic duplication or overlapping broad-spectrum antimicrobial agents identified on active profile.
+          </p>
+</div>
+<div class="mt-space-md pt-2 flex items-center justify-between text-caption font-caption">
+<span class="text-tertiary font-medium">Unique Antibacterial</span>
+<button class="text-primary hover:underline font-medium" onclick="alert('Duplicate Module: Active profile contains Warfarin, CoQ10. Ciprofloxacin unique in ATC J01MA02.')" type="button">View details</button>
+</div>
+</div>
+<!-- 6. Prescription Completeness -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="font-body-md-medium text-body-md-medium text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">assignment_turned_in</span>
+              6. Prescription Completeness
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-caption text-caption font-medium">
+              No alert found
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-3">
+            All core elements present: dose, route, interval, quantity (14 tabs), refills (0), and acute pyelonephritis indication.
+          </p>
+</div>
+<div class="mt-space-md pt-2 flex items-center justify-between text-caption font-caption">
+<span class="text-tertiary font-medium">Schema Validated</span>
+<button class="text-primary hover:underline font-medium" onclick="alert('NCPDP SCRIPT / FHIR MedicationRequest payload complete: 6 of 6 regulatory fields verified.')" type="button">View details</button>
+</div>
+</div>
+<!-- 7. Age / Weight Dosing -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="font-body-md-medium text-body-md-medium text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[#6b46c1] text-[18px]">accessibility_new</span>
+              7. Age / Weight Dosing
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-[#6b46c1] font-caption text-caption font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">help</span> Unable to assess
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-3">
+            Weight not formally confirmed in EMR profile; Cockcroft-Gault CrCl precision requires validated current weight.
+          </p>
+</div>
+<div class="mt-space-md pt-2 flex items-center justify-between text-caption font-caption">
+<span class="text-on-surface-variant font-medium">Missing Anthropometrics</span>
+<button class="text-primary hover:underline font-medium" onclick="alert('Anthropometric Notice: Weight parameter missing. Cockcroft-Gault suppressed; CKD-EPI relied upon.')" type="button">View details</button>
+</div>
+</div>
+<!-- 8. Food / Administration & Monitoring -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="font-body-md-medium text-body-md-medium text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">schedule</span>
+              8. Food / Administration
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-caption text-caption font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Low / Info
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-3">
+            Separate administration from polyvalent cations (calcium/iron/antacids) by ≥2 hours; monitor INR in 48-72h.
+          </p>
+</div>
+<div class="mt-space-md pt-2 flex items-center justify-between text-caption font-caption">
+<span class="text-secondary font-semibold">Timing Guidance</span>
+<a class="text-primary hover:underline font-medium flex items-center gap-0.5" href="#alert-4">
+            View details <span class="material-symbols-outlined text-[14px]">arrow_downward</span>
+</a>
+</div>
+</div>
+<!-- 9. Data Quality & Knowledge Base Sync -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="font-body-md-medium text-body-md-medium text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">sync</span>
+              9. Knowledge Base Sync
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-caption text-caption font-medium">
+              No alert found
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-3">
+            RxNorm 2025-02-B, FDA Black-Box, CPIC Level 1A guidelines successfully queried without parsing degradation.
+          </p>
+</div>
+<div class="mt-space-md pt-2 flex items-center justify-between text-caption font-caption">
+<span class="text-tertiary font-medium">Live Synced</span>
+<button class="text-primary hover:underline font-medium" onclick="alert('KB Health Check: Latency 18ms. Lexicomp + First Databank + CPIC v4 schemas synchronized.')" type="button">View details</button>
+</div>
+</div>
+</div>
+</div>
+<!-- MAIN WORKSPACE 2-COLUMN LAYOUT -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg items-start">
+<!-- Left Column: Detailed Alerts & Resolution Stack (approx 70%) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-subhead text-subhead text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">notification_important</span>
+          Active Clinical Alerts (Ranked by Severity)
+        </h3>
+<span class="font-caption text-caption text-on-surface-variant">4 Active Action Items</span>
+</div>
+<!-- Alert 1: High Severity - CYP Interaction -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all" id="alert-1">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md pb-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-error-container text-error flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">dangerous</span>
+</div>
+<div>
+<div class="flex items-center gap-2 flex-wrap">
+<span class="px-2 py-0.5 rounded bg-error-container text-error font-caption text-caption font-bold tracking-wide uppercase">High Severity</span>
+<span class="font-caption text-caption font-mono text-on-surface-variant">CDS-DDI-CYP1A2-0842</span>
+<span class="font-caption text-caption px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">Level 1 Contraindicated Combination</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mt-1">CYP-Mediated Drug Interaction: Ciprofloxacin + Warfarin</h4>
+</div>
+</div>
+<!-- Review Status Dropdown -->
+<div class="flex items-center gap-2">
+<div class="relative">
+<select class="h-8 pl-2.5 pr-7 bg-surface-container text-on-surface font-label-sm text-label-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary appearance-none cursor-pointer" id="status-alert-1">
+<option selected="" value="unreviewed">Status: Unreviewed</option>
+<option value="acknowledged">Acknowledged</option>
+<option value="resolved">Resolved</option>
+<option value="overridden">Overridden</option>
+</select>
+<span class="material-symbols-outlined absolute right-1.5 top-2 text-[16px] pointer-events-none text-on-surface-variant">expand_more</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md my-space-sm">
+<div class="font-label-md text-label-md text-on-surface font-semibold mb-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[17px]">chips</span>
+            Pharmacokinetic Mechanism &amp; Clinical Hazard
+          </div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Ciprofloxacin strongly inhibits hepatic <span class="font-semibold text-on-surface">CYP1A2</span> and moderately inhibits <span class="font-semibold text-on-surface">CYP3A4</span>, drastically reducing clearance of active (R)- and (S)-Warfarin enantiomers. Concomitant use can precipitate rapid INR escalation (&gt;6.0) within 48–72 hours, resulting in substantial risk of major intracranial or gastrointestinal hemorrhage.
+          </p>
+</div>
+<div class="bg-surface-container rounded-lg p-space-md mb-space-md">
+<div class="font-label-md text-label-md text-primary font-semibold mb-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[17px]">recommend</span>
+            Recommended Clinician Actions
+          </div>
+<ul class="list-disc pl-5 font-body-md text-body-md text-on-surface space-y-1">
+<li>Consider non-quinolone alternative: <strong>Aztreonam 1g IV Q8H</strong> (monobactam safe in penicillin anaphylaxis) or discuss with Infectious Disease.</li>
+<li>If Ciprofloxacin is deemed essential: Empirically reduce ongoing Warfarin dose by <strong>30% to 50%</strong> starting day 1, mandate INR draw at 48 hours, and instruct patient on immediate epistaxis/hematoma vigilance.</li>
+</ul>
+</div>
+<!-- Quick Action Bar -->
+<div class="flex items-center justify-between flex-wrap gap-space-sm pt-2">
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors" onclick="document.getElementById('status-alert-1').value='acknowledged'" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">done</span>
+              Acknowledge Alert
+            </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-error font-label-sm text-label-sm flex items-center gap-1 transition-colors" onclick="const reason = prompt('Clinical justification for overriding CYP1A2 interaction:'); if(reason){ document.getElementById('status-alert-1').value='overridden'; alert('Audit logged: ' + reason); }" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+              Override with Reason
+            </button>
+</div>
+<button class="text-primary hover:underline font-label-sm text-label-sm flex items-center gap-1" onclick="alert('Micromedex / CPIC Evidence monograph retrieved: Grade 1A Evidence (Level A Consensus).')" type="button">
+<span class="material-symbols-outlined text-[15px]">menu_book</span> CPIC Monograph #842
+          </button>
+</div>
+</div>
+<!-- Alert 2: High Severity - Renal Clearance Mismatch -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all" id="alert-2">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md pb-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-error-container text-error flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">water_damage</span>
+</div>
+<div>
+<div class="flex items-center gap-2 flex-wrap">
+<span class="px-2 py-0.5 rounded bg-error-container text-error font-caption text-caption font-bold tracking-wide uppercase">High Severity</span>
+<span class="font-caption text-caption font-mono text-on-surface-variant">CDS-REN-CKD3-1109</span>
+<span class="font-caption text-caption px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">eGFR 42 mL/min/1.73m²</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mt-1">Renal Clearance Mismatch (Dose Reduction Indicated)</h4>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<div class="relative">
+<select class="h-8 pl-2.5 pr-7 bg-surface-container text-on-surface font-label-sm text-label-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary appearance-none cursor-pointer" id="status-alert-2">
+<option selected="" value="unreviewed">Status: Unreviewed</option>
+<option value="acknowledged">Acknowledged</option>
+<option value="resolved">Resolved</option>
+<option value="overridden">Overridden</option>
+</select>
+<span class="material-symbols-outlined absolute right-1.5 top-2 text-[16px] pointer-events-none text-on-surface-variant">expand_more</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md my-space-sm">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Standard dosing of 500mg Q12H risks significant drug accumulation in stage 3b chronic kidney disease (eGFR 42 mL/min). Elevated peak serum concentrations potentiate central nervous system toxicity (tremors, seizure risk, confusion) and tendon rupture.
+          </p>
+</div>
+<div class="bg-surface-container rounded-lg p-space-md mb-space-md">
+<div class="font-label-md text-label-md text-primary font-semibold mb-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[17px]">calculate</span>
+            Renal Dosage Guidance (KDIGO &amp; FDA Label)
+          </div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm font-body-md text-body-md">
+<div class="p-2.5 rounded bg-surface-container-lowest">
+<span class="font-semibold block text-on-surface">Option A (Standard Extended Interval)</span>
+<span class="text-secondary font-medium">500 mg PO every 24 hours</span>
+<span class="text-caption font-caption text-on-surface-variant block mt-0.5">Maintains peak Cmax while preventing trough accumulation.</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container-lowest">
+<span class="font-semibold block text-on-surface">Option B (Divided Lower Dose)</span>
+<span class="text-secondary font-medium">250 mg PO every 12 hours</span>
+<span class="text-caption font-caption text-on-surface-variant block mt-0.5">Preferred if steady-state tissue AUC is prioritized.</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between flex-wrap gap-space-sm pt-2">
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors" onclick="document.getElementById('status-alert-2').value='acknowledged'" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">done</span>
+              Acknowledge Alert
+            </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-error font-label-sm text-label-sm flex items-center gap-1 transition-colors" onclick="const reason = prompt('Renal dose adjustment override reason:'); if(reason){ document.getElementById('status-alert-2').value='overridden'; }" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+              Override with Reason
+            </button>
+</div>
+<span class="font-caption text-caption text-on-surface-variant font-mono">FDA Renal Package Insert Table 3</span>
+</div>
+</div>
+<!-- Alert 3: Moderate Severity - QTc & Geriatric Risk -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all" id="alert-3">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md pb-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-[#fefcbf] text-[#b7791f] flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">monitor_heart</span>
+</div>
+<div>
+<div class="flex items-center gap-2 flex-wrap">
+<span class="px-2 py-0.5 rounded bg-[#fefcbf] text-[#b7791f] font-caption text-caption font-bold tracking-wide uppercase">Moderate Severity</span>
+<span class="font-caption text-caption font-mono text-on-surface-variant">CDS-CARD-QT-3392</span>
+<span class="font-caption text-caption px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">Beers 2024 Geriatric Guideline</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mt-1">QTc Interval &amp; Geriatric Arrhythmia Risk</h4>
+</div>
+</div>
+<!-- Acknowledged State with note -->
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+              Acknowledged
+            </span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md my-space-sm">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Patient age 64 with documented past borderline prolonged QTc (&gt;450ms). Fluoroquinolones exhibit class-effect electrophysiological delayed rectifier potassium channel block, conferring torsades de pointes vulnerability in the presence of electrolyte disturbances.
+          </p>
+</div>
+<div class="p-space-sm rounded bg-surface-container font-caption text-caption text-on-surface-variant flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">clinical_notes</span>
+<span>Clinical Note by <strong>Dr. Sarah Lin, PharmD</strong>: "ECG within normal limits last month (QTc 428ms). Electrolytes normal on 2024-03-15."</span>
+</div>
+<span class="text-tertiary font-semibold">Active Monitoring</span>
+</div>
+</div>
+<!-- Alert 4: Low / Informational Severity - Chelation Timing -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all" id="alert-4">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md pb-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">restaurant</span>
+</div>
+<div>
+<div class="flex items-center gap-2 flex-wrap">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-caption text-caption font-bold tracking-wide uppercase">Low / Info</span>
+<span class="font-caption text-caption font-mono text-on-surface-variant">CDS-ADM-CHEL-0412</span>
+<span class="font-caption text-caption px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">Chelation Kinetics</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mt-1">Chelation Timing &amp; Pharmacodynamic Spacing</h4>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+              Resolved
+            </span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Polyvalent cations (Mg²⁺, Al³⁺, Ca²⁺, Fe²⁺) form insoluble chelate complexes with Ciprofloxacin, reducing oral bioavailability by up to 85%. Ensure the patient ingests Ciprofloxacin at least <strong>2 hours before or 6 hours after</strong> dairy products, antacids, or mineral supplements. Patient advisory leaflet includes this spacing schedule.
+        </p>
+</div>
+</div>
+<!-- Right Column: Limitations & Clinical Governance Panel (approx 30%) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- CDS Limitations & Caveats Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+<div class="flex items-center gap-space-sm text-secondary mb-space-sm">
+<span class="material-symbols-outlined text-[22px]">policy</span>
+<h3 class="font-subhead text-subhead text-on-surface">Clinical Decision Limitations</h3>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mb-space-md">
+          SaMD Class II Decision Logic operates within strict algorithmic boundaries. Clinical discretion remains the legal standard of care.
+        </p>
+<div class="space-y-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="font-label-sm text-label-sm font-semibold text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">scale</span>
+              Unverified Patient Weight
+            </div>
+<p class="font-caption text-caption text-on-surface-variant">
+              Estimated CrCl relies on population-normalized eGFR (CKD-EPI 2021). Exact weight adjustments (Cockcroft-Gault) are unavailable until bedside scale measurement.
+            </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="font-label-sm text-label-sm font-semibold text-[#b7791f] flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">history</span>
+              Stale Lab Values (&gt;180 Days)
+            </div>
+<p class="font-caption text-caption text-on-surface-variant">
+              Serum creatinine and eGFR were obtained 2024-03-15. Acute kidney injury (AKI) status since hospitalization cannot be computationally excluded.
+            </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="font-label-sm text-label-sm font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">medication</span>
+              OTC &amp; Herbals Non-Exhaustive
+            </div>
+<p class="font-caption text-caption text-on-surface-variant">
+              Non-prescription NSAIDs, St. John’s Wort, or home herbals taken without EHR entry cannot be parsed by this automated pipeline.
+            </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="font-label-sm text-label-sm font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">strikethrough_s</span>
+              Phenotypic Pharmacogenomics
+            </div>
+<p class="font-caption text-caption text-on-surface-variant">
+              Patient CYP2C9 and VKORC1 genotypes are unmapped; interaction magnitude is computed on wild-type baseline (*1/*1).
+            </p>
+</div>
+</div>
+</div>
+<!-- Governance & Audit Trail Mini Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold mb-space-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+          Governance &amp; Audit Trail
+        </h4>
+<dl class="space-y-2 font-caption text-caption">
+<div class="flex justify-between items-center py-1">
+<dt class="text-on-surface-variant">Session ID:</dt>
+<dd class="font-mono font-semibold text-on-surface">#SES-4910-CDS</dd>
+</div>
+<div class="flex justify-between items-center py-1">
+<dt class="text-on-surface-variant">Engine Build:</dt>
+<dd class="font-mono text-on-surface">RxGuard v4.18.2</dd>
+</div>
+<div class="flex justify-between items-center py-1">
+<dt class="text-on-surface-variant">FDA Specification:</dt>
+<dd class="text-on-surface">SaMD Class II / 21 CFR 860</dd>
+</div>
+<div class="flex justify-between items-center py-1">
+<dt class="text-on-surface-variant">Logged Authenticator:</dt>
+<dd class="font-semibold text-primary">Dr. Sarah Lin, PharmD</dd>
+</div>
+<div class="flex justify-between items-center py-1">
+<dt class="text-on-surface-variant">Hash Checksum:</dt>
+<dd class="font-mono text-on-surface-variant truncate w-32 text-right">e7f9a2...990b</dd>
+</div>
+</dl>
+</div>
+<!-- Action Panel Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-sm">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold mb-1 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">send_and_archive</span>
+          Clinical Workflow Routing
+        </h4>
+<button class="w-full h-10 px-space-md rounded-lg bg-primary hover:bg-[#006068] text-on-primary font-body-md-medium text-body-md-medium flex items-center justify-center gap-2 shadow-sm transition-all" onclick="document.getElementById('pharmacist-modal').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[20px]">assignment_ind</span>
+          Send for Pharmacist Review
+        </button>
+<button class="w-full h-10 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-body-md-medium text-body-md-medium flex items-center justify-center gap-2 transition-all" onclick="alert('Exporting FHIR v4.0.1 DiagnosticReport &amp; Clinical PDF to St. Jude EMR gateway...')" type="button">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+          Export Report (PDF / FHIR)
+        </button>
+<button class="w-full h-10 px-space-md rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-body-md-medium text-body-md-medium flex items-center justify-center gap-2 transition-all" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-[20px]">local_printshop</span>
+          Print Patient Advisory Leaflet
+        </button>
+</div>
+</div>
+</div>
+<!-- Bottom Sticky Action Footer Bar -->
+<div class="sticky bottom-0 z-30 w-full bg-surface-container-lowest/95 backdrop-blur-md rounded-xl shadow-lg p-space-md mt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<a class="font-body-md-medium text-body-md-medium text-primary hover:underline flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+        Back to Step 4: Review Extracted Data
+      </a>
+<div class="h-4 w-px bg-outline-variant hidden md:block"></div>
+<div class="hidden md:flex items-center gap-1 text-caption font-caption text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Evaluation completed in 142ms • Audit trail cryptographically sealed</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="h-10 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-body-md-medium text-body-md-medium flex items-center gap-1.5 transition-colors" onclick="alert('CDS PDF report saved to local session.')" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+        Export CDS Report
+      </button>
+<button class="h-10 px-space-lg rounded-lg bg-primary hover:bg-[#006068] text-on-primary font-body-md-medium text-body-md-medium flex items-center gap-1.5 shadow-sm transition-colors" onclick="document.getElementById('pharmacist-modal').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">clinical_notes</span>
+        Send for Pharmacist Review
+      </button>
+</div>
+</div>
+<!-- Modal Dialog: Pharmacist Review & Attestation -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" id="pharmacist-modal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-lg w-full p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 text-primary font-headline-md text-headline-md">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+          Prescriber / Pharmacist Attestation
+        </div>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="document.getElementById('pharmacist-modal').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        You are submitting order <strong>#SES-4910</strong> (Ciprofloxacin 500mg) for Patient <strong>MRN-HASH-9042-X</strong>. 
+        There are <strong>2 High Severity Alerts</strong> currently flagged on this record.
+      </p>
+<div class="space-y-space-sm">
+<label class="block font-label-md text-label-md text-on-surface font-semibold">
+          Clinical Disposition Note (Mandatory):
+        </label>
+<textarea class="w-full p-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary" placeholder="State recommended dosage adjustment or alternative antimicrobial agent selection..." rows="3"></textarea>
+</div>
+<div class="flex items-center gap-2 p-space-sm rounded bg-error-container text-error font-caption text-caption">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+<span>Direct electronic transmission will trigger a mandatory pharmacist override verification in St. Jude Inpatient Pharmacy.</span>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-2">
+<button class="px-space-md h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md" onclick="document.getElementById('pharmacist-modal').classList.add('hidden')" type="button">
+          Cancel
+        </button>
+<button class="px-space-lg h-9 rounded-lg bg-primary hover:bg-[#006068] text-on-primary font-label-md text-label-md shadow-sm" onclick="alert('Prescription Order and Decision Support findings routed to St. Jude Inpatient Pharmacy Queue.'); document.getElementById('pharmacist-modal').classList.add('hidden');" type="button">
+          Sign &amp; Route to Pharmacy
+        </button>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low py-space-md px-gutter text-center shadow-[0_1px_8px_rgba(0,119,130,0.04)]"><div class="font-caption text-caption text-on-surface-variant">© 2025 RxGuard Healthcare Technologies. Regulated Clinical Authentication Portal &amp; Decision Support Engine. | HIPAA / HITECH Compliant | CDS Authority Level 3</div></footer></div></body></html>

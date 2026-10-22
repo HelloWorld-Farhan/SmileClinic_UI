@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed": "#d3e4ff", "surface-dim": "#cfdaf1", "on-primary-fixed-variant": "#004f56", "on-primary-fixed": "#001f23", "outline-variant": "#bdc8ca", "on-background": "#111c2c", "on-tertiary-container": "#9ffefb", "surface": "#f9f9ff", "on-secondary-container": "#00477f", "on-tertiary-fixed-variant": "#00504e", "secondary-fixed-dim": "#a2c9ff", "primary-container": "#007782", "on-tertiary": "#ffffff", "inverse-primary": "#7cd4e0", "surface-variant": "#d8e3fa", "surface-container-low": "#f0f3ff", "on-surface-variant": "#3e494a", "tertiary-fixed-dim": "#77d6d3", "primary-fixed": "#99f0fd", "on-secondary-fixed-variant": "#004881", "on-surface": "#111c2c", "primary-fixed-dim": "#7cd4e0", "tertiary-container": "#007876", "inverse-on-surface": "#ebf1ff", "error": "#ba1a1a", "on-error": "#ffffff", "surface-container": "#e7eeff", "on-secondary-fixed": "#001c38", "on-secondary": "#ffffff", "outline": "#6e797b", "surface-tint": "#006972", "surface-container-high": "#dee8ff", "secondary": "#1960a3", "on-primary": "#ffffff", "tertiary-fixed": "#94f2f0", "on-primary-container": "#c1f7ff", "surface-container-highest": "#d8e3fa", "inverse-surface": "#263142", "error-container": "#ffdad6", "on-error-container": "#93000a", "tertiary": "#005d5c", "surface-bright": "#f9f9ff", "on-tertiary-fixed": "#00201f", "secondary-container": "#7db6ff", "background": "#f9f9ff", "surface-container-lowest": "#ffffff", "primary": "#005c65" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-sm": "1rem", "space-md": "1rem", "gutter-sm": "1rem", "space-xl": "2rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter": "1.5rem", "space-xs": "0.25rem", "margin": "2rem" }, "fontFamily": { "subhead": ["Inter"], "headline-md": ["Inter"], "headline-lg-mobile": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"], "body-md-medium": ["Inter"], "label-md": ["Inter"], "caption": ["Inter"], "body-md": ["Inter"], "headline-lg": ["Inter"] }, "fontSize": { "subhead": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md-medium": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><div class="fixed top-0 left-0 right-0 z-50 flex items-center justify-center h-8 bg-surface-container text-secondary font-body-md-medium text-caption px-margin-sm shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-[15px] mr-space-xs text-secondary">info</span><span>Clinical decision support only. Not a definitive safety declaration. Confirm with a licensed prescriber or pharmacist.</span></div><header class="fixed top-8 left-0 right-0 z-40 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,119,130,0.06)] flex items-center justify-between px-gutter"><div class="flex items-center gap-space-lg w-72"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">shield_with_heart</span></div><div><div class="font-headline-md text-headline-md text-primary tracking-tight leading-none">RxGuard</div><div class="font-caption text-caption text-on-surface-variant font-medium mt-0.5">Clinical Decision Support</div></div></div></div><div class="flex-1 max-w-xl mx-gutter"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px] pointer-events-none">search</span><input class="w-full h-10 pl-10 pr-12 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container outline-none transition-all" placeholder="Search patient, MRN, Rx order..." type="text"/><kbd class="absolute right-space-md text-[11px] font-medium text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-1.5 px-space-md py-1 rounded-full bg-surface-container-low text-on-surface"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm font-medium">EMR Integrated</span></div><button aria-label="Notifications" class="relative p-2 rounded-lg hover:bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="text-right hidden sm:block"><div class="font-body-md-medium text-body-md-medium text-on-surface">Dr. Sarah Lin, PharmD</div><div class="font-caption text-caption text-primary font-medium">Lead Clinical Pharmacist - Inpatient</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-24 bottom-0 w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,119,130,0.06)] z-30 flex flex-col justify-between py-space-md"><nav class="px-space-md space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg transition-all bg-primary-container text-on-primary font-semibold shadow-sm" data-path="new-check" href="#"><span class="material-symbols-outlined text-[20px]">add_moderator</span><span>New Check</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="patients" href="#"><span class="material-symbols-outlined text-[20px]">groups</span><span>Patients</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="alerts" href="#"><span class="material-symbols-outlined text-[20px]">warning</span><span>Alerts</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">description</span><span>Reports</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="audit-log" href="#"><span class="material-symbols-outlined text-[20px]">history_toggle_off</span><span>Audit Log</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="rules-and-data" href="#"><span class="material-symbols-outlined text-[20px]">database</span><span>Rules &amp; Data</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md-medium text-body-md-medium" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span>Settings</span></a></nav><div class="px-space-md pt-space-md"><div class="p-space-md rounded-lg bg-surface-container-low flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">hub</span><div class="font-caption text-caption text-on-surface-variant leading-tight"><span class="font-semibold text-on-surface block mb-0.5">SMART on FHIR v4.0.1</span>St. Jude Health System<br/><span class="text-tertiary font-medium">Production Gateway Active</span></div></div></div></aside><div class="pl-72"><main class="w-full min-h-screen pt-24 bg-surface p-space-lg"><div class="flex flex-col w-full">
+<!-- WIZARD STEPPER -->
+<div class="w-full bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg mb-space-lg">
+<div class="relative flex items-center justify-between w-full max-w-4xl mx-auto">
+<div class="absolute left-8 right-8 top-1/2 -translate-y-1/2 h-1 bg-surface-container rounded-full z-0">
+<div class="h-full bg-primary rounded-full transition-all duration-300" style="width: 20%;"></div>
+</div>
+<!-- Step 1: Active -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-subhead text-subhead shadow-md ring-4 ring-primary/20">
+          1
+        </div>
+<div class="mt-space-xs font-label-md text-label-md text-primary font-semibold text-center whitespace-nowrap">
+          1. Patient Context
+        </div>
+</div>
+<!-- Step 2 -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-subhead text-subhead">
+          2
+        </div>
+<div class="mt-space-xs font-label-md text-label-md text-on-surface-variant text-center whitespace-nowrap hidden sm:block">
+          Current Meds &amp; Allergies
+        </div>
+</div>
+<!-- Step 3 -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-subhead text-subhead">
+          3
+        </div>
+<div class="mt-space-xs font-label-md text-label-md text-on-surface-variant text-center whitespace-nowrap hidden sm:block">
+          New Prescription
+        </div>
+</div>
+<!-- Step 4 -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-subhead text-subhead">
+          4
+        </div>
+<div class="mt-space-xs font-label-md text-label-md text-on-surface-variant text-center whitespace-nowrap hidden md:block">
+          Review Data
+        </div>
+</div>
+<!-- Step 5 -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-subhead text-subhead">
+          5
+        </div>
+<div class="mt-space-xs font-label-md text-label-md text-on-surface-variant text-center whitespace-nowrap hidden md:block">
+          Results &amp; Report
+        </div>
+</div>
+</div>
+</div>
+<!-- HEADER & PRIVACY NOTICE -->
+<div class="mb-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-space-sm mb-space-sm">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Patient Context</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Enter baseline physiological metrics and active renal/hepatic lab profiles to instantiate automated pharmacokinetic risk screening.
+        </p>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-start sm:self-auto px-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>CDS Session In-flight</span>
+</div>
+</div>
+<!-- Callout Box -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-md shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">policy</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="font-subhead text-subhead text-secondary flex items-center gap-space-xs">
+          Privacy Notice: Safe Harbor De-identification Mandate
+        </div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+          No direct patient identifiers (full names, SSN, street addresses) should ever be entered into the CDS engine. All records are processed under de-identification safe harbor standards (45 CFR §164.514). Use the pseudonymous ID token format.
+        </p>
+</div>
+</div>
+</div>
+<!-- FORM CONTENT GRID -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg pb-24">
+<!-- LEFT COLUMN: Patient Identification & Organ Assessment -->
+<div class="lg:col-span-8 space-y-space-lg">
+<!-- Card A: Patient Identification & Demographics -->
+<section class="bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg transition-all hover:shadow-md">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">badge</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Identification &amp; Physical Metrics</h2>
+<p class="font-caption text-caption text-on-surface-variant">Validated demographics for baseline clearances</p>
+</div>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Section 1A</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Pseudonymous Key -->
+<div class="md:col-span-2 space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="pt-key">
+              Pseudonymous Patient Key <span class="text-error">*</span>
+</label>
+<div class="flex items-center gap-space-sm">
+<div class="relative flex-1">
+<input class="w-full h-10 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-sm outline-none" id="pt-key" placeholder="e.g. PT-9042-X or MRN-HASH-4819" type="text" value="MRN-HASH-9042-XF"/>
+</div>
+<button class="h-10 px-space-md rounded-lg bg-surface-container-high text-primary hover:bg-surface-container font-label-md text-label-md flex items-center gap-1.5 transition-colors shrink-0" id="btn-auto-token" type="button">
+<span class="material-symbols-outlined text-[18px]">key</span>
+<span>Auto-generate</span>
+</button>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">Cryptographic collision-free pseudonym mapped within local EMR enclave only.</p>
+</div>
+<!-- Age / DOB Selector -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Age or Date of Birth</label>
+<div class="flex items-center bg-surface-container-low rounded-lg p-0.5">
+<button class="px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm" type="button">Age</button>
+<button class="px-2 py-0.5 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">DOB</button>
+</div>
+</div>
+<div class="relative">
+<input class="w-full h-10 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary shadow-sm outline-none" type="text" value="64 years"/>
+<span class="absolute right-3 top-2.5 text-on-surface-variant font-caption text-caption">Adult (Geriatric transition)</span>
+</div>
+</div>
+<!-- Weight Input & Verified Badge -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Current Weight</label>
+<div class="flex items-center bg-surface-container-low rounded-lg p-0.5">
+<button class="px-2 py-0.5 rounded-md bg-primary text-on-primary font-label-sm text-label-sm shadow-sm" type="button">kg</button>
+<button class="px-2 py-0.5 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">lb</button>
+</div>
+</div>
+<div class="relative">
+<input class="w-full h-10 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary shadow-sm outline-none" step="0.1" type="number" value="78.4"/>
+<span class="absolute right-3 top-2.5 text-on-surface-variant font-label-md text-label-md">kg</span>
+</div>
+<div class="flex items-center gap-space-xs pt-1">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary" id="verified-weight" type="checkbox"/>
+<label class="font-caption text-caption text-tertiary font-medium" for="verified-weight">
+                Verified on: Oct 24, 2024 by Inpatient Nursing
+              </label>
+</div>
+</div>
+<!-- Height & Derived BMI -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Height (optional)</label>
+<div class="flex items-center bg-surface-container-low rounded-lg p-0.5">
+<button class="px-2 py-0.5 rounded-md bg-primary text-on-primary font-label-sm text-label-sm shadow-sm" type="button">cm</button>
+<button class="px-2 py-0.5 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">in</button>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<input class="w-full h-10 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary shadow-sm outline-none" type="number" value="175"/>
+</div>
+</div>
+<!-- Computed BMI Pill Card -->
+<div class="flex flex-col justify-end">
+<div class="h-10 px-space-md rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">calculate</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Calculated BMI</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+                25.6 kg/m² (Overweight)
+              </span>
+</div>
+</div>
+<!-- Pregnancy & Lactation Status -->
+<div class="md:col-span-2 space-y-2 pt-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Pregnancy &amp; Lactation Status</label>
+<span class="font-caption text-caption text-on-surface-variant">Teratogenicity screening scope</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-space-xs">
+<label class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm text-center cursor-pointer shadow-sm">
+<input checked="" class="sr-only" name="repro-status" type="radio"/>
+<span class="font-medium leading-tight">Not applicable</span>
+<span class="text-[10px] opacity-80 mt-0.5">Post-menopausal / M</span>
+</label>
+<label class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm text-center cursor-pointer transition-colors">
+<input class="sr-only" name="repro-status" type="radio"/>
+<span class="font-medium leading-tight">Pregnant</span>
+<span class="text-[10px] text-on-surface-variant mt-0.5">1st Trimester</span>
+</label>
+<label class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm text-center cursor-pointer transition-colors">
+<input class="sr-only" name="repro-status" type="radio"/>
+<span class="font-medium leading-tight">Pregnant</span>
+<span class="text-[10px] text-on-surface-variant mt-0.5">2nd Trimester</span>
+</label>
+<label class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm text-center cursor-pointer transition-colors">
+<input class="sr-only" name="repro-status" type="radio"/>
+<span class="font-medium leading-tight">Pregnant</span>
+<span class="text-[10px] text-on-surface-variant mt-0.5">3rd Trimester</span>
+</label>
+<label class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm text-center cursor-pointer transition-colors">
+<input class="sr-only" name="repro-status" type="radio"/>
+<span class="font-medium leading-tight">Lactating</span>
+<span class="text-[10px] text-on-surface-variant mt-0.5">Nursing Infrequent</span>
+</label>
+</div>
+</div>
+</div>
+</section>
+<!-- Card B: Clinical Context & Organ Function Parameters -->
+<section class="bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg transition-all hover:shadow-md">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">vital_signs</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Organ Clearance &amp; Clinical Comorbidities</h2>
+<p class="font-caption text-caption text-on-surface-variant">Critical inputs for renal filtration, hepatic metabolism, and narrow therapeutic index alerts</p>
+</div>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Section 1B</span>
+</div>
+<div class="space-y-space-lg">
+<!-- Diagnoses Multi-tag field -->
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Active Diagnoses / Comorbidities</label>
+<span class="font-caption text-caption text-on-surface-variant">ICD-10 synced with active encounters</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-wrap gap-2 items-center">
+<!-- Pill 1 -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface shadow-sm font-label-sm text-label-sm">
+<span class="font-semibold text-secondary">I48.0</span> Atrial Fibrillation
+                <button class="text-on-surface-variant hover:text-error transition-colors flex items-center" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</span>
+<!-- Pill 2 -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface shadow-sm font-label-sm text-label-sm">
+<span class="font-semibold text-secondary">E11.9</span> Type 2 Diabetes Mellitus
+                <button class="text-on-surface-variant hover:text-error transition-colors flex items-center" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</span>
+<!-- Pill 3 -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface shadow-sm font-label-sm text-label-sm">
+<span class="font-semibold text-secondary">N18.31</span> Chronic Kidney Disease Stage 3a
+                <button class="text-on-surface-variant hover:text-error transition-colors flex items-center" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</span>
+<!-- Pill 4 -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface shadow-sm font-label-sm text-label-sm">
+<span class="font-semibold text-secondary">I10</span> Essential Hypertension
+                <button class="text-on-surface-variant hover:text-error transition-colors flex items-center" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</span>
+<div class="flex-1 min-w-[220px]">
+<input class="w-full h-8 px-2 bg-transparent text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant outline-none" placeholder="+ Type diagnosis or ICD-10 (e.g. Heart Failure, Asthma)..." type="text"/>
+</div>
+</div>
+</div>
+<!-- Kidney Function Panel -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">water_drop</span>
+<span class="font-subhead text-subhead text-on-surface">Kidney Function &amp; Estimated Clearance</span>
+</div>
+<!-- Yellow Stale Lab Warning Chip -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-900 font-label-sm text-label-sm font-semibold shrink-0">
+<span class="material-symbols-outlined text-[16px] text-amber-700">warning</span>
+<span>Stale Lab (&gt; 180 days old)</span>
+</div>
+</div>
+<!-- Stale Alert Notice -->
+<div class="p-space-sm rounded-lg bg-amber-50 text-amber-950 font-caption text-caption flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-amber-700 shrink-0 mt-0.5">history_toggle_off</span>
+<span>
+<strong>Warning:</strong> Renal clearance value is from <strong>2024-03-15</strong> (223 days ago). Renal dosing adjustments for narrow-index agents (e.g., Vancomycin, DOACs, Aminoglycosides) may be inaccurate. Confirm current serum creatinine prior to finalizing.
+              </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-space-sm">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">eGFR / Clearance</label>
+<input class="w-full h-10 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md-medium text-body-md-medium focus:ring-2 focus:ring-primary shadow-sm outline-none" type="number" value="42"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Measurement Units</label>
+<select class="w-full h-10 px-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary shadow-sm outline-none">
+<option selected="">mL/min/1.73m² (CKD-EPI)</option>
+<option>mg/dL (Serum Creatinine)</option>
+<option>mL/min (Cockcroft-Gault)</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Test Date</label>
+<input class="w-full h-10 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary shadow-sm outline-none" type="date" value="2024-03-15"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Estimation Method</label>
+<select class="w-full h-10 px-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary shadow-sm outline-none">
+<option selected="">CKD-EPI 2021 (no race)</option>
+<option>MDRD Refined</option>
+<option>Cockcroft-Gault (IBW)</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Liver Function Panel -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">hub</span>
+<span class="font-subhead text-subhead text-on-surface">Liver Function &amp; Hepatic Assessment</span>
+</div>
+<!-- Fresh Lab Chip -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-900 font-label-sm text-label-sm font-semibold shrink-0">
+<span class="material-symbols-outlined text-[16px] text-emerald-700">check_circle</span>
+<span>Current Lab (6 days ago)</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Clinical Score / Marker</label>
+<input class="w-full h-10 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md-medium text-body-md-medium focus:ring-2 focus:ring-primary shadow-sm outline-none" type="text" value="Child-Pugh Class A / ALT 34"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Classification System</label>
+<select class="w-full h-10 px-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary shadow-sm outline-none">
+<option selected="">Child-Pugh Classification</option>
+<option>MELD-Na Score</option>
+<option>Transaminases (ALT/AST U/L)</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Assay Timestamp</label>
+<input class="w-full h-10 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary shadow-sm outline-none" type="date" value="2024-10-18"/>
+</div>
+</div>
+</div>
+<!-- Dialysis Status Toggle Switch -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div>
+<div class="font-subhead text-subhead text-on-surface flex items-center gap-2">
+<span>Active Dialysis / Renal Replacement Therapy (RRT)</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">
+                Enable if the patient undergoes intermittent hemodialysis, peritoneal dialysis, or CRRT. Overrides standard eGFR equations.
+              </p>
+</div>
+<!-- Toggle Container -->
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input class="sr-only peer" id="dialysis-toggle" type="checkbox"/>
+<div class="w-14 h-8 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-surface-container-lowest after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-primary"></div>
+<span class="ml-3 font-label-md text-label-md font-semibold text-on-surface-variant peer-checked:text-primary" id="dialysis-label">Off</span>
+</label>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT COLUMN: Administrative Context & Visual Summary -->
+<div class="lg:col-span-4 space-y-space-lg">
+<!-- Card C: Administrative & Regulatory Jurisdiction -->
+<section class="bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg transition-all hover:shadow-md">
+<div class="flex items-center gap-space-sm pb-space-md mb-space-md">
+<span class="material-symbols-outlined text-primary text-[24px]">gavel</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Administrative Scope</h2>
+<p class="font-caption text-caption text-on-surface-variant">Regional compendia and practice boundaries</p>
+</div>
+</div>
+<div class="space-y-space-md">
+<!-- Care Setting -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Clinical Care Setting</label>
+<select class="w-full h-10 px-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary shadow-sm outline-none">
+<option selected="">Inpatient Ward (Cardiology / Step-down)</option>
+<option>Emergency Department</option>
+<option>Intensive Care Unit (ICU)</option>
+<option>Outpatient Ambulatory Clinic</option>
+<option>Community Retail Pharmacy</option>
+</select>
+<p class="font-caption text-caption text-on-surface-variant">Influences route-specific alerts (IV compatibility, oral absorption).</p>
+</div>
+<!-- Regulatory Jurisdiction -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Jurisdiction &amp; Guidelines</label>
+<select class="w-full h-10 px-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary shadow-sm outline-none">
+<option selected="">United States (FDA / CPIC Guidelines)</option>
+<option>European Union (EMA / SmPC Guidelines)</option>
+<option>United Kingdom (MHRA / BNF Standards)</option>
+<option>Canada (Health Canada / DPD)</option>
+<option>Australia (TGA / PBS Listings)</option>
+</select>
+<p class="font-caption text-caption text-on-surface-variant">Loads regional Black Box warnings and formulary contraindications.</p>
+</div>
+<!-- Language -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Report Monograph Language</label>
+<select class="w-full h-10 px-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary shadow-sm outline-none">
+<option selected="">English (US Clinical Lexicon)</option>
+<option>Spanish (Castellano Clínico)</option>
+<option>French (Pharmacopée Européenne)</option>
+<option>German (Arzneimittel-Atlas)</option>
+</select>
+</div>
+</div>
+</section>
+<!-- Pharmacokinetic Sensitivity Radar / Summary Card -->
+<section class="bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg transition-all hover:shadow-md">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">monitor_heart</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Screening Sensitivity</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Live Engine</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mb-space-md">
+          Based on the current patient context, the CDS rules engine has activated heightened monitoring thresholds:
+        </p>
+<div class="space-y-space-sm">
+<!-- Clearance Gauge Meter (SVG) -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center gap-space-md">
+<div class="relative w-14 h-14 shrink-0 flex items-center justify-center">
+<svg class="w-14 h-14 -rotate-90" viewbox="0 0 36 36">
+<!-- Background Ring -->
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<!-- Value Ring (42% of 100 for eGFR 42) -->
+<path class="text-amber-500" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="42, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-headline-md text-[13px] font-bold text-amber-700 leading-none">42</span>
+<span class="font-caption text-[8px] text-on-surface-variant leading-none mt-0.5">eGFR</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Moderate Renal Impairment</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">CKD Stage 3a flags active for renally excreted drugs.</p>
+</div>
+</div>
+<!-- Dynamic Active Filters List -->
+<div class="space-y-1.5 pt-1">
+<div class="flex items-center justify-between py-1 px-space-sm rounded bg-surface-container text-caption font-caption">
+<span class="text-on-surface font-medium">Anticoagulation Clash Rules</span>
+<span class="text-error font-semibold">Enabled (AFib)</span>
+</div>
+<div class="flex items-center justify-between py-1 px-space-sm rounded bg-surface-container text-caption font-caption">
+<span class="text-on-surface font-medium">Glycemic Interplay Rules</span>
+<span class="text-primary font-semibold">Enabled (T2D)</span>
+</div>
+<div class="flex items-center justify-between py-1 px-space-sm rounded bg-surface-container text-caption font-caption">
+<span class="text-on-surface font-medium">Geriatric Beers Criteria</span>
+<span class="text-secondary font-semibold">Active (≥65 yrs)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Protocol Assurance Badge Card -->
+<div class="p-space-md rounded-2xl bg-surface-container text-on-surface flex items-start gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0">verified</span>
+<div class="font-caption text-caption text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface font-semibold block mb-0.5">Deterministic Drug Safety Pipeline</strong>
+          Context parameters dynamically adjust kinetic volume of distribution ($V_d$) and elimination half-life ($t_{1/2}$) matrices in Step 5.
+        </div>
+</div>
+</div>
+</div>
+<!-- STICKY ACTION FOOTER BAR -->
+<div class="sticky bottom-4 z-30 w-full bg-surface-container-lowest/95 backdrop-blur-md rounded-2xl shadow-xl p-space-md mt-space-md">
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<!-- Left side: Draft status and Save Draft button -->
+<div class="flex items-center gap-space-md w-full sm:w-auto justify-between sm:justify-start">
+<button class="h-10 px-space-md rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container font-body-md-medium text-body-md-medium flex items-center gap-2 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Draft</span>
+</button>
+<div class="flex items-center gap-1.5 font-caption text-caption text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Auto-saved 12s ago • Token #SES-4910</span>
+</div>
+</div>
+<!-- Right side: Cancel check and Primary Next CTA -->
+<div class="flex items-center gap-space-md w-full sm:w-auto justify-end">
+<button class="h-10 px-space-md text-on-surface-variant hover:text-error font-body-md-medium text-body-md-medium transition-colors" type="button">
+          Cancel Check
+        </button>
+<a class="h-10 px-space-lg rounded-lg bg-primary hover:bg-primary-container text-on-primary font-body-md-medium text-body-md-medium flex items-center gap-2 shadow-md transition-all shrink-0" href="#">
+<span>Next: Current Medicines &amp; Allergies</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Micro-interaction: Auto-generate pseudonymous token
+    const autoTokenBtn = document.getElementById('btn-auto-token');
+    const ptKeyInput = document.getElementById('pt-key');
+    if (autoTokenBtn && ptKeyInput) {
+      autoTokenBtn.addEventListener('click', function() {
+        const randHex = Math.floor(Math.random() * 0xFFFFFF).toString(16).toUpperCase().padStart(6, '0');
+        ptKeyInput.value = 'MRN-PSEUDO-' + randHex;
+        ptKeyInput.classList.add('ring-2', 'ring-primary');
+        setTimeout(() => ptKeyInput.classList.remove('ring-2', 'ring-primary'), 600);
+      });
+    }
+
+    // Micro-interaction: Dialysis toggle label update
+    const dialysisToggle = document.getElementById('dialysis-toggle');
+    const dialysisLabel = document.getElementById('dialysis-label');
+    if (dialysisToggle && dialysisLabel) {
+      dialysisToggle.addEventListener('change', function() {
+        if (this.checked) {
+          dialysisLabel.textContent = 'Active (HD/PD/CRRT)';
+          dialysisLabel.classList.remove('text-on-surface-variant');
+          dialysisLabel.classList.add('text-primary');
+        } else {
+          dialysisLabel.textContent = 'Off';
+          dialysisLabel.classList.remove('text-primary');
+          dialysisLabel.classList.add('text-on-surface-variant');
+        }
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-low py-space-md px-gutter text-center shadow-[0_1px_8px_rgba(0,119,130,0.04)]"><div class="font-caption text-caption text-on-surface-variant">© 2025 RxGuard Healthcare Technologies. Regulated Clinical Authentication Portal &amp; Decision Support Engine. | HIPAA / HITECH Compliant | CDS Authority Level 3</div></footer></div></body></html>
